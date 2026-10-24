@@ -1,6 +1,9 @@
 /inputs/
 /release-assets/*.zip
 /release-assets/*.part
+/release-assets/*.mp4
+/release-assets/*.srt
+/release-assets/*.txt
 /restored/
 /new-run/
 /verification-local.json

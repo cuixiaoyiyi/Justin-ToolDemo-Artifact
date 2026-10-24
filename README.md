@@ -4,6 +4,12 @@ This artifact contains the Justin tool, the five frozen subject versions, the ex
 
 Repository: <https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact> · Release: [v1.0.0](https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact/releases/tag/v1.0.0)
 
+## Video overview
+
+[Watch or download the introduction video](https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact/releases/download/v1.0.0/Justin_SizeAware_Introduction_4m30s_1080p_v2.mp4) (**4 minutes 30 seconds, 1920 × 1080, English narration**). The video follows a running example through input construction, tool use, and the five-tool evaluation. It includes selectable English captions and chapter markers.
+
+[English subtitles](https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact/releases/download/v1.0.0/Justin_SizeAware_Introduction_4m30s_1080p_v2.en.srt) · [Narration transcript](https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact/releases/download/v1.0.0/Justin_SizeAware_Introduction_4m30s_1080p_v2.narration.txt)
+
 ## 1. Start with the recorded results
 
 The recorded results can be checked without Java, Maven, a model account, or network access. Python **3.10 or later**, using only its standard library, is sufficient. Run these commands from the artifact root on Linux, macOS, or Windows (replace `python3` with `python` on Windows):
@@ -75,7 +81,7 @@ Each retained raw file keeps its original bytes and content hash. Repacking remo
 
 String, array, and indexed collection APIs operate on finite sequences: access requires an existing position, a fragment count depends on the extent remaining after its start, and insertion depends on the receiver's current size. The cohort covers text editing/padding, binary/hex conversion, array comparison, byte ranges, indexed collections, and document-tree updates. The exact frozen list, rather than a method-name substring, determines every comparison.
 
-The scope is targeted and exploratory. `TextStringBuilder` contributes 21 methods and `Conversion` contributes 33, together **54/72**. Selection was retrospective, then frozen before this fresh batch; this is neither a random Java API sample nor an independent holdout. Each configuration ran once. These limitations remain part of the dataset.
+The scope is targeted and exploratory. Selection was retrospective, then frozen before this fresh batch; this is neither a random Java API sample nor an independent holdout. Each configuration ran once. These limitations remain part of the dataset.
 
 Only the versions in the table are **tested subjects**. For example, `inputs/subjects/dependencies/commons-lang3-3.20.0.jar` is the runtime dependency used by Commons Text 1.15.0; it is not an additional tested Commons Lang version. Preserving it avoids silently changing the recorded classpath. Other dependency JARs are likewise separated and listed in `input-manifest.json`.
 

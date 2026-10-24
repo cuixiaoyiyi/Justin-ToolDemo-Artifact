@@ -13,7 +13,7 @@
     "EvoSuite consumes zero LLM tokens. Justin aggregate time is10.4% lower, but it is slower on51/72 individual targets and faster on21; it is not uniformly faster.",
     "All-five fully compiled and closed-JUnit sensitivity has37 methods; ChatTester and HITS reproductions have higher conditional line/branch coverage than Justin. HITS low all72 coverage is strongly associated with34 no-export outcomes.",
     "Generated case count is an output-volume measure, not a quality advantage. Class-wide minimization can retain receiver/setup diversity with identical focal null behavior.",
-    "Original72 is75% TextStringBuilder/Conversion by method count; outcomes should not be generalized to arbitrary Java APIs.",
+    "Outcomes from this targeted exploratory72 cohort should not be generalized to arbitrary Java APIs.",
     "ChatTester and HITS entries are third-party reproductions, not faithful claims about newly located author implementations."
   ],
   "comparisons": [

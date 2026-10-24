@@ -14,5 +14,37 @@
       "sha256": "c06ba6c620791566895e8fd9862d2f13e326b421872c0cd8636365b910efe93f",
       "url": "https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact/releases/download/v1.0.0/raw-evidence.zip"
     }
+  ],
+  "media": [
+    {
+      "name": "Justin_SizeAware_Introduction_4m30s_1080p_v2.mp4",
+      "kind": "video",
+      "language": "en",
+      "bytes": 10677952,
+      "sha256": "14ac8266af7b9a404338d6dad7de018699a513fcaa759e880fe07fadad7966ae",
+      "url": "https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact/releases/download/v1.0.0/Justin_SizeAware_Introduction_4m30s_1080p_v2.mp4",
+      "duration_seconds": 270,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 30
+    },
+    {
+      "name": "Justin_SizeAware_Introduction_4m30s_1080p_v2.en.srt",
+      "kind": "subtitles",
+      "language": "en",
+      "bytes": 7522,
+      "sha256": "49e3010de5c2efb8875e2371608937bea5f84e337b3c7a5a880b7b45775d73a7",
+      "url": "https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact/releases/download/v1.0.0/Justin_SizeAware_Introduction_4m30s_1080p_v2.en.srt"
+    },
+    {
+      "name": "Justin_SizeAware_Introduction_4m30s_1080p_v2.narration.txt",
+      "kind": "transcript",
+      "language": "en",
+      "bytes": 5372,
+      "sha256": "4ec8d57eb6e2dd3de139f8302aef22746ff9ac8b5718883056a04e2f0fc56aa5",
+      "url": "https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact/releases/download/v1.0.0/Justin_SizeAware_Introduction_4m30s_1080p_v2.narration.txt"
+    }
   ]
 }
