@@ -1,0 +1,3685 @@
+{
+  "schema": "original72-duration-quantization-audit-v1",
+  "created_unix": 1792756916.1164722,
+  "units": 360,
+  "maximum_absolute_delta_s": 0.0005429096221938323,
+  "median_absolute_delta_s": 0.0002616825103771703,
+  "greater_than_0_5_ms": [
+    {
+      "method_id": "s0050",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 16.618,
+      "wall_timestamp_window_seconds": 16.618542909622192,
+      "signed_delta_s": -0.0005429096221938323,
+      "absolute_delta_s": 0.0005429096221938323,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0050/done.json",
+      "done_sha256": "7b3064adf8cec042dce0a1cd500c3014528da4da32259ed1daa42b9f5d63041d"
+    },
+    {
+      "method_id": "s0068",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 75.91,
+      "wall_timestamp_window_seconds": 75.91052389144897,
+      "signed_delta_s": -0.00052389144897802,
+      "absolute_delta_s": 0.00052389144897802,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/evosuite/s0068/done.json",
+      "done_sha256": "bfaf4f44a2eca49fdc53e4be6d28b1e54d46270b4ea5384180336e29d9098121"
+    },
+    {
+      "method_id": "s0011",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 123.542,
+      "wall_timestamp_window_seconds": 123.54251170158386,
+      "signed_delta_s": -0.0005117015838607131,
+      "absolute_delta_s": 0.0005117015838607131,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0011/done.json",
+      "done_sha256": "722e571cc32e863ede6f69a5230995b1333dd0ebe1f49a3dcaab7c178e7f56a0"
+    },
+    {
+      "method_id": "s0048",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 38.187,
+      "wall_timestamp_window_seconds": 38.1875102519989,
+      "signed_delta_s": -0.0005102519989037546,
+      "absolute_delta_s": 0.0005102519989037546,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0048/done.json",
+      "done_sha256": "0ea1a867ec85279ec1364f735cf4bae5e9ba2e179347cc44bbb5444765a87556"
+    },
+    {
+      "method_id": "s0061",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 49.53,
+      "wall_timestamp_window_seconds": 49.530508279800415,
+      "signed_delta_s": -0.0005082798004139022,
+      "absolute_delta_s": 0.0005082798004139022,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0061/done.json",
+      "done_sha256": "409719005b59d26d0e9a66bebb1f533692f4e66d709cd1d7f33b06fb18b6fff5"
+    },
+    {
+      "method_id": "s0042",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 52.779,
+      "wall_timestamp_window_seconds": 52.77950191497803,
+      "signed_delta_s": -0.0005019149780238763,
+      "absolute_delta_s": 0.0005019149780238763,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0042/done.json",
+      "done_sha256": "a022e9bbb0264b98b1f46de89b0584817cf6fbed473df2be2f9ef44dcf61a766"
+    },
+    {
+      "method_id": "s0023",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 18.633,
+      "wall_timestamp_window_seconds": 18.633500814437866,
+      "signed_delta_s": -0.000500814437867092,
+      "absolute_delta_s": 0.000500814437867092,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0023/done.json",
+      "done_sha256": "01d91eb1cd6ba30ff465685cc8f630daa9472c61ade43bb1f9f464c1a3a79055"
+    }
+  ],
+  "greater_than_1_ms": [],
+  "recommended_generation_duration_window_abs_tol_s": 0.001,
+  "rationale": "done.seconds is rounded to3 decimal places from monotonic time. The independently stored wall start/finish timestamps are sampled in adjacent statements, before/after the monotonic samples, so0.5ms rounding quantization plus small sampling/serialization-order overhead can exceed0.5ms.1ms is conservative for this observed audit only; other numeric equality checks should retain their existing tolerances.",
+  "no_result_or_runtime_changes": true,
+  "all_sorted_deltas": [
+    {
+      "method_id": "s0050",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 16.618,
+      "wall_timestamp_window_seconds": 16.618542909622192,
+      "signed_delta_s": -0.0005429096221938323,
+      "absolute_delta_s": 0.0005429096221938323,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0050/done.json",
+      "done_sha256": "7b3064adf8cec042dce0a1cd500c3014528da4da32259ed1daa42b9f5d63041d"
+    },
+    {
+      "method_id": "s0068",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 75.91,
+      "wall_timestamp_window_seconds": 75.91052389144897,
+      "signed_delta_s": -0.00052389144897802,
+      "absolute_delta_s": 0.00052389144897802,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/evosuite/s0068/done.json",
+      "done_sha256": "bfaf4f44a2eca49fdc53e4be6d28b1e54d46270b4ea5384180336e29d9098121"
+    },
+    {
+      "method_id": "s0011",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 123.542,
+      "wall_timestamp_window_seconds": 123.54251170158386,
+      "signed_delta_s": -0.0005117015838607131,
+      "absolute_delta_s": 0.0005117015838607131,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0011/done.json",
+      "done_sha256": "722e571cc32e863ede6f69a5230995b1333dd0ebe1f49a3dcaab7c178e7f56a0"
+    },
+    {
+      "method_id": "s0048",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 38.187,
+      "wall_timestamp_window_seconds": 38.1875102519989,
+      "signed_delta_s": -0.0005102519989037546,
+      "absolute_delta_s": 0.0005102519989037546,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0048/done.json",
+      "done_sha256": "0ea1a867ec85279ec1364f735cf4bae5e9ba2e179347cc44bbb5444765a87556"
+    },
+    {
+      "method_id": "s0061",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 49.53,
+      "wall_timestamp_window_seconds": 49.530508279800415,
+      "signed_delta_s": -0.0005082798004139022,
+      "absolute_delta_s": 0.0005082798004139022,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0061/done.json",
+      "done_sha256": "409719005b59d26d0e9a66bebb1f533692f4e66d709cd1d7f33b06fb18b6fff5"
+    },
+    {
+      "method_id": "s0042",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 52.779,
+      "wall_timestamp_window_seconds": 52.77950191497803,
+      "signed_delta_s": -0.0005019149780238763,
+      "absolute_delta_s": 0.0005019149780238763,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0042/done.json",
+      "done_sha256": "a022e9bbb0264b98b1f46de89b0584817cf6fbed473df2be2f9ef44dcf61a766"
+    },
+    {
+      "method_id": "s0023",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 18.633,
+      "wall_timestamp_window_seconds": 18.633500814437866,
+      "signed_delta_s": -0.000500814437867092,
+      "absolute_delta_s": 0.000500814437867092,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0023/done.json",
+      "done_sha256": "01d91eb1cd6ba30ff465685cc8f630daa9472c61ade43bb1f9f464c1a3a79055"
+    },
+    {
+      "method_id": "s0014",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 26.425,
+      "wall_timestamp_window_seconds": 26.42549729347229,
+      "signed_delta_s": -0.0004972934722893285,
+      "absolute_delta_s": 0.0004972934722893285,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0014/done.json",
+      "done_sha256": "abe54fcfd678ae47e4036a9f2030845ace0811d45475e26c33dda932343bc53e"
+    },
+    {
+      "method_id": "s0006",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 17.229,
+      "wall_timestamp_window_seconds": 17.229496002197266,
+      "signed_delta_s": -0.0004960021972664208,
+      "absolute_delta_s": 0.0004960021972664208,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0006/done.json",
+      "done_sha256": "fe814f93c97dcb9885c6945faa7ef88660e2f592f2b52366ea25c59bfb555b56"
+    },
+    {
+      "method_id": "s0030",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 53.706,
+      "wall_timestamp_window_seconds": 53.70648956298828,
+      "signed_delta_s": -0.0004895629882781805,
+      "absolute_delta_s": 0.0004895629882781805,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0030/done.json",
+      "done_sha256": "41fc8a35a78d45d03f3ac6bf34357e87adf8390315f3ec09155284787bd2d7c8"
+    },
+    {
+      "method_id": "s0009",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 57.776,
+      "wall_timestamp_window_seconds": 57.77648949623108,
+      "signed_delta_s": -0.0004894962310757478,
+      "absolute_delta_s": 0.0004894962310757478,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0009/done.json",
+      "done_sha256": "15538d950f132903d6b591f406780020737c7d34f0b72379cf2e4a04f7e54eea"
+    },
+    {
+      "method_id": "s0062",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 22.689,
+      "wall_timestamp_window_seconds": 22.688512086868286,
+      "signed_delta_s": 0.00048791313171392403,
+      "absolute_delta_s": 0.00048791313171392403,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0062/done.json",
+      "done_sha256": "55c8714ca5e2b3d70b069bd078dd219497956f1898edcac61201c08a4ad4d822"
+    },
+    {
+      "method_id": "s0015",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 21.685,
+      "wall_timestamp_window_seconds": 21.684512615203857,
+      "signed_delta_s": 0.00048738479614129915,
+      "absolute_delta_s": 0.00048738479614129915,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0015/done.json",
+      "done_sha256": "79767798b54034ba7f03907f6140df3f1f82a3026e35e76f2d13256a32466b3a"
+    },
+    {
+      "method_id": "s0026",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 15.56,
+      "wall_timestamp_window_seconds": 15.559515237808228,
+      "signed_delta_s": 0.0004847621917729583,
+      "absolute_delta_s": 0.0004847621917729583,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0026/done.json",
+      "done_sha256": "a12322b49b5ac6cadc01f9f318c2bf75852580d28ec43af94d8d869e56c9400d"
+    },
+    {
+      "method_id": "s0065",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 54.798,
+      "wall_timestamp_window_seconds": 54.797516107559204,
+      "signed_delta_s": 0.0004838924407977174,
+      "absolute_delta_s": 0.0004838924407977174,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/hits/s0065/done.json",
+      "done_sha256": "f5bb1942911e1fa54662b34fcadae569edcd61f991c2a64836b2635d85984d69"
+    },
+    {
+      "method_id": "s0020",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 100.446,
+      "wall_timestamp_window_seconds": 100.44551610946655,
+      "signed_delta_s": 0.00048389053344521926,
+      "absolute_delta_s": 0.00048389053344521926,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0020/done.json",
+      "done_sha256": "2e4bb03be34356de8e560153325b66ec9ceca2acb3a6e94dd2cd4a197d2a01d9"
+    },
+    {
+      "method_id": "s0049",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 50.093,
+      "wall_timestamp_window_seconds": 50.09251618385315,
+      "signed_delta_s": 0.00048381614685411023,
+      "absolute_delta_s": 0.00048381614685411023,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0049/done.json",
+      "done_sha256": "9956e9b901d787292c858944a349e4f456f9e36d69a2fde3302d7cf8c8335e6c"
+    },
+    {
+      "method_id": "s0061",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 18.748,
+      "wall_timestamp_window_seconds": 18.747520923614502,
+      "signed_delta_s": 0.0004790763854991553,
+      "absolute_delta_s": 0.0004790763854991553,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0061/done.json",
+      "done_sha256": "d59c660a65f66a752b8c5fba2208cd9a29170dc8d09a56210c3ca460a33fac7d"
+    },
+    {
+      "method_id": "s0029",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 29.394,
+      "wall_timestamp_window_seconds": 29.394478797912598,
+      "signed_delta_s": -0.0004787979125993047,
+      "absolute_delta_s": 0.0004787979125993047,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0029/done.json",
+      "done_sha256": "bac0dfeaab2ff5d8f3756d74c3f983f92e5e363be0990145bb440c43659b5b7b"
+    },
+    {
+      "method_id": "s0003",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 47.249,
+      "wall_timestamp_window_seconds": 47.24947667121887,
+      "signed_delta_s": -0.00047667121886973973,
+      "absolute_delta_s": 0.00047667121886973973,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0003/done.json",
+      "done_sha256": "4952743eaffb1a653035af4198bdbedf656c1b3a74286ad480503961fa703069"
+    },
+    {
+      "method_id": "s0024",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 21.009,
+      "wall_timestamp_window_seconds": 21.009474754333496,
+      "signed_delta_s": -0.0004747543334957527,
+      "absolute_delta_s": 0.0004747543334957527,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0024/done.json",
+      "done_sha256": "0e7a43105fddc7a2c99bd55ab1c0b3b157b419a8fc8da844ce4a0c6802068d9e"
+    },
+    {
+      "method_id": "s0034",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 55.636,
+      "wall_timestamp_window_seconds": 55.635525703430176,
+      "signed_delta_s": 0.0004742965698270041,
+      "absolute_delta_s": 0.0004742965698270041,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0034/done.json",
+      "done_sha256": "f5e5865bfbea4d9fa6a2102ef2cb20811ab20f54a9b515c23ccf7c95c260fec1"
+    },
+    {
+      "method_id": "s0030",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 19.819,
+      "wall_timestamp_window_seconds": 19.818526029586792,
+      "signed_delta_s": 0.0004739704132070699,
+      "absolute_delta_s": 0.0004739704132070699,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0030/done.json",
+      "done_sha256": "8b8727260396a8a36c5fef5bea2bc574bb1e92c2a48007f4e0be68ba03073f38"
+    },
+    {
+      "method_id": "s0031",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 8.885,
+      "wall_timestamp_window_seconds": 8.884527683258057,
+      "signed_delta_s": 0.0004723167419431462,
+      "absolute_delta_s": 0.0004723167419431462,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0031/done.json",
+      "done_sha256": "c041f1aff4701c971673695ba229da07702648faa243142efce51effcf3a1572"
+    },
+    {
+      "method_id": "s0048",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 22.215,
+      "wall_timestamp_window_seconds": 22.214529991149902,
+      "signed_delta_s": 0.00047000885009751414,
+      "absolute_delta_s": 0.00047000885009751414,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0048/done.json",
+      "done_sha256": "fe20e768be21819279a4c0ea683d76cc93bc75e25043b368dfc5a10d0064371f"
+    },
+    {
+      "method_id": "s0047",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 32.633,
+      "wall_timestamp_window_seconds": 32.63346862792969,
+      "signed_delta_s": -0.00046862792968482836,
+      "absolute_delta_s": 0.00046862792968482836,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0047/done.json",
+      "done_sha256": "f421381004f1079cf9ace2bb25db2250d410444b4e263da17fc11e14433c18c6"
+    },
+    {
+      "method_id": "s0029",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 220.904,
+      "wall_timestamp_window_seconds": 220.90446376800537,
+      "signed_delta_s": -0.00046376800537473173,
+      "absolute_delta_s": 0.00046376800537473173,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0029/done.json",
+      "done_sha256": "4c98843b6914714c540345f924ee3b39418401189a830f4cc7ae55cd3c085e2a"
+    },
+    {
+      "method_id": "s0049",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 19.583,
+      "wall_timestamp_window_seconds": 19.58345866203308,
+      "signed_delta_s": -0.0004586620330826463,
+      "absolute_delta_s": 0.0004586620330826463,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0049/done.json",
+      "done_sha256": "2b277c9c26112ad72e02e076c2eebb10ccd08b4f2db945bcc73fe89a46f687c3"
+    },
+    {
+      "method_id": "s0021",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 39.443,
+      "wall_timestamp_window_seconds": 39.4425413608551,
+      "signed_delta_s": 0.0004586391448953009,
+      "absolute_delta_s": 0.0004586391448953009,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0021/done.json",
+      "done_sha256": "8fabbdbd64e9a1a76c3b0f38aadbc21351dd89f9bb7269404368009417d94e27"
+    },
+    {
+      "method_id": "s0042",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 20.591,
+      "wall_timestamp_window_seconds": 20.59145498275757,
+      "signed_delta_s": -0.00045498275756727935,
+      "absolute_delta_s": 0.00045498275756727935,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0042/done.json",
+      "done_sha256": "ac5105478ba9271b84e8f286721f9bd1e67cbac7c92649752f754a4a100d8df6"
+    },
+    {
+      "method_id": "s0042",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 54.332,
+      "wall_timestamp_window_seconds": 54.33245491981506,
+      "signed_delta_s": -0.0004549198150627376,
+      "absolute_delta_s": 0.0004549198150627376,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0042/done.json",
+      "done_sha256": "546919325a247478b9f389fd80cdb346bf961fd16812adbd93418effd8799fdb"
+    },
+    {
+      "method_id": "s0018",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 16.227,
+      "wall_timestamp_window_seconds": 16.227450847625732,
+      "signed_delta_s": -0.00045084762573210924,
+      "absolute_delta_s": 0.00045084762573210924,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0018/done.json",
+      "done_sha256": "8453770102347bf6a57a354334faebd22b87793b900cfd978c2c46c4b04ab384"
+    },
+    {
+      "method_id": "s0001",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 106.643,
+      "wall_timestamp_window_seconds": 106.64345073699951,
+      "signed_delta_s": -0.00045073699951103663,
+      "absolute_delta_s": 0.00045073699951103663,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0001/done.json",
+      "done_sha256": "b378b033b003db08a9d8d33ca90822c9a67d35d7e06ad5c8259d2bf92f710277"
+    },
+    {
+      "method_id": "s0068",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 41.534,
+      "wall_timestamp_window_seconds": 41.5344500541687,
+      "signed_delta_s": -0.0004500541687022519,
+      "absolute_delta_s": 0.0004500541687022519,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/chattester/s0068/done.json",
+      "done_sha256": "5f6e9e4f6e1ae78f7817ffb6344ef91e4a653cc0ed73cbcb2a3a755f315de7fc"
+    },
+    {
+      "method_id": "s0039",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 32.244,
+      "wall_timestamp_window_seconds": 32.24355101585388,
+      "signed_delta_s": 0.0004489841461179367,
+      "absolute_delta_s": 0.0004489841461179367,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0039/done.json",
+      "done_sha256": "8ca51096850b2ff7653ca3515736c370bda8f41717136175be82c1233a670bac"
+    },
+    {
+      "method_id": "s0051",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 50.066,
+      "wall_timestamp_window_seconds": 50.06644821166992,
+      "signed_delta_s": -0.0004482116699193739,
+      "absolute_delta_s": 0.0004482116699193739,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0051/done.json",
+      "done_sha256": "79edf814912d77ef7e17c19e02c9d79af80772611fdc5cbfc83d61c6dace50c2"
+    },
+    {
+      "method_id": "s0055",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 52.301,
+      "wall_timestamp_window_seconds": 52.30144762992859,
+      "signed_delta_s": -0.0004476299285869345,
+      "absolute_delta_s": 0.0004476299285869345,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0055/done.json",
+      "done_sha256": "a81451bf288c07adea6f31d963375e7bca8840434a36beb1e973a7e4e66826df"
+    },
+    {
+      "method_id": "s0033",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 46.447,
+      "wall_timestamp_window_seconds": 46.447447538375854,
+      "signed_delta_s": -0.0004475383758517637,
+      "absolute_delta_s": 0.0004475383758517637,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0033/done.json",
+      "done_sha256": "526999ef9dccdf97873c4551ec14e09d0b5a0630ebd8fa8db7549c8b3ea73dc4"
+    },
+    {
+      "method_id": "s0053",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 17.093,
+      "wall_timestamp_window_seconds": 17.09344720840454,
+      "signed_delta_s": -0.00044720840454104405,
+      "absolute_delta_s": 0.00044720840454104405,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0053/done.json",
+      "done_sha256": "8e7359dcef3f4fce0005c4b7530050b17502fe7ffb75f69f4ceed4791d49eab4"
+    },
+    {
+      "method_id": "s0022",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 38.692,
+      "wall_timestamp_window_seconds": 38.69244575500488,
+      "signed_delta_s": -0.00044575500488264197,
+      "absolute_delta_s": 0.00044575500488264197,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0022/done.json",
+      "done_sha256": "dc67b9b99d8cd6e80a879ecd9bd7062727811ebd5da943914305e1d7480b5be5"
+    },
+    {
+      "method_id": "s0062",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 16.902,
+      "wall_timestamp_window_seconds": 16.901555061340332,
+      "signed_delta_s": 0.00044493865966899193,
+      "absolute_delta_s": 0.00044493865966899193,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0062/done.json",
+      "done_sha256": "f06818138685f191182128c73610d6759edf0dc640ff74b5b6451b37fda81b78"
+    },
+    {
+      "method_id": "s0069",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 35.942,
+      "wall_timestamp_window_seconds": 35.94156265258789,
+      "signed_delta_s": 0.00043734741210954553,
+      "absolute_delta_s": 0.00043734741210954553,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/evosuite/s0069/done.json",
+      "done_sha256": "671c97769821fcc2d1c88fe8611c2d783e8c55672cf91518eab78b54411416ab"
+    },
+    {
+      "method_id": "s0022",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 31.734,
+      "wall_timestamp_window_seconds": 31.73443627357483,
+      "signed_delta_s": -0.0004362735748273394,
+      "absolute_delta_s": 0.0004362735748273394,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0022/done.json",
+      "done_sha256": "517d995f824af033e7fa3b6c4e35b6ca29a3d71ef5536c574d5d16683327bb83"
+    },
+    {
+      "method_id": "s0012",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 34.834,
+      "wall_timestamp_window_seconds": 34.83443522453308,
+      "signed_delta_s": -0.00043522453307787146,
+      "absolute_delta_s": 0.00043522453307787146,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0012/done.json",
+      "done_sha256": "7337e1482efbb418aa4aa1e60461c9aeccc24e6f6d6245b7b8361c04915869b3"
+    },
+    {
+      "method_id": "s0047",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 53.959,
+      "wall_timestamp_window_seconds": 53.958566188812256,
+      "signed_delta_s": 0.00043381118774732386,
+      "absolute_delta_s": 0.00043381118774732386,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0047/done.json",
+      "done_sha256": "2ac8cfc1799bd4f59550eb42b561e67b3497323ab2bd04c5899eb8f90dc624c7"
+    },
+    {
+      "method_id": "s0004",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 42.041,
+      "wall_timestamp_window_seconds": 42.04056668281555,
+      "signed_delta_s": 0.00043331718444505896,
+      "absolute_delta_s": 0.00043331718444505896,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0004/done.json",
+      "done_sha256": "a0bc2b8f3a5c4ed9a327792b42fc40d31e8f9e9b3a67febca1ae6b793918ae1b"
+    },
+    {
+      "method_id": "s0031",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 47.723,
+      "wall_timestamp_window_seconds": 47.722567319869995,
+      "signed_delta_s": 0.00043268013000385963,
+      "absolute_delta_s": 0.00043268013000385963,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0031/done.json",
+      "done_sha256": "3601aeb3b97f27d3705b378d39bdc367d9d102f3a34bba878c60be743d18ebe5"
+    },
+    {
+      "method_id": "s0057",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 13.471,
+      "wall_timestamp_window_seconds": 13.471431493759155,
+      "signed_delta_s": -0.00043149375915518817,
+      "absolute_delta_s": 0.00043149375915518817,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0057/done.json",
+      "done_sha256": "24a77e3ca4d2eb38bb611cc9ea3762177ab95171762e9a02100c38926737f554"
+    },
+    {
+      "method_id": "s0040",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 18.667,
+      "wall_timestamp_window_seconds": 18.666568756103516,
+      "signed_delta_s": 0.0004312438964859666,
+      "absolute_delta_s": 0.0004312438964859666,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0040/done.json",
+      "done_sha256": "31ed9cb0da88244772c385691403c055fad966f7d6e7ef0457268f27d5b419da"
+    },
+    {
+      "method_id": "s0002",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 86.318,
+      "wall_timestamp_window_seconds": 86.31843042373657,
+      "signed_delta_s": -0.0004304237365744257,
+      "absolute_delta_s": 0.0004304237365744257,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0002/done.json",
+      "done_sha256": "1d63b5e1fed2cb3d7daaf66e3d104dddb36edd607a14935a4727463d6e2bd0da"
+    },
+    {
+      "method_id": "s0044",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 46.108,
+      "wall_timestamp_window_seconds": 46.10842943191528,
+      "signed_delta_s": -0.0004294319152862158,
+      "absolute_delta_s": 0.0004294319152862158,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0044/done.json",
+      "done_sha256": "da9ebdf92c3c4f087f3d9f2015098ba1b86ca4dee45d4506bd66b9046cb95f34"
+    },
+    {
+      "method_id": "s0021",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 40.538,
+      "wall_timestamp_window_seconds": 40.53842759132385,
+      "signed_delta_s": -0.000427591323855836,
+      "absolute_delta_s": 0.000427591323855836,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0021/done.json",
+      "done_sha256": "d73772cf023b1f41fc5113ca38749a6157af93a8a93908a96960085d0650e4fd"
+    },
+    {
+      "method_id": "s0039",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 48.712,
+      "wall_timestamp_window_seconds": 48.71157479286194,
+      "signed_delta_s": 0.00042520713806482036,
+      "absolute_delta_s": 0.00042520713806482036,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0039/done.json",
+      "done_sha256": "773196da7c1b0fd99c67153b44f70bd8d7a39494be2888f003e07f44fe78736e"
+    },
+    {
+      "method_id": "s0033",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 46.545,
+      "wall_timestamp_window_seconds": 46.54542517662048,
+      "signed_delta_s": -0.00042517662048169313,
+      "absolute_delta_s": 0.00042517662048169313,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0033/done.json",
+      "done_sha256": "3669ace96f1445dffc48f8bca4279bda2cb7702f161acd481ea06d7358b949b2"
+    },
+    {
+      "method_id": "s0027",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 95.237,
+      "wall_timestamp_window_seconds": 95.23657727241516,
+      "signed_delta_s": 0.0004227275848336376,
+      "absolute_delta_s": 0.0004227275848336376,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0027/done.json",
+      "done_sha256": "83f12d9d422c7ff5b715360a3bb15e36d06c8da73041ade6e4ed69446743fa28"
+    },
+    {
+      "method_id": "s0048",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 46.504,
+      "wall_timestamp_window_seconds": 46.504422426223755,
+      "signed_delta_s": -0.0004224262237570997,
+      "absolute_delta_s": 0.0004224262237570997,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0048/done.json",
+      "done_sha256": "ca1a3a97afd8c5384d3036797e32db5b3f3b129ca3ebb24fa3e089a81b938c67"
+    },
+    {
+      "method_id": "s0046",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 12.478,
+      "wall_timestamp_window_seconds": 12.478422403335571,
+      "signed_delta_s": -0.00042240333557153065,
+      "absolute_delta_s": 0.00042240333557153065,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0046/done.json",
+      "done_sha256": "687d86e01960557beea061b93c0c3a5655a73299931ef39fa1af8263e2c71473"
+    },
+    {
+      "method_id": "s0002",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 135.678,
+      "wall_timestamp_window_seconds": 135.67757868766785,
+      "signed_delta_s": 0.00042131233215059183,
+      "absolute_delta_s": 0.00042131233215059183,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0002/done.json",
+      "done_sha256": "fd069af39144f1ff716eb3b78f59eab67be1e1147413586ea7a5e2a36ab7d0be"
+    },
+    {
+      "method_id": "s0008",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 20.87,
+      "wall_timestamp_window_seconds": 20.8695809841156,
+      "signed_delta_s": 0.0004190158844004088,
+      "absolute_delta_s": 0.0004190158844004088,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0008/done.json",
+      "done_sha256": "600674e32d5349264f9fc6a1cde5bd78a8596ef4c9b6bd80ef684cb28c0a89df"
+    },
+    {
+      "method_id": "s0040",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 16.141,
+      "wall_timestamp_window_seconds": 16.141417741775513,
+      "signed_delta_s": -0.00041774177551445746,
+      "absolute_delta_s": 0.00041774177551445746,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0040/done.json",
+      "done_sha256": "d4dc7540cf2a5c4b636c6fde627a0851f4454b3b596a6383f7d004b5df017f94"
+    },
+    {
+      "method_id": "s0043",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 116.275,
+      "wall_timestamp_window_seconds": 116.27541399002075,
+      "signed_delta_s": -0.0004139900207462688,
+      "absolute_delta_s": 0.0004139900207462688,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0043/done.json",
+      "done_sha256": "bbd680edf5cd00d41588216e6c785e1dfb04aa8bb5a03a79fd17cd9d72875b42"
+    },
+    {
+      "method_id": "s0070",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 130.878,
+      "wall_timestamp_window_seconds": 130.8775863647461,
+      "signed_delta_s": 0.00041363525389215283,
+      "absolute_delta_s": 0.00041363525389215283,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/hits/s0070/done.json",
+      "done_sha256": "09ba3c77bc90d86f6f16b6a101cfac2683d5199d5f3ca31a778db04d3e555bbd"
+    },
+    {
+      "method_id": "s0038",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 16.489,
+      "wall_timestamp_window_seconds": 16.4894118309021,
+      "signed_delta_s": -0.000411830902098842,
+      "absolute_delta_s": 0.000411830902098842,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0038/done.json",
+      "done_sha256": "c54ff07709bf5ddca44b2f235c131f1ae2a41ca5d006511659e4161b0fffa94d"
+    },
+    {
+      "method_id": "s0053",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 56.603,
+      "wall_timestamp_window_seconds": 56.60258913040161,
+      "signed_delta_s": 0.00041086959839020665,
+      "absolute_delta_s": 0.00041086959839020665,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0053/done.json",
+      "done_sha256": "49fc89a5da65ddbbdb88f9c13a7ca4adf1dd554e3b85b76638fed5671005739d"
+    },
+    {
+      "method_id": "s0064",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 47.204,
+      "wall_timestamp_window_seconds": 47.20359134674072,
+      "signed_delta_s": 0.00040865325927796903,
+      "absolute_delta_s": 0.00040865325927796903,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jline-3.21.0/hits/s0064/done.json",
+      "done_sha256": "2b6184bd8efb9d4fb2ec23b3dd85d958ca667d8934131bfb3d200625f5b09110"
+    },
+    {
+      "method_id": "s0050",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 147.713,
+      "wall_timestamp_window_seconds": 147.71259188652039,
+      "signed_delta_s": 0.0004081134796081187,
+      "absolute_delta_s": 0.0004081134796081187,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0050/done.json",
+      "done_sha256": "a672265dcf648dd766f034c3cfa16fae68b175b22966b9365516c4b09bbbfa4c"
+    },
+    {
+      "method_id": "s0063",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 29.407,
+      "wall_timestamp_window_seconds": 29.406593322753906,
+      "signed_delta_s": 0.0004066772460937784,
+      "absolute_delta_s": 0.0004066772460937784,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/chatunitest/s0063/done.json",
+      "done_sha256": "16d4bcad999d5708b7b0992dd582c20fa33ee55febc9e2d6d1f394452494db14"
+    },
+    {
+      "method_id": "s0062",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 248.323,
+      "wall_timestamp_window_seconds": 248.32340502738953,
+      "signed_delta_s": -0.00040502738951886386,
+      "absolute_delta_s": 0.00040502738951886386,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0062/done.json",
+      "done_sha256": "63f49723c697caee9791314c6adbc901a0a92fc95d931f7fa53804d4793ef4f0"
+    },
+    {
+      "method_id": "s0035",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 32.895,
+      "wall_timestamp_window_seconds": 32.89540481567383,
+      "signed_delta_s": -0.0004048156738249986,
+      "absolute_delta_s": 0.0004048156738249986,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0035/done.json",
+      "done_sha256": "e9e403e94d26ef74409cf7f61cbcda5d247efdb630f7963fd6aa1c210b7be7ff"
+    },
+    {
+      "method_id": "s0046",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 16.586,
+      "wall_timestamp_window_seconds": 16.58559560775757,
+      "signed_delta_s": 0.0004043922424301627,
+      "absolute_delta_s": 0.0004043922424301627,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0046/done.json",
+      "done_sha256": "6ea1167460366df7ad090ed6ac5706348d562bd4f6d9b2edc2137ec6d8ab58ff"
+    },
+    {
+      "method_id": "s0043",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 20.243,
+      "wall_timestamp_window_seconds": 20.24259662628174,
+      "signed_delta_s": 0.00040337371826026924,
+      "absolute_delta_s": 0.00040337371826026924,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0043/done.json",
+      "done_sha256": "4fc137cd96b3426ae9d95ef9315d8cc28c83545707240b2bede154bbf242ace4"
+    },
+    {
+      "method_id": "s0069",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 29.816,
+      "wall_timestamp_window_seconds": 29.81559729576111,
+      "signed_delta_s": 0.00040270423889054996,
+      "absolute_delta_s": 0.00040270423889054996,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/justin-llm/s0069/done.json",
+      "done_sha256": "67320bdaee42fe1f7b3f7df859719e83fceb4b7e740b815052bc8602a3641212"
+    },
+    {
+      "method_id": "s0054",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 131.406,
+      "wall_timestamp_window_seconds": 131.405597448349,
+      "signed_delta_s": 0.0004025516510068883,
+      "absolute_delta_s": 0.0004025516510068883,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0054/done.json",
+      "done_sha256": "817f1e001ce17828620d98b773c3443332faf319ca609a3c338b4e4116d9df0d"
+    },
+    {
+      "method_id": "s0028",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 159.719,
+      "wall_timestamp_window_seconds": 159.718599319458,
+      "signed_delta_s": 0.0004006805419862758,
+      "absolute_delta_s": 0.0004006805419862758,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0028/done.json",
+      "done_sha256": "2f856c9c868754fe4e920a5b5502a11d74b7af3bee6105dc1dbbf0802e4084c1"
+    },
+    {
+      "method_id": "s0004",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 225.08,
+      "wall_timestamp_window_seconds": 225.07960176467896,
+      "signed_delta_s": 0.00039823532105742743,
+      "absolute_delta_s": 0.00039823532105742743,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0004/done.json",
+      "done_sha256": "6b645bec9de2ddd302fdcc517a171ad0fbc39154d1be4bc69c7ad2ef91eab6a2"
+    },
+    {
+      "method_id": "s0058",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 52.616,
+      "wall_timestamp_window_seconds": 52.615602016448975,
+      "signed_delta_s": 0.00039798355102504956,
+      "absolute_delta_s": 0.00039798355102504956,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0058/done.json",
+      "done_sha256": "dd41601c358c12e95eaba908edbee80051376d134527077165c0d7fb4268038f"
+    },
+    {
+      "method_id": "s0071",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 27.193,
+      "wall_timestamp_window_seconds": 27.193397760391235,
+      "signed_delta_s": -0.0003977603912339589,
+      "absolute_delta_s": 0.0003977603912339589,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/justin-llm/s0071/done.json",
+      "done_sha256": "705431e90b6b4167a261aec12743df3c60abbe1f1bc77964da185de5e7a3bdb5"
+    },
+    {
+      "method_id": "s0021",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 26.0,
+      "wall_timestamp_window_seconds": 26.000397443771362,
+      "signed_delta_s": -0.0003974437713623047,
+      "absolute_delta_s": 0.0003974437713623047,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0021/done.json",
+      "done_sha256": "8c7a6f1b3eedccf99b64c58f00218150c19c2f98617255b5055410f797edf034"
+    },
+    {
+      "method_id": "s0025",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 44.09,
+      "wall_timestamp_window_seconds": 44.0903959274292,
+      "signed_delta_s": -0.00039592742919580814,
+      "absolute_delta_s": 0.00039592742919580814,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0025/done.json",
+      "done_sha256": "577f837bbece34e57100eb93b00bce67db05b8aa0db5e6124ba885399b7d296f"
+    },
+    {
+      "method_id": "s0034",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 15.997,
+      "wall_timestamp_window_seconds": 15.997395753860474,
+      "signed_delta_s": -0.0003957538604737465,
+      "absolute_delta_s": 0.0003957538604737465,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0034/done.json",
+      "done_sha256": "dff70dc68134bd67c5e68db2a54f49b403b681139ee57b7504b56a7bcf71a15e"
+    },
+    {
+      "method_id": "s0058",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 291.817,
+      "wall_timestamp_window_seconds": 291.81739473342896,
+      "signed_delta_s": -0.00039473342894780217,
+      "absolute_delta_s": 0.00039473342894780217,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0058/done.json",
+      "done_sha256": "773cc207f1cdf72cb85fc896fd25ab9e9a788c0d912c150889a81606bb9d63f1"
+    },
+    {
+      "method_id": "s0001",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 33.462,
+      "wall_timestamp_window_seconds": 33.46160936355591,
+      "signed_delta_s": 0.0003906364440950938,
+      "absolute_delta_s": 0.0003906364440950938,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0001/done.json",
+      "done_sha256": "7c6ebb4200fd1575cd6c79e7192c71fc2f8a936df9cd5129f95628bbc3451c16"
+    },
+    {
+      "method_id": "s0046",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 34.182,
+      "wall_timestamp_window_seconds": 34.181609869003296,
+      "signed_delta_s": 0.0003901309967062616,
+      "absolute_delta_s": 0.0003901309967062616,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0046/done.json",
+      "done_sha256": "7e05884202387a4ced2d2cfbadf2d7883829c6a9b6eb0bd9b43ae0765054c1f5"
+    },
+    {
+      "method_id": "s0070",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 44.229,
+      "wall_timestamp_window_seconds": 44.228615045547485,
+      "signed_delta_s": 0.00038495445251385263,
+      "absolute_delta_s": 0.00038495445251385263,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/chattester/s0070/done.json",
+      "done_sha256": "72de3655e42b6e91c3dd067207f6f81d237cf4b947d6374130155f8b25d5cef4"
+    },
+    {
+      "method_id": "s0013",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 46.619,
+      "wall_timestamp_window_seconds": 46.61938166618347,
+      "signed_delta_s": -0.00038166618347190706,
+      "absolute_delta_s": 0.00038166618347190706,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0013/done.json",
+      "done_sha256": "55528d65f0d82508f13a64ac9c1c80b6037b6689caac644a9bb681d5aba77d9e"
+    },
+    {
+      "method_id": "s0038",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 36.915,
+      "wall_timestamp_window_seconds": 36.9146192073822,
+      "signed_delta_s": 0.0003807926177969989,
+      "absolute_delta_s": 0.0003807926177969989,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0038/done.json",
+      "done_sha256": "e03ec332152006a1a77d8dc7f85f179b163e7e74c027ed0ab994fda9e640d2e6"
+    },
+    {
+      "method_id": "s0066",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 78.727,
+      "wall_timestamp_window_seconds": 78.72738003730774,
+      "signed_delta_s": -0.00038003730773539246,
+      "absolute_delta_s": 0.00038003730773539246,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/hits/s0066/done.json",
+      "done_sha256": "53930635044f348c32ec98a7aaa0e3c3b1d3ba982c712f88def50858206e6939"
+    },
+    {
+      "method_id": "s0045",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 17.652,
+      "wall_timestamp_window_seconds": 17.652379035949707,
+      "signed_delta_s": -0.00037903594970600807,
+      "absolute_delta_s": 0.00037903594970600807,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0045/done.json",
+      "done_sha256": "075b74e62bbf3c30210517ba62f805323e52223e09631d6fbf6e6c8bce977328"
+    },
+    {
+      "method_id": "s0046",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 56.03,
+      "wall_timestamp_window_seconds": 56.02962112426758,
+      "signed_delta_s": 0.00037887573242301187,
+      "absolute_delta_s": 0.00037887573242301187,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0046/done.json",
+      "done_sha256": "e90f3297bb249de19a29afa9e979aa4590f0d84c1dccc3f8ccd823cc4925426e"
+    },
+    {
+      "method_id": "s0012",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 12.339,
+      "wall_timestamp_window_seconds": 12.339374303817749,
+      "signed_delta_s": -0.0003743038177486113,
+      "absolute_delta_s": 0.0003743038177486113,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0012/done.json",
+      "done_sha256": "1fc846d0b8c0698b5d7f46bf62142921758b59e7bae8b8117316be941d90b68f"
+    },
+    {
+      "method_id": "s0047",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 18.536,
+      "wall_timestamp_window_seconds": 18.53562831878662,
+      "signed_delta_s": 0.0003716812133802705,
+      "absolute_delta_s": 0.0003716812133802705,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0047/done.json",
+      "done_sha256": "5ea06b1de0e66926e7edb19af3446a47da14d3d1caa242d76fd5e2c03e9a97b1"
+    },
+    {
+      "method_id": "s0038",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 48.442,
+      "wall_timestamp_window_seconds": 48.44163131713867,
+      "signed_delta_s": 0.00036868286132829553,
+      "absolute_delta_s": 0.00036868286132829553,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0038/done.json",
+      "done_sha256": "78d96a6b741f5186979359af095410f758f017b58bdd66ad29e2add89353bcf9"
+    },
+    {
+      "method_id": "s0034",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 49.379,
+      "wall_timestamp_window_seconds": 49.37863278388977,
+      "signed_delta_s": 0.0003672161102272753,
+      "absolute_delta_s": 0.0003672161102272753,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0034/done.json",
+      "done_sha256": "c7554dd88a6e48754f0528dc4f776dc0a453bbad6fa6032dd7f5258a23696089"
+    },
+    {
+      "method_id": "s0060",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 46.026,
+      "wall_timestamp_window_seconds": 46.025633335113525,
+      "signed_delta_s": 0.00036666488647796314,
+      "absolute_delta_s": 0.00036666488647796314,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0060/done.json",
+      "done_sha256": "38facf95671dfd5d938f96208dd7024974b2360faf105b38c974072803cf8a5c"
+    },
+    {
+      "method_id": "s0008",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 42.344,
+      "wall_timestamp_window_seconds": 42.344364166259766,
+      "signed_delta_s": -0.0003641662597644313,
+      "absolute_delta_s": 0.0003641662597644313,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0008/done.json",
+      "done_sha256": "b94c6b8030ccbc8d3f8f99ffc3c12b8998726013672c9e4f21a0c5c1ba6c1d22"
+    },
+    {
+      "method_id": "s0005",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 73.581,
+      "wall_timestamp_window_seconds": 73.58063817024231,
+      "signed_delta_s": 0.00036182975769349923,
+      "absolute_delta_s": 0.00036182975769349923,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0005/done.json",
+      "done_sha256": "f7c8d54858e9ea0f1151d442ef2c8fc172fa36bed17b856e9b4e07fed1e377c2"
+    },
+    {
+      "method_id": "s0041",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 47.263,
+      "wall_timestamp_window_seconds": 47.26335954666138,
+      "signed_delta_s": -0.00035954666137882896,
+      "absolute_delta_s": 0.00035954666137882896,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0041/done.json",
+      "done_sha256": "136f227d7d2c497e8c2d7b7c38bbd44753631d38cc5063d1e351887a6fc0f52e"
+    },
+    {
+      "method_id": "s0012",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 109.107,
+      "wall_timestamp_window_seconds": 109.10664057731628,
+      "signed_delta_s": 0.0003594226837151382,
+      "absolute_delta_s": 0.0003594226837151382,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0012/done.json",
+      "done_sha256": "45ac5f5b6394986e5456fcf75ee830a756e1d0a7abc8938ef5c498be52a597fc"
+    },
+    {
+      "method_id": "s0028",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 64.699,
+      "wall_timestamp_window_seconds": 64.69935917854309,
+      "signed_delta_s": -0.000359178543092753,
+      "absolute_delta_s": 0.000359178543092753,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0028/done.json",
+      "done_sha256": "aa9c5ffd79b42e6545d35c0a133f80005626605c56ba8785ed9f7fcbe717ccd5"
+    },
+    {
+      "method_id": "s0008",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 73.672,
+      "wall_timestamp_window_seconds": 73.6716411113739,
+      "signed_delta_s": 0.00035888862609567695,
+      "absolute_delta_s": 0.00035888862609567695,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0008/done.json",
+      "done_sha256": "decbc379ed829e627932162454911e1d422c4e2dd363b91136ce5f2494b7d3d0"
+    },
+    {
+      "method_id": "s0043",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 18.204,
+      "wall_timestamp_window_seconds": 18.20364260673523,
+      "signed_delta_s": 0.0003573932647711331,
+      "absolute_delta_s": 0.0003573932647711331,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0043/done.json",
+      "done_sha256": "ce4fbc278fa460f6f226274b400bb330adc9b0507141f91f56c53365b5c39b6c"
+    },
+    {
+      "method_id": "s0044",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 17.7,
+      "wall_timestamp_window_seconds": 17.700355291366577,
+      "signed_delta_s": -0.000355291366577859,
+      "absolute_delta_s": 0.000355291366577859,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0044/done.json",
+      "done_sha256": "3a11e20bbcc3ea4807e2ed1c652a62cf177267cc668ad090fc05da30fcc24290"
+    },
+    {
+      "method_id": "s0015",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 32.477,
+      "wall_timestamp_window_seconds": 32.47664785385132,
+      "signed_delta_s": 0.00035214614867840055,
+      "absolute_delta_s": 0.00035214614867840055,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0015/done.json",
+      "done_sha256": "f7017e82c5411327591120893088505e1b3a228f246c9246970df85b3feef629"
+    },
+    {
+      "method_id": "s0024",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 46.235,
+      "wall_timestamp_window_seconds": 46.23464822769165,
+      "signed_delta_s": 0.00035177230834904094,
+      "absolute_delta_s": 0.00035177230834904094,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0024/done.json",
+      "done_sha256": "bff9bb12a7322a71d3bcf2e5fc33602e100e1fc1088840f7c48575c982b7a112"
+    },
+    {
+      "method_id": "s0032",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 136.387,
+      "wall_timestamp_window_seconds": 136.3866491317749,
+      "signed_delta_s": 0.000350868225098111,
+      "absolute_delta_s": 0.000350868225098111,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0032/done.json",
+      "done_sha256": "8aa7c04465503a41ff9f6f551ec4d621e945a328b448b556539b4190dcabf04b"
+    },
+    {
+      "method_id": "s0065",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 23.342,
+      "wall_timestamp_window_seconds": 23.342347383499146,
+      "signed_delta_s": -0.00034738349914675837,
+      "absolute_delta_s": 0.00034738349914675837,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/justin-llm/s0065/done.json",
+      "done_sha256": "ba1ee4896e2c3ae15bbd92b3a37f43c91279b8767148a36b3638a9b88642f878"
+    },
+    {
+      "method_id": "s0045",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 128.272,
+      "wall_timestamp_window_seconds": 128.2723467350006,
+      "signed_delta_s": -0.00034673500061899176,
+      "absolute_delta_s": 0.00034673500061899176,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0045/done.json",
+      "done_sha256": "85b68bf3d371b6188fe3f695b0f90ebcbded06fa53ac1aa58e4718639ce0cdc2"
+    },
+    {
+      "method_id": "s0017",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 25.996,
+      "wall_timestamp_window_seconds": 25.996344804763794,
+      "signed_delta_s": -0.00034480476379528113,
+      "absolute_delta_s": 0.00034480476379528113,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0017/done.json",
+      "done_sha256": "cdd5ad2fa137ef27695f540d9683c9baef14ba1bcc75bbf03f6b8ae3ddd58772"
+    },
+    {
+      "method_id": "s0004",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 47.653,
+      "wall_timestamp_window_seconds": 47.652655839920044,
+      "signed_delta_s": 0.0003441600799547473,
+      "absolute_delta_s": 0.0003441600799547473,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0004/done.json",
+      "done_sha256": "bc22b34e41e4209ab02cc2b7ddf936edf276a288eb240c16803ecd1840e799a2"
+    },
+    {
+      "method_id": "s0034",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 19.196,
+      "wall_timestamp_window_seconds": 19.195656061172485,
+      "signed_delta_s": 0.0003439388275161548,
+      "absolute_delta_s": 0.0003439388275161548,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0034/done.json",
+      "done_sha256": "56025755ab567c91776778732330dbd59bd38cd09d37e41811872ad478b92290"
+    },
+    {
+      "method_id": "s0025",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 27.424,
+      "wall_timestamp_window_seconds": 27.423656225204468,
+      "signed_delta_s": 0.00034377479553171497,
+      "absolute_delta_s": 0.00034377479553171497,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0025/done.json",
+      "done_sha256": "260e4f5dbf5c3950524dc7c328b22e125e7094488d1b5a1f7902edbb3c680779"
+    },
+    {
+      "method_id": "s0006",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 27.791,
+      "wall_timestamp_window_seconds": 27.790656805038452,
+      "signed_delta_s": 0.00034319496154822104,
+      "absolute_delta_s": 0.00034319496154822104,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0006/done.json",
+      "done_sha256": "f4e6b0ff412e00e7d7a94bb88d8e89493404009e3de4cb06752863124ace729e"
+    },
+    {
+      "method_id": "s0021",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 21.056,
+      "wall_timestamp_window_seconds": 21.056342840194702,
+      "signed_delta_s": -0.0003428401947012105,
+      "absolute_delta_s": 0.0003428401947012105,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0021/done.json",
+      "done_sha256": "fafb273949066c46e10e94e6e3fb083bb2ed2e3055782a2bd7a383f38803421e"
+    },
+    {
+      "method_id": "s0065",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 20.379,
+      "wall_timestamp_window_seconds": 20.378657341003418,
+      "signed_delta_s": 0.00034265899658336707,
+      "absolute_delta_s": 0.00034265899658336707,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/evosuite/s0065/done.json",
+      "done_sha256": "cc2e5d91446cfba101b573537fc04a658a33268a900a61c210b6720b608d8435"
+    },
+    {
+      "method_id": "s0037",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 46.513,
+      "wall_timestamp_window_seconds": 46.51265788078308,
+      "signed_delta_s": 0.0003421192169170695,
+      "absolute_delta_s": 0.0003421192169170695,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0037/done.json",
+      "done_sha256": "534543ecf0a6df668200f1b5098c80c84d1a9990cdb2bcc342dda75a75b9f049"
+    },
+    {
+      "method_id": "s0059",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 16.309,
+      "wall_timestamp_window_seconds": 16.309341430664062,
+      "signed_delta_s": -0.0003414306640614484,
+      "absolute_delta_s": 0.0003414306640614484,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0059/done.json",
+      "done_sha256": "235616352e69caef74b407d6c438901d520ae7dc6dc8b05c81b5fdd553cc8f68"
+    },
+    {
+      "method_id": "s0036",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 52.881,
+      "wall_timestamp_window_seconds": 52.880659341812134,
+      "signed_delta_s": 0.0003406581878664383,
+      "absolute_delta_s": 0.0003406581878664383,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0036/done.json",
+      "done_sha256": "3ca337bbbd67b7f1e28142bfbd3d96ef82edcb1f9866de8b93efeef44034e235"
+    },
+    {
+      "method_id": "s0013",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 25.021,
+      "wall_timestamp_window_seconds": 25.02133870124817,
+      "signed_delta_s": -0.0003387012481681495,
+      "absolute_delta_s": 0.0003387012481681495,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0013/done.json",
+      "done_sha256": "09e9e29802f7606b6271ad8ea4dc563d044c295936078c4e1df789fd28f9d6f7"
+    },
+    {
+      "method_id": "s0032",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 55.982,
+      "wall_timestamp_window_seconds": 55.9816620349884,
+      "signed_delta_s": 0.00033796501159599757,
+      "absolute_delta_s": 0.00033796501159599757,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0032/done.json",
+      "done_sha256": "d14eea4fae1ddaa12fb54bfb8d1a23245d60b292ad981ed7ba72107685ebb4d7"
+    },
+    {
+      "method_id": "s0008",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 69.883,
+      "wall_timestamp_window_seconds": 69.88266253471375,
+      "signed_delta_s": 0.000337465286250449,
+      "absolute_delta_s": 0.000337465286250449,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0008/done.json",
+      "done_sha256": "7aca162b7c2981b45b6848c5d9ccd9efd25c3587d7ccc7707511da4f05d583f7"
+    },
+    {
+      "method_id": "s0020",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 29.811,
+      "wall_timestamp_window_seconds": 29.811336994171143,
+      "signed_delta_s": -0.00033699417114263497,
+      "absolute_delta_s": 0.00033699417114263497,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0020/done.json",
+      "done_sha256": "73a8014e1adb44c9fbdaca1a080ec7ee4e77992a4d38794c312dfe490975c07a"
+    },
+    {
+      "method_id": "s0019",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 40.781,
+      "wall_timestamp_window_seconds": 40.78066444396973,
+      "signed_delta_s": 0.0003355560302722438,
+      "absolute_delta_s": 0.0003355560302722438,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0019/done.json",
+      "done_sha256": "ebf0541feed7fcdaa99c868e12214ea3c040349abfcf3cd3b2030cd621b5c8ac"
+    },
+    {
+      "method_id": "s0067",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 24.459,
+      "wall_timestamp_window_seconds": 24.458664655685425,
+      "signed_delta_s": 0.00033534431457482583,
+      "absolute_delta_s": 0.00033534431457482583,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/justin-llm/s0067/done.json",
+      "done_sha256": "7e204b7d030872c3c9fc5eea8200a8a4c6e4447c13eb3669a3c47656381549c8"
+    },
+    {
+      "method_id": "s0037",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 32.549,
+      "wall_timestamp_window_seconds": 32.549333572387695,
+      "signed_delta_s": -0.0003335723876958241,
+      "absolute_delta_s": 0.0003335723876958241,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0037/done.json",
+      "done_sha256": "e35c026110c4a219e52b484ba1487d08024484fd65b45bfc82f46f56ae4a76b6"
+    },
+    {
+      "method_id": "s0026",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 52.97,
+      "wall_timestamp_window_seconds": 52.97033333778381,
+      "signed_delta_s": -0.00033333778381461343,
+      "absolute_delta_s": 0.00033333778381461343,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0026/done.json",
+      "done_sha256": "34013778ef951637fb3257cfc46fba09f813ca3ad3adafc49a397e7c903d39a9"
+    },
+    {
+      "method_id": "s0012",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 38.281,
+      "wall_timestamp_window_seconds": 38.28066682815552,
+      "signed_delta_s": 0.00033317184448122816,
+      "absolute_delta_s": 0.00033317184448122816,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0012/done.json",
+      "done_sha256": "f4824ea6425f74c2ffc834bb0d0859c60daccc7d362690ffb20d97bac48a79fd"
+    },
+    {
+      "method_id": "s0003",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 27.606,
+      "wall_timestamp_window_seconds": 27.60566759109497,
+      "signed_delta_s": 0.00033240890503094533,
+      "absolute_delta_s": 0.00033240890503094533,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0003/done.json",
+      "done_sha256": "73f3b85538afbd4cee8c48ddec9f458cbd5fcec6b615670a481bf7511ac27272"
+    },
+    {
+      "method_id": "s0030",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 190.793,
+      "wall_timestamp_window_seconds": 190.7926688194275,
+      "signed_delta_s": 0.0003311805725161321,
+      "absolute_delta_s": 0.0003311805725161321,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0030/done.json",
+      "done_sha256": "9d138f46c870da8c17f781bec0ceebb52882d6ff83b7191274266f88766c3394"
+    },
+    {
+      "method_id": "s0052",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 74.158,
+      "wall_timestamp_window_seconds": 74.15766882896423,
+      "signed_delta_s": 0.0003311710357678521,
+      "absolute_delta_s": 0.0003311710357678521,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0052/done.json",
+      "done_sha256": "aeba2db11103ad8253ae7609d4f4bc2fae7252d57c5d594c404023220d935bc7"
+    },
+    {
+      "method_id": "s0072",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 50.052,
+      "wall_timestamp_window_seconds": 50.051668882369995,
+      "signed_delta_s": 0.0003311176300044849,
+      "absolute_delta_s": 0.0003311176300044849,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0072/done.json",
+      "done_sha256": "57db05fee152e627581bfd7630008a14e4c3a38bf2bd5e90ce67e99b1af910d7"
+    },
+    {
+      "method_id": "s0010",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 68.969,
+      "wall_timestamp_window_seconds": 68.96867060661316,
+      "signed_delta_s": 0.0003293933868349086,
+      "absolute_delta_s": 0.0003293933868349086,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0010/done.json",
+      "done_sha256": "f70ce2c01618eeb3c2162bbcba771479d0b741952cf5b2873619b4b0daac0bab"
+    },
+    {
+      "method_id": "s0023",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 137.666,
+      "wall_timestamp_window_seconds": 137.6656732559204,
+      "signed_delta_s": 0.0003267440795866605,
+      "absolute_delta_s": 0.0003267440795866605,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0023/done.json",
+      "done_sha256": "ef2e4e975943da5231c35a5a7fdb3a34c84772668eebf819dacee699d6667de0"
+    },
+    {
+      "method_id": "s0067",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 76.326,
+      "wall_timestamp_window_seconds": 76.32632660865784,
+      "signed_delta_s": -0.0003266086578435079,
+      "absolute_delta_s": 0.0003266086578435079,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/evosuite/s0067/done.json",
+      "done_sha256": "63747c5baacf0ddf5ef012181fe0bca502bec3f9d0809501f2a7b1044a02bdf6"
+    },
+    {
+      "method_id": "s0069",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 47.335,
+      "wall_timestamp_window_seconds": 47.33532476425171,
+      "signed_delta_s": -0.0003247642517081317,
+      "absolute_delta_s": 0.0003247642517081317,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/hits/s0069/done.json",
+      "done_sha256": "eb51f66c2f02f8cc341c2927d0794674ba17873c9d952e193f2a716b30a3b937"
+    },
+    {
+      "method_id": "s0016",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 42.364,
+      "wall_timestamp_window_seconds": 42.36432433128357,
+      "signed_delta_s": -0.00032433128357212127,
+      "absolute_delta_s": 0.00032433128357212127,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0016/done.json",
+      "done_sha256": "0dc3849c538efa6a5f72a7b7a6567275b9980c5aa387988eda68289d907fe091"
+    },
+    {
+      "method_id": "s0013",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 28.153,
+      "wall_timestamp_window_seconds": 28.1526780128479,
+      "signed_delta_s": 0.000321987152098302,
+      "absolute_delta_s": 0.000321987152098302,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0013/done.json",
+      "done_sha256": "8d1c334b8933e4b225e4785816b19841a0f225d96bd194b0519b05e3986a7543"
+    },
+    {
+      "method_id": "s0019",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 16.937,
+      "wall_timestamp_window_seconds": 16.93667960166931,
+      "signed_delta_s": 0.00032039833068964185,
+      "absolute_delta_s": 0.00032039833068964185,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0019/done.json",
+      "done_sha256": "ea14b2153962e3972af90658a20172e483a7ce9f3d4018ceb348d6775669cd50"
+    },
+    {
+      "method_id": "s0017",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 23.6,
+      "wall_timestamp_window_seconds": 23.600317001342773,
+      "signed_delta_s": -0.0003170013427720164,
+      "absolute_delta_s": 0.0003170013427720164,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0017/done.json",
+      "done_sha256": "2893c47b38b8e5c9a4beb689709722e38c545212371aed91510995519e52e325"
+    },
+    {
+      "method_id": "s0028",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 25.283,
+      "wall_timestamp_window_seconds": 25.28331446647644,
+      "signed_delta_s": -0.00031446647643917913,
+      "absolute_delta_s": 0.00031446647643917913,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0028/done.json",
+      "done_sha256": "273688c5c52fc6c4940dd8c7640f2633f2e83d84dd7460ca261ff9e022233773"
+    },
+    {
+      "method_id": "s0011",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 11.655,
+      "wall_timestamp_window_seconds": 11.65468716621399,
+      "signed_delta_s": 0.0003128337860101027,
+      "absolute_delta_s": 0.0003128337860101027,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0011/done.json",
+      "done_sha256": "f8b83bfe21f940f181d2283f09cddc7b43c8ba461f7b0717a3456876ac5a2899"
+    },
+    {
+      "method_id": "s0060",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 355.242,
+      "wall_timestamp_window_seconds": 355.2423119544983,
+      "signed_delta_s": -0.000311954498272371,
+      "absolute_delta_s": 0.000311954498272371,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0060/done.json",
+      "done_sha256": "755d3aeae6a9948644f598487603f15b229be8f997035ee02653e442f0df7ca1"
+    },
+    {
+      "method_id": "s0037",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 53.067,
+      "wall_timestamp_window_seconds": 53.06731176376343,
+      "signed_delta_s": -0.00031176376342756384,
+      "absolute_delta_s": 0.00031176376342756384,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0037/done.json",
+      "done_sha256": "293d50425a58b8ba1a92a85f37d44c0af389f01b42c8b511a2429dedd4955a64"
+    },
+    {
+      "method_id": "s0040",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 49.41,
+      "wall_timestamp_window_seconds": 49.410311222076416,
+      "signed_delta_s": -0.00031122207641942623,
+      "absolute_delta_s": 0.00031122207641942623,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0040/done.json",
+      "done_sha256": "bae7ebf852060da8e7a11b38a0fd28ed41d2acc4c9ee44bf11653f4fd97443c7"
+    },
+    {
+      "method_id": "s0050",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 20.599,
+      "wall_timestamp_window_seconds": 20.59930920600891,
+      "signed_delta_s": -0.00030920600891093386,
+      "absolute_delta_s": 0.00030920600891093386,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0050/done.json",
+      "done_sha256": "cf7ba2a4cd252769ba2977270b51c2989ec88d754d8ace4757699b5c9b24d2e7"
+    },
+    {
+      "method_id": "s0050",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 45.782,
+      "wall_timestamp_window_seconds": 45.781692028045654,
+      "signed_delta_s": 0.00030797195434217883,
+      "absolute_delta_s": 0.00030797195434217883,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0050/done.json",
+      "done_sha256": "015a35ddf1a2db8134398d7e6e1b9034be9ce4f99509fd2667cc8c09a6271276"
+    },
+    {
+      "method_id": "s0071",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 39.29,
+      "wall_timestamp_window_seconds": 39.290305614471436,
+      "signed_delta_s": -0.0003056144714363995,
+      "absolute_delta_s": 0.0003056144714363995,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/chattester/s0071/done.json",
+      "done_sha256": "d65f7046ea7fed0eb2995251cdf6ec5aad7c127bb51fa74b4a95bb2046344a78"
+    },
+    {
+      "method_id": "s0050",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 31.217,
+      "wall_timestamp_window_seconds": 31.217305183410645,
+      "signed_delta_s": -0.0003051834106457818,
+      "absolute_delta_s": 0.0003051834106457818,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0050/done.json",
+      "done_sha256": "82d3606960eded89cd5ea666a05c6190c3bd0f246e6d9cdada06aac47747b3a4"
+    },
+    {
+      "method_id": "s0054",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 55.203,
+      "wall_timestamp_window_seconds": 55.20330476760864,
+      "signed_delta_s": -0.00030476760863962227,
+      "absolute_delta_s": 0.00030476760863962227,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0054/done.json",
+      "done_sha256": "30c9bfb1f3dca3aa97e3d60023f6ac4b140aff728ac0975d63783a3368810e63"
+    },
+    {
+      "method_id": "s0023",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 32.793,
+      "wall_timestamp_window_seconds": 32.793304204940796,
+      "signed_delta_s": -0.0003042049407966374,
+      "absolute_delta_s": 0.0003042049407966374,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0023/done.json",
+      "done_sha256": "73e12216a25136a20b70adfe11c9d43d561b95957c8a67aa04bc90cc740af9d9"
+    },
+    {
+      "method_id": "s0040",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 75.472,
+      "wall_timestamp_window_seconds": 75.47169876098633,
+      "signed_delta_s": 0.00030123901366607697,
+      "absolute_delta_s": 0.00030123901366607697,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0040/done.json",
+      "done_sha256": "30ff390c8af28954c3e61b3135e2f9833f34307f1bb74cf2fe0e2736277fc051"
+    },
+    {
+      "method_id": "s0004",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 25.187,
+      "wall_timestamp_window_seconds": 25.187299251556396,
+      "signed_delta_s": -0.0002992515563953191,
+      "absolute_delta_s": 0.0002992515563953191,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0004/done.json",
+      "done_sha256": "be104c600a72f6d72aac0271bdc6a3244f590a87d2b2680acedbc01b4676d4d3"
+    },
+    {
+      "method_id": "s0007",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 187.503,
+      "wall_timestamp_window_seconds": 187.5032980442047,
+      "signed_delta_s": -0.00029804420472601123,
+      "absolute_delta_s": 0.00029804420472601123,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0007/done.json",
+      "done_sha256": "38c605631b84af11c45bc1e4c203e0b56d48d4d6f162e51ad328f5efbe391f43"
+    },
+    {
+      "method_id": "s0040",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 30.365,
+      "wall_timestamp_window_seconds": 30.365296840667725,
+      "signed_delta_s": -0.00029684066772617257,
+      "absolute_delta_s": 0.00029684066772617257,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0040/done.json",
+      "done_sha256": "0c3408e3fdf978183a80fa3e1ec2fd12473c268da1b867d62ce3dab33873eafc"
+    },
+    {
+      "method_id": "s0027",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 29.568,
+      "wall_timestamp_window_seconds": 29.567706823349,
+      "signed_delta_s": 0.0002931766510023692,
+      "absolute_delta_s": 0.0002931766510023692,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0027/done.json",
+      "done_sha256": "3203e5f29ddd48e08d4c75bd3f562216b18844542f7ffd68df49c59b97a61294"
+    },
+    {
+      "method_id": "s0053",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 36.805,
+      "wall_timestamp_window_seconds": 36.80470824241638,
+      "signed_delta_s": 0.00029175758361787985,
+      "absolute_delta_s": 0.00029175758361787985,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0053/done.json",
+      "done_sha256": "e42c16064af36c2e8322e0a1bdb3ce495319f2bd89e8e05af4047a6c9423aee7"
+    },
+    {
+      "method_id": "s0062",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 56.156,
+      "wall_timestamp_window_seconds": 56.156291484832764,
+      "signed_delta_s": -0.0002914848327648656,
+      "absolute_delta_s": 0.0002914848327648656,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0062/done.json",
+      "done_sha256": "2ed7e787903a60647b8206cd459859509e50a762b97062f626ea7f00cca8d035"
+    },
+    {
+      "method_id": "s0049",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 49.054,
+      "wall_timestamp_window_seconds": 49.05370903015137,
+      "signed_delta_s": 0.00029096984863485886,
+      "absolute_delta_s": 0.00029096984863485886,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0049/done.json",
+      "done_sha256": "78fa60e253d52a7fe83f25a56a3657ec968eaa6f426933999c1e2f2ddf2778ab"
+    },
+    {
+      "method_id": "s0063",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 86.66,
+      "wall_timestamp_window_seconds": 86.65970945358276,
+      "signed_delta_s": 0.0002905464172329175,
+      "absolute_delta_s": 0.0002905464172329175,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/chattester/s0063/done.json",
+      "done_sha256": "df66a8fac542fb06b08ab7ca63c7c77388971fd2dcac5dc7490b238c56cbaa5c"
+    },
+    {
+      "method_id": "s0005",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 72.576,
+      "wall_timestamp_window_seconds": 72.57571077346802,
+      "signed_delta_s": 0.00028922653197582804,
+      "absolute_delta_s": 0.00028922653197582804,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0005/done.json",
+      "done_sha256": "bb7165c3a890ab1cc92579fc0ed0d6118fd79a6b56bcc30d3490d3d199ef1b54"
+    },
+    {
+      "method_id": "s0061",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 48.072,
+      "wall_timestamp_window_seconds": 48.07228899002075,
+      "signed_delta_s": -0.00028899002074922464,
+      "absolute_delta_s": 0.00028899002074922464,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0061/done.json",
+      "done_sha256": "54fc979a3b1e999f9ea804c79bf5b594a3e9f511eca35382cbc72bb9e6fc3e3a"
+    },
+    {
+      "method_id": "s0054",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 19.148,
+      "wall_timestamp_window_seconds": 19.14771318435669,
+      "signed_delta_s": 0.00028681564331023424,
+      "absolute_delta_s": 0.00028681564331023424,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0054/done.json",
+      "done_sha256": "73212e83e19bebb5a3d4b1c085cbca02d12be9f70d6bcf4a15e8487a1997e504"
+    },
+    {
+      "method_id": "s0069",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 90.843,
+      "wall_timestamp_window_seconds": 90.8432867527008,
+      "signed_delta_s": -0.00028675270080213977,
+      "absolute_delta_s": 0.00028675270080213977,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/chattester/s0069/done.json",
+      "done_sha256": "8b6d350d1259ed7239d962b43ce6eb64e57b4f47b332cff473ed43b36dbea84a"
+    },
+    {
+      "method_id": "s0010",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 51.453,
+      "wall_timestamp_window_seconds": 51.45271325111389,
+      "signed_delta_s": 0.0002867488861113543,
+      "absolute_delta_s": 0.0002867488861113543,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0010/done.json",
+      "done_sha256": "03ba52b01ab0a03e43991a0d8a6a8579cef094b8c5e7c506f7f87b8c52f157af"
+    },
+    {
+      "method_id": "s0033",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 16.432,
+      "wall_timestamp_window_seconds": 16.431713342666626,
+      "signed_delta_s": 0.0002866573333726308,
+      "absolute_delta_s": 0.0002866573333726308,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0033/done.json",
+      "done_sha256": "fd0ed6ec77773756a45ed6ebc893187d111a2813db8ac7241380c26a0f954f61"
+    },
+    {
+      "method_id": "s0042",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 17.45,
+      "wall_timestamp_window_seconds": 17.449713468551636,
+      "signed_delta_s": 0.00028653144836354727,
+      "absolute_delta_s": 0.00028653144836354727,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0042/done.json",
+      "done_sha256": "de1483dcaf038265cf6d1715e086a665988caa7ce8dc673a14c720be4d0335cc"
+    },
+    {
+      "method_id": "s0061",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 21.032,
+      "wall_timestamp_window_seconds": 21.032286405563354,
+      "signed_delta_s": -0.00028640556335446377,
+      "absolute_delta_s": 0.00028640556335446377,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0061/done.json",
+      "done_sha256": "f5020d19b0cd435c3d33f1b4188d732d857ca8ae0734d9087b41d74ce8ed55d4"
+    },
+    {
+      "method_id": "s0007",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 15.279,
+      "wall_timestamp_window_seconds": 15.27928376197815,
+      "signed_delta_s": -0.00028376197814949933,
+      "absolute_delta_s": 0.00028376197814949933,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0007/done.json",
+      "done_sha256": "6e79901897f350d1a760430a385308dbe83ab9c07cf3f96dc900162be0d1f1e8"
+    },
+    {
+      "method_id": "s0072",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 33.156,
+      "wall_timestamp_window_seconds": 33.15628218650818,
+      "signed_delta_s": -0.00028218650817990465,
+      "absolute_delta_s": 0.00028218650817990465,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0072/done.json",
+      "done_sha256": "78dfaae71a59078b04a8e37eb9bc81f1614d9ae1d6b4a85a13aea859e0f36f4c"
+    },
+    {
+      "method_id": "s0066",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 43.452,
+      "wall_timestamp_window_seconds": 43.451719760894775,
+      "signed_delta_s": 0.0002802391052227904,
+      "absolute_delta_s": 0.0002802391052227904,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/chattester/s0066/done.json",
+      "done_sha256": "772753c39e42d6d64e3210c9af47e7161b9240a4e529488d82c9f6163753edd2"
+    },
+    {
+      "method_id": "s0010",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 18.067,
+      "wall_timestamp_window_seconds": 18.06727886199951,
+      "signed_delta_s": -0.0002788619995115482,
+      "absolute_delta_s": 0.0002788619995115482,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0010/done.json",
+      "done_sha256": "6481c3c988e81952ce63716a4fdeb385eeeb3960117d111dda62a427be8d1363"
+    },
+    {
+      "method_id": "s0055",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 51.381,
+      "wall_timestamp_window_seconds": 51.38072371482849,
+      "signed_delta_s": 0.00027628517150901644,
+      "absolute_delta_s": 0.00027628517150901644,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0055/done.json",
+      "done_sha256": "0d56fc43fb09ef7d86ac7fc892736c7f6bd22c84e2fac09df340d5d5d1f99e04"
+    },
+    {
+      "method_id": "s0031",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 36.659,
+      "wall_timestamp_window_seconds": 36.6592743396759,
+      "signed_delta_s": -0.00027433967590440034,
+      "absolute_delta_s": 0.00027433967590440034,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0031/done.json",
+      "done_sha256": "a0f5df194d5fd54d66ffa2374a2ba4cf28099e972906774a398fcabe67ad6fe2"
+    },
+    {
+      "method_id": "s0065",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 91.872,
+      "wall_timestamp_window_seconds": 91.8717291355133,
+      "signed_delta_s": 0.00027086448669422225,
+      "absolute_delta_s": 0.00027086448669422225,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/chattester/s0065/done.json",
+      "done_sha256": "5b3b2a3c75c8d78c1848d1cb0fb53fdbfa1ea94692883d39d570cedf80adb1c8"
+    },
+    {
+      "method_id": "s0016",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 55.449,
+      "wall_timestamp_window_seconds": 55.449270486831665,
+      "signed_delta_s": -0.00027048683166697174,
+      "absolute_delta_s": 0.00027048683166697174,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0016/done.json",
+      "done_sha256": "c73831354201cd6f4d31b8e50662eff3d6b529fd92102659e26bb9c36151cebe"
+    },
+    {
+      "method_id": "s0037",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 17.551,
+      "wall_timestamp_window_seconds": 17.550731658935547,
+      "signed_delta_s": 0.00026834106445150496,
+      "absolute_delta_s": 0.00026834106445150496,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0037/done.json",
+      "done_sha256": "abf31cce67e1be0167d0a3ddbefdd18e7baa7ae1e229dc113be4ba0a811d5cfb"
+    },
+    {
+      "method_id": "s0063",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 102.613,
+      "wall_timestamp_window_seconds": 102.61326479911804,
+      "signed_delta_s": -0.00026479911804244693,
+      "absolute_delta_s": 0.00026479911804244693,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/hits/s0063/done.json",
+      "done_sha256": "ab8148ff6640885f062ca1de52cd848258737984a79af5602244705827ed96f2"
+    },
+    {
+      "method_id": "s0003",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 33.931,
+      "wall_timestamp_window_seconds": 33.93073654174805,
+      "signed_delta_s": 0.0002634582519505102,
+      "absolute_delta_s": 0.0002634582519505102,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0003/done.json",
+      "done_sha256": "43e952a19b463c32178640d1036437c219df69f8dafbd5fc607b0e42afaf3e7b"
+    },
+    {
+      "method_id": "s0033",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 18.205,
+      "wall_timestamp_window_seconds": 18.204737186431885,
+      "signed_delta_s": 0.00026281356811352907,
+      "absolute_delta_s": 0.00026281356811352907,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0033/done.json",
+      "done_sha256": "c4976e86224be02d142d6b00ab332ca492ff2bf2692e45b5c363960fa80ad9a0"
+    },
+    {
+      "method_id": "s0029",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 28.669,
+      "wall_timestamp_window_seconds": 28.669262170791626,
+      "signed_delta_s": -0.0002621707916254934,
+      "absolute_delta_s": 0.0002621707916254934,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0029/done.json",
+      "done_sha256": "8cd53483024495f0aa23b1e661af8f5afa317cec58a22cc0611fd4bc8fbf8146"
+    },
+    {
+      "method_id": "s0038",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 54.744,
+      "wall_timestamp_window_seconds": 54.744261741638184,
+      "signed_delta_s": -0.0002617416381838211,
+      "absolute_delta_s": 0.0002617416381838211,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0038/done.json",
+      "done_sha256": "592227600e743a0f8cd17a40819c5742eb6ad110d1f0ad288e031fdd304f3342"
+    },
+    {
+      "method_id": "s0026",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 33.807,
+      "wall_timestamp_window_seconds": 33.80673837661743,
+      "signed_delta_s": 0.0002616233825705194,
+      "absolute_delta_s": 0.0002616233825705194,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0026/done.json",
+      "done_sha256": "36c64dd5e0b995586ff76799b62622ae459ac8523624e6ea04c7555d9ae2574a"
+    },
+    {
+      "method_id": "s0063",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 72.343,
+      "wall_timestamp_window_seconds": 72.34326028823853,
+      "signed_delta_s": -0.00026028823852186633,
+      "absolute_delta_s": 0.00026028823852186633,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/evosuite/s0063/done.json",
+      "done_sha256": "a5433626dd0cd0296c9e9436f25e02a98b213b288984607aa316bd9d9aeaf6eb"
+    },
+    {
+      "method_id": "s0007",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 26.367,
+      "wall_timestamp_window_seconds": 26.36725616455078,
+      "signed_delta_s": -0.0002561645507803689,
+      "absolute_delta_s": 0.0002561645507803689,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0007/done.json",
+      "done_sha256": "3b414ed62d98833cca67ef5f50f5d3f0528a613498f981946758efee779b5b79"
+    },
+    {
+      "method_id": "s0027",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 21.078,
+      "wall_timestamp_window_seconds": 21.078256130218506,
+      "signed_delta_s": -0.00025613021850645623,
+      "absolute_delta_s": 0.00025613021850645623,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0027/done.json",
+      "done_sha256": "3836811b5f79b857fc2c7ae0a98b13dc3a3fcfa0ba1dcdace299f8ec7c5087df"
+    },
+    {
+      "method_id": "s0024",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 56.236,
+      "wall_timestamp_window_seconds": 56.23625612258911,
+      "signed_delta_s": -0.00025612258911422714,
+      "absolute_delta_s": 0.00025612258911422714,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0024/done.json",
+      "done_sha256": "111b43ca5e8d157e5d24f782846b55ddf675bc313e6b9c39661407973aabce1a"
+    },
+    {
+      "method_id": "s0038",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 20.571,
+      "wall_timestamp_window_seconds": 20.570744514465332,
+      "signed_delta_s": 0.0002554855346694751,
+      "absolute_delta_s": 0.0002554855346694751,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0038/done.json",
+      "done_sha256": "f7fddc726f4e2fe3686cac927ab8268f79016aeba5e388e46e36582b5086b91f"
+    },
+    {
+      "method_id": "s0016",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 22.77,
+      "wall_timestamp_window_seconds": 22.770253658294678,
+      "signed_delta_s": -0.0002536582946781607,
+      "absolute_delta_s": 0.0002536582946781607,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0016/done.json",
+      "done_sha256": "3c4745983cbaa77323adf0c09adba795e994f287927192e89c9829f501ebfcdf"
+    },
+    {
+      "method_id": "s0036",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 37.184,
+      "wall_timestamp_window_seconds": 37.18374729156494,
+      "signed_delta_s": 0.00025270843505609264,
+      "absolute_delta_s": 0.00025270843505609264,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0036/done.json",
+      "done_sha256": "39d4c4b1f627b2fbca9c27b6b7a44faaf2868868130178844ca053130c57f1f7"
+    },
+    {
+      "method_id": "s0060",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 21.96,
+      "wall_timestamp_window_seconds": 21.960249423980713,
+      "signed_delta_s": -0.000249423980712038,
+      "absolute_delta_s": 0.000249423980712038,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0060/done.json",
+      "done_sha256": "92f8d199fc2d263535b22df7c048eddbe55b59073c7e23abe54f2dec77832105"
+    },
+    {
+      "method_id": "s0034",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 45.399,
+      "wall_timestamp_window_seconds": 45.39875245094299,
+      "signed_delta_s": 0.00024754905700774543,
+      "absolute_delta_s": 0.00024754905700774543,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0034/done.json",
+      "done_sha256": "9bd6029ce9d9b352001ef4a12472eeb9132e286587b27dfb707fc34331b701e7"
+    },
+    {
+      "method_id": "s0048",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 127.386,
+      "wall_timestamp_window_seconds": 127.38624668121338,
+      "signed_delta_s": -0.00024668121338322635,
+      "absolute_delta_s": 0.00024668121338322635,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0048/done.json",
+      "done_sha256": "9ada1c212e45f412e88208e0721b332311a410cca4a37d12877d67f3d74128cf"
+    },
+    {
+      "method_id": "s0072",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 37.6,
+      "wall_timestamp_window_seconds": 37.60024571418762,
+      "signed_delta_s": -0.0002457141876206492,
+      "absolute_delta_s": 0.0002457141876206492,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0072/done.json",
+      "done_sha256": "09d68268b1079c5f29c91ccbb44b826489877a9668cc92a4f7c083e3d68708d4"
+    },
+    {
+      "method_id": "s0016",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 31.442,
+      "wall_timestamp_window_seconds": 31.442241430282593,
+      "signed_delta_s": -0.0002414302825926029,
+      "absolute_delta_s": 0.0002414302825926029,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0016/done.json",
+      "done_sha256": "9f7f1c65ad705694cde908df3a0a4ce1130c1f7d3b5d22fc57655c765fbfef06"
+    },
+    {
+      "method_id": "s0001",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 37.978,
+      "wall_timestamp_window_seconds": 37.97776198387146,
+      "signed_delta_s": 0.00023801612854157383,
+      "absolute_delta_s": 0.00023801612854157383,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0001/done.json",
+      "done_sha256": "9051ee27c136cd941f9dd9bd7d08bd7dd1d6e8f6ffcbcf5ad80bb36381b94982"
+    },
+    {
+      "method_id": "s0045",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 14.139,
+      "wall_timestamp_window_seconds": 14.139237642288208,
+      "signed_delta_s": -0.0002376422882086615,
+      "absolute_delta_s": 0.0002376422882086615,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0045/done.json",
+      "done_sha256": "a116d881d24ccfe5601a04b849dff9af2d2fab3a537ccc2ee5a629a6eee481b6"
+    },
+    {
+      "method_id": "s0057",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 134.86,
+      "wall_timestamp_window_seconds": 134.8602340221405,
+      "signed_delta_s": -0.00023402214048928727,
+      "absolute_delta_s": 0.00023402214048928727,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0057/done.json",
+      "done_sha256": "6a33b465c85c11a60d43968a6963499745864bb0f33214af53a82f391f766262"
+    },
+    {
+      "method_id": "s0061",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 32.317,
+      "wall_timestamp_window_seconds": 32.31676626205444,
+      "signed_delta_s": 0.00023373794555681116,
+      "absolute_delta_s": 0.00023373794555681116,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0061/done.json",
+      "done_sha256": "83e312ae692dba7ea8ce1685ce123406e7114e3b11d5fa9d0fc7f989ce047f91"
+    },
+    {
+      "method_id": "s0059",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 23.129,
+      "wall_timestamp_window_seconds": 23.128767490386963,
+      "signed_delta_s": 0.0002325096130384452,
+      "absolute_delta_s": 0.0002325096130384452,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0059/done.json",
+      "done_sha256": "3e4226676bbab80fa00ddea905ce71e60cd05ae0655764996ef54a41b6835ee1"
+    },
+    {
+      "method_id": "s0043",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 52.033,
+      "wall_timestamp_window_seconds": 52.03276872634888,
+      "signed_delta_s": 0.00023127365112429743,
+      "absolute_delta_s": 0.00023127365112429743,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0043/done.json",
+      "done_sha256": "66ebc4013bfa7522b1dd5a6c5bb7beff32b57483f3b6b9752980725feaa5ecc4"
+    },
+    {
+      "method_id": "s0031",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 19.015,
+      "wall_timestamp_window_seconds": 19.014771938323975,
+      "signed_delta_s": 0.00022806167602595906,
+      "absolute_delta_s": 0.00022806167602595906,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0031/done.json",
+      "done_sha256": "e865d3b383aea8a5d850b2f42c8a25d71d75b54fca014f76c21cf6cac8e9ec9f"
+    },
+    {
+      "method_id": "s0068",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 34.0,
+      "wall_timestamp_window_seconds": 33.99977207183838,
+      "signed_delta_s": 0.00022792816162109375,
+      "absolute_delta_s": 0.00022792816162109375,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/chatunitest/s0068/done.json",
+      "done_sha256": "3502e8b2653727341e8b45762b5a4136764ecceeef0d59d20a36a811a3dd6a0e"
+    },
+    {
+      "method_id": "s0036",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 16.738,
+      "wall_timestamp_window_seconds": 16.738227367401123,
+      "signed_delta_s": -0.00022736740112350162,
+      "absolute_delta_s": 0.00022736740112350162,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0036/done.json",
+      "done_sha256": "b58be73489587f65c5d2082999b144981d794b3601d7e439fffde4a183387172"
+    },
+    {
+      "method_id": "s0042",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 32.423,
+      "wall_timestamp_window_seconds": 32.423227310180664,
+      "signed_delta_s": -0.0002273101806622435,
+      "absolute_delta_s": 0.0002273101806622435,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0042/done.json",
+      "done_sha256": "60ab4d95b54fa28aad7b17a072b0f5e8a3faccd7b12ec17c9e31ba9c011b673c"
+    },
+    {
+      "method_id": "s0036",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 18.98,
+      "wall_timestamp_window_seconds": 18.97977304458618,
+      "signed_delta_s": 0.0002269554138187857,
+      "absolute_delta_s": 0.0002269554138187857,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0036/done.json",
+      "done_sha256": "a8fe5008379f37ce2ba9a81a4088f21f1517fa5eed58abcaa57ca2fcf3c96595"
+    },
+    {
+      "method_id": "s0052",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 20.291,
+      "wall_timestamp_window_seconds": 20.29122567176819,
+      "signed_delta_s": -0.00022567176818810708,
+      "absolute_delta_s": 0.00022567176818810708,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0052/done.json",
+      "done_sha256": "49d16f795c019a6eaaee8df41c79103df56621a47ea213e147173894f6608e35"
+    },
+    {
+      "method_id": "s0071",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 26.387,
+      "wall_timestamp_window_seconds": 26.38722515106201,
+      "signed_delta_s": -0.000225151062011264,
+      "absolute_delta_s": 0.000225151062011264,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/chatunitest/s0071/done.json",
+      "done_sha256": "0957bc4a52e3773f093a92dddf87b506ea39b0430aa3852e0096b03f9ed17ae9"
+    },
+    {
+      "method_id": "s0009",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 46.44,
+      "wall_timestamp_window_seconds": 46.44022464752197,
+      "signed_delta_s": -0.00022464752197493,
+      "absolute_delta_s": 0.00022464752197493,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0009/done.json",
+      "done_sha256": "0dc294886df3a8ac942c307f69ac77a3dbb1a9ab0a6fec82572dc302a1e7ea4b"
+    },
+    {
+      "method_id": "s0009",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 31.298,
+      "wall_timestamp_window_seconds": 31.297776699066162,
+      "signed_delta_s": 0.0002233009338361569,
+      "absolute_delta_s": 0.0002233009338361569,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0009/done.json",
+      "done_sha256": "a70c35f33febe3e29e13bb1abc846bb453173ee4abde6fd14ddeae2b1efb5899"
+    },
+    {
+      "method_id": "s0056",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 33.876,
+      "wall_timestamp_window_seconds": 33.875778675079346,
+      "signed_delta_s": 0.0002213249206519663,
+      "absolute_delta_s": 0.0002213249206519663,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0056/done.json",
+      "done_sha256": "a80cf4caed1492fdf4653de4318f022c8844f6c54c8a00e823de91519610f8c6"
+    },
+    {
+      "method_id": "s0015",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 54.263,
+      "wall_timestamp_window_seconds": 54.262778997421265,
+      "signed_delta_s": 0.00022100257873347573,
+      "absolute_delta_s": 0.00022100257873347573,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0015/done.json",
+      "done_sha256": "b63065ca080b23c0e0cd64145bb16b04a3d8344f8d3f8ead88a133637c462b71"
+    },
+    {
+      "method_id": "s0010",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 17.638,
+      "wall_timestamp_window_seconds": 17.638219833374023,
+      "signed_delta_s": -0.00021983337402176062,
+      "absolute_delta_s": 0.00021983337402176062,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0010/done.json",
+      "done_sha256": "ebc767c7ff86459ced4423add76b2034d2babb9afd3263460fb49dd35171746d"
+    },
+    {
+      "method_id": "s0026",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 139.18,
+      "wall_timestamp_window_seconds": 139.18021965026855,
+      "signed_delta_s": -0.0002196502685478663,
+      "absolute_delta_s": 0.0002196502685478663,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0026/done.json",
+      "done_sha256": "248c71e22cb5d1d1254b08e50504922b09595ad4471e52b6bece0247478aab38"
+    },
+    {
+      "method_id": "s0044",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 31.777,
+      "wall_timestamp_window_seconds": 31.776780366897583,
+      "signed_delta_s": 0.00021963310241801537,
+      "absolute_delta_s": 0.00021963310241801537,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0044/done.json",
+      "done_sha256": "6f8938233014d50196f8bd4a59327df2e215e6fbdf2f61fccbbd143316202b33"
+    },
+    {
+      "method_id": "s0062",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 27.287,
+      "wall_timestamp_window_seconds": 27.287219285964966,
+      "signed_delta_s": -0.00021928596496678665,
+      "absolute_delta_s": 0.00021928596496678665,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0062/done.json",
+      "done_sha256": "4ab6df31943c953ba49055089f9ddc999349bcc68d84b42d3fdf1c7dbb5a4fed"
+    },
+    {
+      "method_id": "s0058",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 31.685,
+      "wall_timestamp_window_seconds": 31.684782028198242,
+      "signed_delta_s": 0.00021797180175653352,
+      "absolute_delta_s": 0.00021797180175653352,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0058/done.json",
+      "done_sha256": "6cd4aa85f5d818a9f7892d3319a47f83c42a4159a8963bc3ca35b8fc61ee3378"
+    },
+    {
+      "method_id": "s0002",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 29.142,
+      "wall_timestamp_window_seconds": 29.141785383224487,
+      "signed_delta_s": 0.0002146167755121553,
+      "absolute_delta_s": 0.0002146167755121553,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0002/done.json",
+      "done_sha256": "04334eafcec084a89b26a6ac7da24a1badcf526b6e4489593540018e681f84f1"
+    },
+    {
+      "method_id": "s0014",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 129.168,
+      "wall_timestamp_window_seconds": 129.16778779029846,
+      "signed_delta_s": 0.0002122097015444524,
+      "absolute_delta_s": 0.0002122097015444524,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0014/done.json",
+      "done_sha256": "bee00953ef5448323d3d39804adc1c7a9b9cf6e79c45e2a9a6118b2f3a1d8c70"
+    },
+    {
+      "method_id": "s0067",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 29.694,
+      "wall_timestamp_window_seconds": 29.694210052490234,
+      "signed_delta_s": -0.00021005249023531292,
+      "absolute_delta_s": 0.00021005249023531292,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/chatunitest/s0067/done.json",
+      "done_sha256": "70624ec136d40bd9cc61ab6d37f1a2ee3375457b824e652fb5a01f356ddd68b9"
+    },
+    {
+      "method_id": "s0059",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 238.516,
+      "wall_timestamp_window_seconds": 238.51620888710022,
+      "signed_delta_s": -0.00020888710022859414,
+      "absolute_delta_s": 0.00020888710022859414,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0059/done.json",
+      "done_sha256": "3240c915f973279d81e28e78c0186d0a0b443c8a25bde1f19a3efdbe55c38bb1"
+    },
+    {
+      "method_id": "s0054",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 74.853,
+      "wall_timestamp_window_seconds": 74.85320830345154,
+      "signed_delta_s": -0.0002083034515436566,
+      "absolute_delta_s": 0.0002083034515436566,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0054/done.json",
+      "done_sha256": "e9383dbc2be131625f62f16f3dc769dd50ad5ca649428c590540250734689f2f"
+    },
+    {
+      "method_id": "s0044",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 23.042,
+      "wall_timestamp_window_seconds": 23.042207717895508,
+      "signed_delta_s": -0.00020771789550622088,
+      "absolute_delta_s": 0.00020771789550622088,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0044/done.json",
+      "done_sha256": "27942127623365a51d719d2ab6fe538896857b8d3c739021cb9ceef8c2fa1107"
+    },
+    {
+      "method_id": "s0035",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 19.06,
+      "wall_timestamp_window_seconds": 19.059794187545776,
+      "signed_delta_s": 0.00020581245422235384,
+      "absolute_delta_s": 0.00020581245422235384,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0035/done.json",
+      "done_sha256": "fd7775ad1e844979f4e1ada04a06aa0516df33634a5378790b4419b602f90272"
+    },
+    {
+      "method_id": "s0037",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 23.695,
+      "wall_timestamp_window_seconds": 23.695201635360718,
+      "signed_delta_s": -0.00020163536071748922,
+      "absolute_delta_s": 0.00020163536071748922,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0037/done.json",
+      "done_sha256": "a9947d9161a4b0e2e071cc3a607e346a5190d560af0cca71084a26383b22152d"
+    },
+    {
+      "method_id": "s0002",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 48.941,
+      "wall_timestamp_window_seconds": 48.94079923629761,
+      "signed_delta_s": 0.00020076370239507924,
+      "absolute_delta_s": 0.00020076370239507924,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0002/done.json",
+      "done_sha256": "a89132eb4fb83ddf2ae4bd0670d6cd1a482f13d39b36d5e6d590d4bb64d3fce8"
+    },
+    {
+      "method_id": "s0002",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 39.889,
+      "wall_timestamp_window_seconds": 39.88879942893982,
+      "signed_delta_s": 0.00020057106018356308,
+      "absolute_delta_s": 0.00020057106018356308,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0002/done.json",
+      "done_sha256": "3a5f1cf0effc11a6f8ad1bcf94dca6c2fd4d857e6c91f00df70439de9b5c9890"
+    },
+    {
+      "method_id": "s0014",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 19.851,
+      "wall_timestamp_window_seconds": 19.850801706314087,
+      "signed_delta_s": 0.00019829368591217644,
+      "absolute_delta_s": 0.00019829368591217644,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0014/done.json",
+      "done_sha256": "2b2dcbaae16a445ae3d1ce5dea4a3ff2a1199a0436c2836c9e8a403f33aee069"
+    },
+    {
+      "method_id": "s0067",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 111.779,
+      "wall_timestamp_window_seconds": 111.77880191802979,
+      "signed_delta_s": 0.00019808197021120577,
+      "absolute_delta_s": 0.00019808197021120577,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/hits/s0067/done.json",
+      "done_sha256": "bc6663832c90efb3b115f904b513b087cb5e94624e85664b6a7fac0618714df7"
+    },
+    {
+      "method_id": "s0052",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 44.655,
+      "wall_timestamp_window_seconds": 44.654802083969116,
+      "signed_delta_s": 0.00019791603088492593,
+      "absolute_delta_s": 0.00019791603088492593,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0052/done.json",
+      "done_sha256": "b9eb2391444c2d39c578b9a42dcec43b89a25079b93a82ea86a7fa1735bd03f0"
+    },
+    {
+      "method_id": "s0046",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 125.886,
+      "wall_timestamp_window_seconds": 125.88619756698608,
+      "signed_delta_s": -0.00019756698608830447,
+      "absolute_delta_s": 0.00019756698608830447,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0046/done.json",
+      "done_sha256": "8f34919210c42b53b686f192ba9553e0b231b720dc0c448ac86cccb37e693197"
+    },
+    {
+      "method_id": "s0045",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 29.523,
+      "wall_timestamp_window_seconds": 29.52280330657959,
+      "signed_delta_s": 0.0001966934204098436,
+      "absolute_delta_s": 0.0001966934204098436,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0045/done.json",
+      "done_sha256": "7fed599bd6340886a52cc370b8ad1d5794a97b084e3a7e1a0e61ea20d93eedd0"
+    },
+    {
+      "method_id": "s0039",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 18.832,
+      "wall_timestamp_window_seconds": 18.831804513931274,
+      "signed_delta_s": 0.0001954860687263249,
+      "absolute_delta_s": 0.0001954860687263249,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0039/done.json",
+      "done_sha256": "2b909c864475ce8094a397dde0ca72c703e79d685b0d1a2defb5a913ad22afde"
+    },
+    {
+      "method_id": "s0004",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 29.479,
+      "wall_timestamp_window_seconds": 29.47880792617798,
+      "signed_delta_s": 0.00019207382202068857,
+      "absolute_delta_s": 0.00019207382202068857,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0004/done.json",
+      "done_sha256": "cbb91596b924a6279d698936348873538078237ea15fb5745539d89cc0b47b0d"
+    },
+    {
+      "method_id": "s0029",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 20.225,
+      "wall_timestamp_window_seconds": 20.225188493728638,
+      "signed_delta_s": -0.00018849372863627423,
+      "absolute_delta_s": 0.00018849372863627423,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0029/done.json",
+      "done_sha256": "d36bca848377cbacd85ed3f69cba3408d6c6f9ddbc4cb89fd38904b262a421b7"
+    },
+    {
+      "method_id": "s0048",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 15.449,
+      "wall_timestamp_window_seconds": 15.449188232421875,
+      "signed_delta_s": -0.00018823242187515632,
+      "absolute_delta_s": 0.00018823242187515632,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0048/done.json",
+      "done_sha256": "fee25b01609329954bd47de1cfa1b70e2606ea064e0f426088d5d18c8be540f1"
+    },
+    {
+      "method_id": "s0053",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 15.799,
+      "wall_timestamp_window_seconds": 15.798813819885254,
+      "signed_delta_s": 0.00018618011474558216,
+      "absolute_delta_s": 0.00018618011474558216,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0053/done.json",
+      "done_sha256": "bfbf13835292972645554352ecdb9d44dade8fcc0842247894ca2e085698e4cd"
+    },
+    {
+      "method_id": "s0055",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 27.317,
+      "wall_timestamp_window_seconds": 27.31681537628174,
+      "signed_delta_s": 0.00018462371826188928,
+      "absolute_delta_s": 0.00018462371826188928,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0055/done.json",
+      "done_sha256": "e5bbcd5ad72f7e731cbb25f49262d15305933217d0a2bf455708d7503b75215e"
+    },
+    {
+      "method_id": "s0041",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 134.613,
+      "wall_timestamp_window_seconds": 134.61317992210388,
+      "signed_delta_s": -0.00017992210388229068,
+      "absolute_delta_s": 0.00017992210388229068,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0041/done.json",
+      "done_sha256": "228edd0046341991b63edcee9bae84275e61730e3531b781e2db538cbc7a0ab5"
+    },
+    {
+      "method_id": "s0027",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 188.13,
+      "wall_timestamp_window_seconds": 188.1301760673523,
+      "signed_delta_s": -0.00017606735229946935,
+      "absolute_delta_s": 0.00017606735229946935,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0027/done.json",
+      "done_sha256": "a31d77960efc8b58f084d2cfa359d3e6a0b870a81a8b622909ffda7d0c3fe824"
+    },
+    {
+      "method_id": "s0065",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 30.811,
+      "wall_timestamp_window_seconds": 30.81117582321167,
+      "signed_delta_s": -0.00017582321166997872,
+      "absolute_delta_s": 0.00017582321166997872,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/chatunitest/s0065/done.json",
+      "done_sha256": "7adf7ab632a6ca213d7dac475c0ac874d5230074c3f5a91a98fa4f78d93eee3d"
+    },
+    {
+      "method_id": "s0041",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 35.403,
+      "wall_timestamp_window_seconds": 35.40317368507385,
+      "signed_delta_s": -0.00017368507385384646,
+      "absolute_delta_s": 0.00017368507385384646,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0041/done.json",
+      "done_sha256": "07d9174950fec79951a81ef6c124c6e65c913a5626574f80d35612d7559f099c"
+    },
+    {
+      "method_id": "s0009",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 56.171,
+      "wall_timestamp_window_seconds": 56.17117094993591,
+      "signed_delta_s": -0.00017094993591371122,
+      "absolute_delta_s": 0.00017094993591371122,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0009/done.json",
+      "done_sha256": "9f3796ff713969ea72fd4fba721272dbaab971934b0e76fdffaa96c439de4f33"
+    },
+    {
+      "method_id": "s0032",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 39.213,
+      "wall_timestamp_window_seconds": 39.21282982826233,
+      "signed_delta_s": 0.00017017173767186478,
+      "absolute_delta_s": 0.00017017173767186478,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0032/done.json",
+      "done_sha256": "07d2dbb74590855b86ae4a09cfcf6a8104e85fd902bfdcb139961bd8e364b7aa"
+    },
+    {
+      "method_id": "s0022",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 49.605,
+      "wall_timestamp_window_seconds": 49.605167388916016,
+      "signed_delta_s": -0.0001673889160187514,
+      "absolute_delta_s": 0.0001673889160187514,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0022/done.json",
+      "done_sha256": "7df0d263a2b4b65278cfc568cca4b16bbd59249a4fd61acfac2578763feeb0b4"
+    },
+    {
+      "method_id": "s0060",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 29.443,
+      "wall_timestamp_window_seconds": 29.442833423614502,
+      "signed_delta_s": 0.00016657638549943954,
+      "absolute_delta_s": 0.00016657638549943954,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0060/done.json",
+      "done_sha256": "572dbcbc006456923921618ffd220e30b9cfbaea4adc43eaf448cfe8a37c5369"
+    },
+    {
+      "method_id": "s0030",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 19.965,
+      "wall_timestamp_window_seconds": 19.965166568756104,
+      "signed_delta_s": -0.00016656875610365773,
+      "absolute_delta_s": 0.00016656875610365773,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0030/done.json",
+      "done_sha256": "b7115bebc1f2134bab1039c9766df5fac25b4094587366a8a49be18b575f04da"
+    },
+    {
+      "method_id": "s0027",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 29.484,
+      "wall_timestamp_window_seconds": 29.48383355140686,
+      "signed_delta_s": 0.00016644859314141058,
+      "absolute_delta_s": 0.00016644859314141058,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0027/done.json",
+      "done_sha256": "f629d1efd596ae541a1fbf0c061eb1309dc630737236d418bac8b449caa7033c"
+    },
+    {
+      "method_id": "s0043",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 34.987,
+      "wall_timestamp_window_seconds": 34.98716640472412,
+      "signed_delta_s": -0.00016640472411921792,
+      "absolute_delta_s": 0.00016640472411921792,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0043/done.json",
+      "done_sha256": "b2c3c46bc040f81ed33f7777832a1cda6de3d4cb540249b06c2aa5e1fe48e11c"
+    },
+    {
+      "method_id": "s0057",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 23.692,
+      "wall_timestamp_window_seconds": 23.69183373451233,
+      "signed_delta_s": 0.00016626548767106897,
+      "absolute_delta_s": 0.00016626548767106897,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0057/done.json",
+      "done_sha256": "2098ecd28ff66ca1162c2f7e2c76a88f30815b7ebf37badc61f73d33071e34e8"
+    },
+    {
+      "method_id": "s0041",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 13.185,
+      "wall_timestamp_window_seconds": 13.184837102890015,
+      "signed_delta_s": 0.00016289710998584894,
+      "absolute_delta_s": 0.00016289710998584894,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0041/done.json",
+      "done_sha256": "c0b22ddf7be72fa2a2f163be4209316ca1f201a58b4dba79a17a1effae7f2261"
+    },
+    {
+      "method_id": "s0035",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 100.45,
+      "wall_timestamp_window_seconds": 100.44984292984009,
+      "signed_delta_s": 0.00015707015991495155,
+      "absolute_delta_s": 0.00015707015991495155,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0035/done.json",
+      "done_sha256": "750a9a091a358c738c14951823440cecb57de24616e0bd1cafa06d0be7a60d7b"
+    },
+    {
+      "method_id": "s0069",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 51.152,
+      "wall_timestamp_window_seconds": 51.152156352996826,
+      "signed_delta_s": -0.0001563529968251487,
+      "absolute_delta_s": 0.0001563529968251487,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/chatunitest/s0069/done.json",
+      "done_sha256": "64ec3eb7a4e6ee49ca9c96fb4d63f870ad7520842d65223bd70773ef92fe2f24"
+    },
+    {
+      "method_id": "s0011",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 20.479,
+      "wall_timestamp_window_seconds": 20.47884464263916,
+      "signed_delta_s": 0.00015535736083904794,
+      "absolute_delta_s": 0.00015535736083904794,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0011/done.json",
+      "done_sha256": "68993f7e94912d43c69b1c619654621c62145bc8c6817e1e5951b0d0bfb77093"
+    },
+    {
+      "method_id": "s0051",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 19.391,
+      "wall_timestamp_window_seconds": 19.391155242919922,
+      "signed_delta_s": -0.00015524291992363715,
+      "absolute_delta_s": 0.00015524291992363715,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0051/done.json",
+      "done_sha256": "9862e963adaf8773fb068bc6d2339717dabd0829b730a23fa031defe0d6adf13"
+    },
+    {
+      "method_id": "s0039",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 49.121,
+      "wall_timestamp_window_seconds": 49.12115502357483,
+      "signed_delta_s": -0.00015502357482688467,
+      "absolute_delta_s": 0.00015502357482688467,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0039/done.json",
+      "done_sha256": "074392d7557e9a78b51791bee431201e2e34459f177a1890ea2f78094363ab35"
+    },
+    {
+      "method_id": "s0060",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 11.845,
+      "wall_timestamp_window_seconds": 11.845153331756592,
+      "signed_delta_s": -0.0001533317565911574,
+      "absolute_delta_s": 0.0001533317565911574,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0060/done.json",
+      "done_sha256": "8b258ea66f444e2f0849c21a88ad267ebad76df4e35622080ee1e936b3b1429e"
+    },
+    {
+      "method_id": "s0009",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 16.27,
+      "wall_timestamp_window_seconds": 16.26984930038452,
+      "signed_delta_s": 0.0001506996154780893,
+      "absolute_delta_s": 0.0001506996154780893,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0009/done.json",
+      "done_sha256": "2c098fdfb971539dd1ea2be51cd2573512cd08ca9de13a34ebb3283637890d6f"
+    },
+    {
+      "method_id": "s0068",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 28.868,
+      "wall_timestamp_window_seconds": 28.867849588394165,
+      "signed_delta_s": 0.00015041160583351143,
+      "absolute_delta_s": 0.00015041160583351143,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/justin-llm/s0068/done.json",
+      "done_sha256": "9ed1bf9e0f21579861817d1ea19ec479af95f94e64aa06462492186f066b31ff"
+    },
+    {
+      "method_id": "s0067",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 45.864,
+      "wall_timestamp_window_seconds": 45.864150285720825,
+      "signed_delta_s": -0.00015028572082798064,
+      "absolute_delta_s": 0.00015028572082798064,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/chattester/s0067/done.json",
+      "done_sha256": "70f3e34873b4e29774f67a0d23928dadf512b8d70dd84cd5505a314f7776cfad"
+    },
+    {
+      "method_id": "s0028",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 21.589,
+      "wall_timestamp_window_seconds": 21.5888512134552,
+      "signed_delta_s": 0.00014878654479844045,
+      "absolute_delta_s": 0.00014878654479844045,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0028/done.json",
+      "done_sha256": "5af2b8a6777eacb009ab9249e001069f8b1db1351d9fd177cb4a75757bb57661"
+    },
+    {
+      "method_id": "s0066",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 15.258,
+      "wall_timestamp_window_seconds": 15.25785231590271,
+      "signed_delta_s": 0.000147684097289158,
+      "absolute_delta_s": 0.000147684097289158,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/evosuite/s0066/done.json",
+      "done_sha256": "460c7b8ab15c231f490d28a210fa053f68abf8ff5a9fbe9fe33f4ec47ae24ccd"
+    },
+    {
+      "method_id": "s0022",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 23.271,
+      "wall_timestamp_window_seconds": 23.27114701271057,
+      "signed_delta_s": -0.00014701271057049325,
+      "absolute_delta_s": 0.00014701271057049325,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0022/done.json",
+      "done_sha256": "f942ae7ce05c586187330eae531f8f72ab9fda97949fd02b892777e928bf2d83"
+    },
+    {
+      "method_id": "s0019",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 26.032,
+      "wall_timestamp_window_seconds": 26.032146215438843,
+      "signed_delta_s": -0.00014621543884274502,
+      "absolute_delta_s": 0.00014621543884274502,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0019/done.json",
+      "done_sha256": "c64c3ac6f1b2a8eb03535ede11031b9f311372cd0e35ff271d5a1928debd7452"
+    },
+    {
+      "method_id": "s0001",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 29.151,
+      "wall_timestamp_window_seconds": 29.150854110717773,
+      "signed_delta_s": 0.00014588928222636355,
+      "absolute_delta_s": 0.00014588928222636355,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0001/done.json",
+      "done_sha256": "7225d75f0f14281043f21f68309890fa2fb05ec5b749b162cc6be2849d3f325f"
+    },
+    {
+      "method_id": "s0059",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 30.768,
+      "wall_timestamp_window_seconds": 30.768144369125366,
+      "signed_delta_s": -0.00014436912536552882,
+      "absolute_delta_s": 0.00014436912536552882,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0059/done.json",
+      "done_sha256": "17fbc224cc194429b8cb0aaf3082700dc896ffdd4642e1dccb31c340a35b12f3"
+    },
+    {
+      "method_id": "s0047",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 13.563,
+      "wall_timestamp_window_seconds": 13.563143968582153,
+      "signed_delta_s": -0.00014396858215270925,
+      "absolute_delta_s": 0.00014396858215270925,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0047/done.json",
+      "done_sha256": "f59ed84397fda74bf6e3d8b502fd13e42a2b2c34d0c9824ee62b26543dc0bbbd"
+    },
+    {
+      "method_id": "s0030",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 41.384,
+      "wall_timestamp_window_seconds": 41.384143352508545,
+      "signed_delta_s": -0.00014335250854458081,
+      "absolute_delta_s": 0.00014335250854458081,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0030/done.json",
+      "done_sha256": "bbc3f4e949f6374668f40cf10c47811d1b96af61bb419780c2b36fa3c7a1fee7"
+    },
+    {
+      "method_id": "s0071",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 21.112,
+      "wall_timestamp_window_seconds": 21.111857891082764,
+      "signed_delta_s": 0.00014210891723465124,
+      "absolute_delta_s": 0.00014210891723465124,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/evosuite/s0071/done.json",
+      "done_sha256": "ac7f208a925f20586fa61b2b7afc9293856757b3c1b2a28617c225b44eea4dd3"
+    },
+    {
+      "method_id": "s0054",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 31.631,
+      "wall_timestamp_window_seconds": 31.630860567092896,
+      "signed_delta_s": 0.00013943290710471956,
+      "absolute_delta_s": 0.00013943290710471956,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0054/done.json",
+      "done_sha256": "94e0071f39f5cf1b867e71ec51e0da8e7904c58be7a8477741f1881c2b0feb4f"
+    },
+    {
+      "method_id": "s0014",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 15.122,
+      "wall_timestamp_window_seconds": 15.121862173080444,
+      "signed_delta_s": 0.00013782691955555038,
+      "absolute_delta_s": 0.00013782691955555038,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0014/done.json",
+      "done_sha256": "c9cf842296167a9d9b935ee0422e98954984221e232b07c4a601f4bbfa2b95bc"
+    },
+    {
+      "method_id": "s0013",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 16.425,
+      "wall_timestamp_window_seconds": 16.425135612487793,
+      "signed_delta_s": -0.0001356124877922582,
+      "absolute_delta_s": 0.0001356124877922582,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0013/done.json",
+      "done_sha256": "9afa4050f924b9169781e4f0623d31a0b99970ab03d8a6497ac5929ae7a6f5fb"
+    },
+    {
+      "method_id": "s0071",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 104.238,
+      "wall_timestamp_window_seconds": 104.23786473274231,
+      "signed_delta_s": 0.00013526725768997494,
+      "absolute_delta_s": 0.00013526725768997494,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/hits/s0071/done.json",
+      "done_sha256": "80faec36b6c55b8f2824f6942756dc5e30648f61f6f5853a707c544a7dfd2fca"
+    },
+    {
+      "method_id": "s0036",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 50.3,
+      "wall_timestamp_window_seconds": 50.300132751464844,
+      "signed_delta_s": -0.00013275146484659217,
+      "absolute_delta_s": 0.00013275146484659217,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0036/done.json",
+      "done_sha256": "24f8d905aeabb0164ce73b1bc969d74c09f396fe9d30438b6b7eafa2c3de722b"
+    },
+    {
+      "method_id": "s0068",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 142.46,
+      "wall_timestamp_window_seconds": 142.45986771583557,
+      "signed_delta_s": 0.00013228416443666902,
+      "absolute_delta_s": 0.00013228416443666902,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/hits/s0068/done.json",
+      "done_sha256": "10c4327df79e4546af4e1d61a8f46e03f4dcccaeeddb1fea81d2a1095b897d88"
+    },
+    {
+      "method_id": "s0049",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 14.267,
+      "wall_timestamp_window_seconds": 14.266867876052856,
+      "signed_delta_s": 0.00013212394714301468,
+      "absolute_delta_s": 0.00013212394714301468,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0049/done.json",
+      "done_sha256": "4c825eb6727798874479fa638ecfe4c4aaa57a900a6fc56a1074e90829579ddd"
+    },
+    {
+      "method_id": "s0020",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 46.559,
+      "wall_timestamp_window_seconds": 46.55912971496582,
+      "signed_delta_s": -0.0001297149658228136,
+      "absolute_delta_s": 0.0001297149658228136,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0020/done.json",
+      "done_sha256": "48c62c26f1468351181d8a49011fe605915792e2a05532307e388f5f1891c9b3"
+    },
+    {
+      "method_id": "s0019",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 50.137,
+      "wall_timestamp_window_seconds": 50.13687086105347,
+      "signed_delta_s": 0.00012913894653365787,
+      "absolute_delta_s": 0.00012913894653365787,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0019/done.json",
+      "done_sha256": "c28b2199b7eaf12dbf83caf4c2c327c6840c8d0240f2ef339834863a3ec09e4b"
+    },
+    {
+      "method_id": "s0057",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 28.664,
+      "wall_timestamp_window_seconds": 28.66412854194641,
+      "signed_delta_s": -0.00012854194640965488,
+      "absolute_delta_s": 0.00012854194640965488,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0057/done.json",
+      "done_sha256": "e4db3ec9c1860e1de46127f32ce1094acfff498c2f25aa97303e15c7ca2f5af2"
+    },
+    {
+      "method_id": "s0014",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 51.757,
+      "wall_timestamp_window_seconds": 51.7571280002594,
+      "signed_delta_s": -0.00012800025940151727,
+      "absolute_delta_s": 0.00012800025940151727,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0014/done.json",
+      "done_sha256": "16726cfd4ca1d4468e8a75527473138194975615290f1e05b90a6390fb6745b5"
+    },
+    {
+      "method_id": "s0035",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 50.445,
+      "wall_timestamp_window_seconds": 50.44512486457825,
+      "signed_delta_s": -0.0001248645782467861,
+      "absolute_delta_s": 0.0001248645782467861,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0035/done.json",
+      "done_sha256": "f8a772d5e98ef51c8405c9f723525230958c84cf5a68b3f365e86ca09b300ab3"
+    },
+    {
+      "method_id": "s0070",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 35.133,
+      "wall_timestamp_window_seconds": 35.1328821182251,
+      "signed_delta_s": 0.00011788177490501539,
+      "absolute_delta_s": 0.00011788177490501539,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/evosuite/s0070/done.json",
+      "done_sha256": "7b2b4fc60eacf5c4a1cd247dd35e54c63dda77ffc52fe286d9418dc2421265a4"
+    },
+    {
+      "method_id": "s0010",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 117.59,
+      "wall_timestamp_window_seconds": 117.58988404273987,
+      "signed_delta_s": 0.00011595726013524654,
+      "absolute_delta_s": 0.00011595726013524654,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0010/done.json",
+      "done_sha256": "dd02907ee1c0e3abdad9f7d6a3053d359025fea0750dc2bacb94a89e2f21f764"
+    },
+    {
+      "method_id": "s0058",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 14.957,
+      "wall_timestamp_window_seconds": 14.956884145736694,
+      "signed_delta_s": 0.00011585426330640303,
+      "absolute_delta_s": 0.00011585426330640303,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0058/done.json",
+      "done_sha256": "9ed8edd365fcd2675c703ef61b0e63db28c645581461292df8a560d1d492ccf9"
+    },
+    {
+      "method_id": "s0008",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 71.056,
+      "wall_timestamp_window_seconds": 71.05588436126709,
+      "signed_delta_s": 0.00011563873290754145,
+      "absolute_delta_s": 0.00011563873290754145,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0008/done.json",
+      "done_sha256": "e01cd5be57ca37de959279c9a64ab3bd2cc2fe0848ba78643e0a1a6e97575064"
+    },
+    {
+      "method_id": "s0001",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 56.088,
+      "wall_timestamp_window_seconds": 56.08788442611694,
+      "signed_delta_s": 0.00011557388305760696,
+      "absolute_delta_s": 0.00011557388305760696,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0001/done.json",
+      "done_sha256": "3129aa318d731eeacbabe8433d8e15267a2cffb6deb8386a1d481dd0104312e8"
+    },
+    {
+      "method_id": "s0007",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 25.461,
+      "wall_timestamp_window_seconds": 25.461113452911377,
+      "signed_delta_s": -0.00011345291137843105,
+      "absolute_delta_s": 0.00011345291137843105,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0007/done.json",
+      "done_sha256": "a6c70dc2edb1e93352278e1be9c31010936c63c559049d0d6dd95efb9ecccd2b"
+    },
+    {
+      "method_id": "s0064",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 52.527,
+      "wall_timestamp_window_seconds": 52.52711296081543,
+      "signed_delta_s": -0.00011296081542866432,
+      "absolute_delta_s": 0.00011296081542866432,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jline-3.21.0/chattester/s0064/done.json",
+      "done_sha256": "6ec1e638b91aeddc395956e57f00b80c105be838e3309b30eb4958e7e43d815b"
+    },
+    {
+      "method_id": "s0003",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 24.677,
+      "wall_timestamp_window_seconds": 24.6768901348114,
+      "signed_delta_s": 0.00010986518859823491,
+      "absolute_delta_s": 0.00010986518859823491,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0003/done.json",
+      "done_sha256": "64875a1b245321856137321a100942ebf02199eba3431be4b8fb2973d3296cb4"
+    },
+    {
+      "method_id": "s0055",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 21.572,
+      "wall_timestamp_window_seconds": 21.57210946083069,
+      "signed_delta_s": -0.00010946083068930079,
+      "absolute_delta_s": 0.00010946083068930079,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0055/done.json",
+      "done_sha256": "27f632adb0027b39cf6e26945bebb9d00b5371bf70a6a602d3662c5d309e2fac"
+    },
+    {
+      "method_id": "s0031",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 54.166,
+      "wall_timestamp_window_seconds": 54.16610503196716,
+      "signed_delta_s": -0.00010503196716626917,
+      "absolute_delta_s": 0.00010503196716626917,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0031/done.json",
+      "done_sha256": "b23c93bf87730d665ade889e2ba006e8a5b88eaa41991faa044273f86c210b55"
+    },
+    {
+      "method_id": "s0035",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 17.658,
+      "wall_timestamp_window_seconds": 17.65810465812683,
+      "signed_delta_s": -0.00010465812682980413,
+      "absolute_delta_s": 0.00010465812682980413,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0035/done.json",
+      "done_sha256": "d9d0cd20586078452791fb9adb1b6da2480a352c445f589a89b488fc43ab54e3"
+    },
+    {
+      "method_id": "s0063",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 14.617,
+      "wall_timestamp_window_seconds": 14.617104530334473,
+      "signed_delta_s": -0.00010453033447177518,
+      "absolute_delta_s": 0.00010453033447177518,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/justin-llm/s0063/done.json",
+      "done_sha256": "45aa8636a29029423ed62a12eb13d26a95058be0f6f7eb6cb9ba25633d64fe37"
+    },
+    {
+      "method_id": "s0015",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 25.725,
+      "wall_timestamp_window_seconds": 25.72489643096924,
+      "signed_delta_s": 0.00010356903076313984,
+      "absolute_delta_s": 0.00010356903076313984,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0015/done.json",
+      "done_sha256": "b55458ad8b9b66208fdc57696940c5844041d6eabc6bb02896b06b2e38cbc30f"
+    },
+    {
+      "method_id": "s0015",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 52.075,
+      "wall_timestamp_window_seconds": 52.07489800453186,
+      "signed_delta_s": 0.00010199546814249061,
+      "absolute_delta_s": 0.00010199546814249061,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0015/done.json",
+      "done_sha256": "08e2a9e327c798a9df3bd406b5f22f0c432849acefbb4d867ee54505ee71c0f0"
+    },
+    {
+      "method_id": "s0066",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 29.81,
+      "wall_timestamp_window_seconds": 29.81010150909424,
+      "signed_delta_s": -0.00010150909423956023,
+      "absolute_delta_s": 0.00010150909423956023,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/chatunitest/s0066/done.json",
+      "done_sha256": "1dbd8e8f8f204afb7f50bf9e1ff0082ddc733a10afda1245bd575ce0c7808ede"
+    },
+    {
+      "method_id": "s0018",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 25.104,
+      "wall_timestamp_window_seconds": 25.103899002075195,
+      "signed_delta_s": 0.00010099792480389169,
+      "absolute_delta_s": 0.00010099792480389169,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0018/done.json",
+      "done_sha256": "4354cfc419f91a252c3fa96925feb9007373d6474f13f075f214466f49f03fed"
+    },
+    {
+      "method_id": "s0019",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 16.103,
+      "wall_timestamp_window_seconds": 16.10290217399597,
+      "signed_delta_s": 9.782600402985508e-05,
+      "absolute_delta_s": 9.782600402985508e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0019/done.json",
+      "done_sha256": "c7e4c8f892441f4f0b6c509d517940bb677e75d6f4763132ef2c124850399abd"
+    },
+    {
+      "method_id": "s0016",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 23.022,
+      "wall_timestamp_window_seconds": 23.021902561187744,
+      "signed_delta_s": 9.74388122543246e-05,
+      "absolute_delta_s": 9.74388122543246e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0016/done.json",
+      "done_sha256": "aa2c91755d036eedadc65de18b17165a04d1735debc7d4627a4a7293a5c24e10"
+    },
+    {
+      "method_id": "s0033",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 50.119,
+      "wall_timestamp_window_seconds": 50.11890268325806,
+      "signed_delta_s": 9.7316741943132e-05,
+      "absolute_delta_s": 9.7316741943132e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0033/done.json",
+      "done_sha256": "3e89ff12c8528e5de3e40bfafb3f0fb5823d148b9fda5a5c893ac83cd0c83a80"
+    },
+    {
+      "method_id": "s0039",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 20.717,
+      "wall_timestamp_window_seconds": 20.717094659805298,
+      "signed_delta_s": -9.465980529910212e-05,
+      "absolute_delta_s": 9.465980529910212e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0039/done.json",
+      "done_sha256": "e64a31b95be7a20ef6612021891a8c2c5a4b399aba5db3d1648570c4dc48f7e0"
+    },
+    {
+      "method_id": "s0053",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 42.697,
+      "wall_timestamp_window_seconds": 42.696906089782715,
+      "signed_delta_s": 9.391021728788473e-05,
+      "absolute_delta_s": 9.391021728788473e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0053/done.json",
+      "done_sha256": "3b88406598fda490124de416f638cb65591970145ea15d63eef0702c560925a1"
+    },
+    {
+      "method_id": "s0070",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 34.388,
+      "wall_timestamp_window_seconds": 34.38790822029114,
+      "signed_delta_s": 9.177970886042885e-05,
+      "absolute_delta_s": 9.177970886042885e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/chatunitest/s0070/done.json",
+      "done_sha256": "dd0ac2d379efdea338b980c1dc3de52bfef0c8125593aeba2261c1413bbc7810"
+    },
+    {
+      "method_id": "s0022",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 45.81,
+      "wall_timestamp_window_seconds": 45.810091733932495,
+      "signed_delta_s": -9.173393249284345e-05,
+      "absolute_delta_s": 9.173393249284345e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0022/done.json",
+      "done_sha256": "46c67e13343406a52c3ed87f87b323826da4b24b6d5cdaeab285140afda2f68a"
+    },
+    {
+      "method_id": "s0056",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 22.338,
+      "wall_timestamp_window_seconds": 22.338091373443604,
+      "signed_delta_s": -9.137344360254929e-05,
+      "absolute_delta_s": 9.137344360254929e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0056/done.json",
+      "done_sha256": "4aeee1303aa3c5417d92b6e0acf7550363dadd43bda2ea8a974cecf16c117a45"
+    },
+    {
+      "method_id": "s0052",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 50.523,
+      "wall_timestamp_window_seconds": 50.52291488647461,
+      "signed_delta_s": 8.511352539386507e-05,
+      "absolute_delta_s": 8.511352539386507e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0052/done.json",
+      "done_sha256": "fe64612ae0f3d3e85f4ea08b5bda13b0b5bf93222631402077040aaac20000ae"
+    },
+    {
+      "method_id": "s0011",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 45.114,
+      "wall_timestamp_window_seconds": 45.11408472061157,
+      "signed_delta_s": -8.472061157505095e-05,
+      "absolute_delta_s": 8.472061157505095e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0011/done.json",
+      "done_sha256": "eaf2eb41329f7f12f09be2e555cc2793d521e60384620a282203fc85c43cdb96"
+    },
+    {
+      "method_id": "s0023",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 52.173,
+      "wall_timestamp_window_seconds": 52.173080921173096,
+      "signed_delta_s": -8.092117309388414e-05,
+      "absolute_delta_s": 8.092117309388414e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0023/done.json",
+      "done_sha256": "83786ba95e531ce46564f1f37386db1fe337cd7769f0bae882417642a642a6bb"
+    },
+    {
+      "method_id": "s0044",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 44.081,
+      "wall_timestamp_window_seconds": 44.08091926574707,
+      "signed_delta_s": 8.073425293275704e-05,
+      "absolute_delta_s": 8.073425293275704e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0044/done.json",
+      "done_sha256": "bb34382a57df68aee539dfe1ad2b2e3ca35d4fd779007bed0d16dac034487ef1"
+    },
+    {
+      "method_id": "s0029",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 57.733,
+      "wall_timestamp_window_seconds": 57.73308062553406,
+      "signed_delta_s": -8.062553406062989e-05,
+      "absolute_delta_s": 8.062553406062989e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0029/done.json",
+      "done_sha256": "5b733837674a429146516ef08d85acc230be8f83229aedd69c650b49965c9462"
+    },
+    {
+      "method_id": "s0025",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 20.165,
+      "wall_timestamp_window_seconds": 20.16492009162903,
+      "signed_delta_s": 7.990837097082704e-05,
+      "absolute_delta_s": 7.990837097082704e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0025/done.json",
+      "done_sha256": "7b966ba88d3a949c4577a27bbe46805abadc68899ea869fcf9ffba135a3e57e6"
+    },
+    {
+      "method_id": "s0047",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 48.093,
+      "wall_timestamp_window_seconds": 48.09292244911194,
+      "signed_delta_s": 7.755088806504773e-05,
+      "absolute_delta_s": 7.755088806504773e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0047/done.json",
+      "done_sha256": "9a8ceb1aceeed87e31aed3990cec51b257106939647f31a98284a1005090ec9e"
+    },
+    {
+      "method_id": "s0049",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 34.175,
+      "wall_timestamp_window_seconds": 34.17492341995239,
+      "signed_delta_s": 7.65800476045797e-05,
+      "absolute_delta_s": 7.65800476045797e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0049/done.json",
+      "done_sha256": "2e973d703c8dc04eeeb91c73fb916a250251476a91115fcdd6d46b25964832ab"
+    },
+    {
+      "method_id": "s0025",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 18.178,
+      "wall_timestamp_window_seconds": 18.177923440933228,
+      "signed_delta_s": 7.655906677328517e-05,
+      "absolute_delta_s": 7.655906677328517e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0025/done.json",
+      "done_sha256": "4014f617f077395e0181e3fcb0e012b548044061f9382e490ccb4022beb4eb60"
+    },
+    {
+      "method_id": "s0018",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 36.869,
+      "wall_timestamp_window_seconds": 36.869075775146484,
+      "signed_delta_s": -7.577514648460237e-05,
+      "absolute_delta_s": 7.577514648460237e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0018/done.json",
+      "done_sha256": "6fa63b51b08c7725098a8649e6ce9a6f37c3d9a245816a4fe8245a64f2b24053"
+    },
+    {
+      "method_id": "s0017",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 20.778,
+      "wall_timestamp_window_seconds": 20.777926445007324,
+      "signed_delta_s": 7.355499267447385e-05,
+      "absolute_delta_s": 7.355499267447385e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0017/done.json",
+      "done_sha256": "a64c7303b04797bb679fa6c8a5d24ea54f01c22acefd25ed4b1a52c70a377e5a"
+    },
+    {
+      "method_id": "s0059",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 49.532,
+      "wall_timestamp_window_seconds": 49.53192925453186,
+      "signed_delta_s": 7.074546813612415e-05,
+      "absolute_delta_s": 7.074546813612415e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0059/done.json",
+      "done_sha256": "81e7c525fe46f6ca3a5d37641ac227e941aab31ffbc73d026d1440fa792a96b4"
+    },
+    {
+      "method_id": "s0072",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 26.976,
+      "wall_timestamp_window_seconds": 26.976070642471313,
+      "signed_delta_s": -7.064247131438606e-05,
+      "absolute_delta_s": 7.064247131438606e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0072/done.json",
+      "done_sha256": "e920f6ca62307243f68b47309688012d0de001798746fc532d6a901e3d771425"
+    },
+    {
+      "method_id": "s0064",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 24.608,
+      "wall_timestamp_window_seconds": 24.608068704605103,
+      "signed_delta_s": -6.870460510199905e-05,
+      "absolute_delta_s": 6.870460510199905e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jline-3.21.0/justin-llm/s0064/done.json",
+      "done_sha256": "6a41a19d5898455f42f0724a93c66bc575a5c0ec40ab2e827e1bfce646098776"
+    },
+    {
+      "method_id": "s0032",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 19.702,
+      "wall_timestamp_window_seconds": 19.701932430267334,
+      "signed_delta_s": 6.756973266774935e-05,
+      "absolute_delta_s": 6.756973266774935e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0032/done.json",
+      "done_sha256": "6ca5c9533220fb4f2f1e64ed0e47d1575536c782aede60c2d45930434b0d1798"
+    },
+    {
+      "method_id": "s0052",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 33.895,
+      "wall_timestamp_window_seconds": 33.89506459236145,
+      "signed_delta_s": -6.459236144706892e-05,
+      "absolute_delta_s": 6.459236144706892e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0052/done.json",
+      "done_sha256": "2c93eeb85fb124d0e6cba7ca1a841054a396b39d37a70703d4062e0143d1d45b"
+    },
+    {
+      "method_id": "s0066",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 23.969,
+      "wall_timestamp_window_seconds": 23.969064474105835,
+      "signed_delta_s": -6.447410583376723e-05,
+      "absolute_delta_s": 6.447410583376723e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-collections4-4.6.0/justin-llm/s0066/done.json",
+      "done_sha256": "d4ae4fc8653804db40f982f56527116b182b312de40b3b2a6d4d7e48a85ec4f2"
+    },
+    {
+      "method_id": "s0058",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 24.582,
+      "wall_timestamp_window_seconds": 24.58193588256836,
+      "signed_delta_s": 6.411743164136396e-05,
+      "absolute_delta_s": 6.411743164136396e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0058/done.json",
+      "done_sha256": "39b4abea0fdd0cc0570fd8ba92364bd0f5549956045f1d3ac7ae3f509581fbe6"
+    },
+    {
+      "method_id": "s0007",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 38.154,
+      "wall_timestamp_window_seconds": 38.1540629863739,
+      "signed_delta_s": -6.298637389789974e-05,
+      "absolute_delta_s": 6.298637389789974e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0007/done.json",
+      "done_sha256": "18edfc1a45fdeee03ae81bdd2e81e9fc64db78713bf510b4d17539636e209f38"
+    },
+    {
+      "method_id": "s0013",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 50.275,
+      "wall_timestamp_window_seconds": 50.27506065368652,
+      "signed_delta_s": -6.0653686524858585e-05,
+      "absolute_delta_s": 6.0653686524858585e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0013/done.json",
+      "done_sha256": "129a5e5381d0b150dc8b9cb5ed9e621362f7c38e7de1e16e0d78b0b613f1639a"
+    },
+    {
+      "method_id": "s0017",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 65.361,
+      "wall_timestamp_window_seconds": 65.36093997955322,
+      "signed_delta_s": 6.002044678155016e-05,
+      "absolute_delta_s": 6.002044678155016e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0017/done.json",
+      "done_sha256": "690f9f47d24a4499f294bcff7196f92883f84e8e0a717516f9af978d3db67695"
+    },
+    {
+      "method_id": "s0020",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 18.896,
+      "wall_timestamp_window_seconds": 18.8960599899292,
+      "signed_delta_s": -5.998992919842294e-05,
+      "absolute_delta_s": 5.998992919842294e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0020/done.json",
+      "done_sha256": "c054579840d2d4bffd2ff8b28a73692d6ffdea60c47e88e2560d008b88a37064"
+    },
+    {
+      "method_id": "s0028",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 30.891,
+      "wall_timestamp_window_seconds": 30.891059398651123,
+      "signed_delta_s": -5.939865112480902e-05,
+      "absolute_delta_s": 5.939865112480902e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0028/done.json",
+      "done_sha256": "43a4484289e9463bbeb3974d55eae778a9525e7fa9bdec6f572b614c56da401c"
+    },
+    {
+      "method_id": "s0021",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 19.58,
+      "wall_timestamp_window_seconds": 19.580058813095093,
+      "signed_delta_s": -5.881309509447874e-05,
+      "absolute_delta_s": 5.881309509447874e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0021/done.json",
+      "done_sha256": "a48b1d04ab604020c4139e53e4b10c0e093b224100373148dab655c332ee727b"
+    },
+    {
+      "method_id": "s0012",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 21.314,
+      "wall_timestamp_window_seconds": 21.314058303833008,
+      "signed_delta_s": -5.8303833007755657e-05,
+      "absolute_delta_s": 5.8303833007755657e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0012/done.json",
+      "done_sha256": "275f09cc9bf32b168db87a872bf3643d326e06353ce6295b7f9402cf59c72541"
+    },
+    {
+      "method_id": "s0006",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 37.491,
+      "wall_timestamp_window_seconds": 37.490946531295776,
+      "signed_delta_s": 5.346870422329175e-05,
+      "absolute_delta_s": 5.346870422329175e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0006/done.json",
+      "done_sha256": "fc50f73b01b27cd6705e491205306d055140ec730263841e6153dff605a3e216"
+    },
+    {
+      "method_id": "s0011",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 29.395,
+      "wall_timestamp_window_seconds": 29.394949913024902,
+      "signed_delta_s": 5.0086975097229924e-05,
+      "absolute_delta_s": 5.0086975097229924e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0011/done.json",
+      "done_sha256": "6e917eca3c92bb0d6031b110677623960b0ae3a79a7858f39765339f492a72e7"
+    },
+    {
+      "method_id": "s0056",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 54.411,
+      "wall_timestamp_window_seconds": 54.411049604415894,
+      "signed_delta_s": -4.9604415892190445e-05,
+      "absolute_delta_s": 4.9604415892190445e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0056/done.json",
+      "done_sha256": "91fe2983cc7496964ffb270a60fc2f95d64f465ff063ec0a1f3b43de6e7fc072"
+    },
+    {
+      "method_id": "s0051",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 45.915,
+      "wall_timestamp_window_seconds": 45.91504788398743,
+      "signed_delta_s": -4.7883987427610464e-05,
+      "absolute_delta_s": 4.7883987427610464e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0051/done.json",
+      "done_sha256": "b1f530e54f42d24f4c406752b3e9e00686a412f28f48f65c41808d292c2e5d85"
+    },
+    {
+      "method_id": "s0041",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 19.992,
+      "wall_timestamp_window_seconds": 19.991952657699585,
+      "signed_delta_s": 4.7342300415920135e-05,
+      "absolute_delta_s": 4.7342300415920135e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0041/done.json",
+      "done_sha256": "9c2941c259f9bafffd1a007aac17999ef0e7ca0bad881428e6b08b274b300e1d"
+    },
+    {
+      "method_id": "s0005",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 27.901,
+      "wall_timestamp_window_seconds": 27.901046752929688,
+      "signed_delta_s": -4.675292968769895e-05,
+      "absolute_delta_s": 4.675292968769895e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chatunitest/s0005/done.json",
+      "done_sha256": "8e6a1f755f074d96953f2c006116334fc7192eeb9e91e33f5d915e673074f3bc"
+    },
+    {
+      "method_id": "s0051",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 15.159,
+      "wall_timestamp_window_seconds": 15.159045696258545,
+      "signed_delta_s": -4.569625854422554e-05,
+      "absolute_delta_s": 4.569625854422554e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0051/done.json",
+      "done_sha256": "5d8a22368375957d5d76187eb09f4b024c1f562c5c90c97920a455bfaac1fe81"
+    },
+    {
+      "method_id": "s0006",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 26.274,
+      "wall_timestamp_window_seconds": 26.27395462989807,
+      "signed_delta_s": 4.537010192962043e-05,
+      "absolute_delta_s": 4.537010192962043e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0006/done.json",
+      "done_sha256": "e551fb2766b8a60681a40d71a8b19fce49b2763a7c590f6d7f7ecb70d9fc7213"
+    },
+    {
+      "method_id": "s0005",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 21.889,
+      "wall_timestamp_window_seconds": 21.888957023620605,
+      "signed_delta_s": 4.297637939387755e-05,
+      "absolute_delta_s": 4.297637939387755e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0005/done.json",
+      "done_sha256": "c19259cf0cafbaa61eeca2f8c34937931849b0d75fda23ac367b5e29a2776194"
+    },
+    {
+      "method_id": "s0056",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 289.889,
+      "wall_timestamp_window_seconds": 289.88895750045776,
+      "signed_delta_s": 4.249954224633257e-05,
+      "absolute_delta_s": 4.249954224633257e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0056/done.json",
+      "done_sha256": "21619346822796653f914eecf81f21653183f2b77fab7088107bb0b52852c37d"
+    },
+    {
+      "method_id": "s0051",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 115.682,
+      "wall_timestamp_window_seconds": 115.68195819854736,
+      "signed_delta_s": 4.18014526388788e-05,
+      "absolute_delta_s": 4.18014526388788e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0051/done.json",
+      "done_sha256": "8941e815dfe986ad86c2ccc17a17065ee001a77538d89e3a4669c6fa956fe2a3"
+    },
+    {
+      "method_id": "s0005",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 26.629,
+      "wall_timestamp_window_seconds": 26.62895894050598,
+      "signed_delta_s": 4.105949401989051e-05,
+      "absolute_delta_s": 4.105949401989051e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0005/done.json",
+      "done_sha256": "715ea8613f459b4ba894720092a93792bd973a610db27635b0dac6094330d0e9"
+    },
+    {
+      "method_id": "s0024",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 19.498,
+      "wall_timestamp_window_seconds": 19.498038291931152,
+      "signed_delta_s": -3.82919311512353e-05,
+      "absolute_delta_s": 3.82919311512353e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0024/done.json",
+      "done_sha256": "5790ea4394eb41d4785fa2a7a1585f52cc6dbfafdadd923cba5b8df78f9a4d5e"
+    },
+    {
+      "method_id": "s0018",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 57.389,
+      "wall_timestamp_window_seconds": 57.38896417617798,
+      "signed_delta_s": 3.582382202438339e-05,
+      "absolute_delta_s": 3.582382202438339e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0018/done.json",
+      "done_sha256": "cfb37452b3374f6a8a188d18fb310afbfa843dd0a9247750bb785c79d8da21ce"
+    },
+    {
+      "method_id": "s0064",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 71.171,
+      "wall_timestamp_window_seconds": 71.1710352897644,
+      "signed_delta_s": -3.5289764397816725e-05,
+      "absolute_delta_s": 3.5289764397816725e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jline-3.21.0/evosuite/s0064/done.json",
+      "done_sha256": "3a4d12d933bab846b8bde0b794e844db0c2e7386ee6ab89879ee7a2f0f44624c"
+    },
+    {
+      "method_id": "s0064",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 32.48,
+      "wall_timestamp_window_seconds": 32.47996687889099,
+      "signed_delta_s": 3.3121109005662674e-05,
+      "absolute_delta_s": 3.3121109005662674e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jline-3.21.0/chatunitest/s0064/done.json",
+      "done_sha256": "5e825f332bfe55baf13185701ab300ab55d629dcf10e4ccde9ab3bb173ad53db"
+    },
+    {
+      "method_id": "s0056",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 21.091,
+      "wall_timestamp_window_seconds": 21.09103226661682,
+      "signed_delta_s": -3.226661682020904e-05,
+      "absolute_delta_s": 3.226661682020904e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0056/done.json",
+      "done_sha256": "de9c04925d957b8823abad3b19e9f6b40786b80d2815ed3fbc57613d208dd816"
+    },
+    {
+      "method_id": "s0017",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 39.914,
+      "wall_timestamp_window_seconds": 39.91397023200989,
+      "signed_delta_s": 2.9767990113782616e-05,
+      "absolute_delta_s": 2.9767990113782616e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0017/done.json",
+      "done_sha256": "4bf8fd7d4b1d38a5e28245c82a2bd6f9ef75305a3cdd2917f957b38b2d066fea"
+    },
+    {
+      "method_id": "s0057",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 45.84,
+      "wall_timestamp_window_seconds": 45.8400297164917,
+      "signed_delta_s": -2.9716491695808145e-05,
+      "absolute_delta_s": 2.9716491695808145e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0057/done.json",
+      "done_sha256": "ed82024e03c36104b20154c1e1bb6f7f169359b3f88227d41baa9b3cb68b13fd"
+    },
+    {
+      "method_id": "s0045",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 47.771,
+      "wall_timestamp_window_seconds": 47.77102708816528,
+      "signed_delta_s": -2.7088165282407317e-05,
+      "absolute_delta_s": 2.7088165282407317e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chattester/s0045/done.json",
+      "done_sha256": "fe1bac73afa93e4321b6412af1f037d318099a7de092022561b578d46260c657"
+    },
+    {
+      "method_id": "s0023",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 20.717,
+      "wall_timestamp_window_seconds": 20.717023611068726,
+      "signed_delta_s": -2.3611068726836493e-05,
+      "absolute_delta_s": 2.3611068726836493e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0023/done.json",
+      "done_sha256": "e6992e464f7459559aa89998dbf3aa511ec80ac7584f063a6cb4e0efc7af4c1d"
+    },
+    {
+      "method_id": "s0072",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 32.848,
+      "wall_timestamp_window_seconds": 32.84797644615173,
+      "signed_delta_s": 2.355384826557838e-05,
+      "absolute_delta_s": 2.355384826557838e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0072/done.json",
+      "done_sha256": "5ba96b23f6c0dcd7c62bb0507a11f1347e510a6fca21c8e6c4c86468b289ceb6"
+    },
+    {
+      "method_id": "s0020",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 38.699,
+      "wall_timestamp_window_seconds": 38.69897747039795,
+      "signed_delta_s": 2.2529602048848574e-05,
+      "absolute_delta_s": 2.2529602048848574e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0020/done.json",
+      "done_sha256": "6a6c5bfb68da271c18ceda2e22669d3ae59ca32cbca81041a3b9c0b7d66e5329"
+    },
+    {
+      "method_id": "s0032",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 19.957,
+      "wall_timestamp_window_seconds": 19.956978797912598,
+      "signed_delta_s": 2.1202087403082714e-05,
+      "absolute_delta_s": 2.1202087403082714e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/evosuite/s0032/done.json",
+      "done_sha256": "36a99a62210327f89c6498eba1f80332016296717f42cbaba32b82980640ef88"
+    },
+    {
+      "method_id": "s0070",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 23.955,
+      "wall_timestamp_window_seconds": 23.954983234405518,
+      "signed_delta_s": 1.6765594480716572e-05,
+      "absolute_delta_s": 1.6765594480716572e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/jsoup-1.23.2/justin-llm/s0070/done.json",
+      "done_sha256": "1877c658c094b4bb84c3c82aef1ca6e09ce20f122b2eccf2d77c11c2171bb1a3"
+    },
+    {
+      "method_id": "s0024",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 29.969,
+      "wall_timestamp_window_seconds": 29.969016313552856,
+      "signed_delta_s": -1.63135528552516e-05,
+      "absolute_delta_s": 1.63135528552516e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0024/done.json",
+      "done_sha256": "fc47bd1002c938a2f6930914619c171652bd0ce7ae92547c884eb07fec8d3537"
+    },
+    {
+      "method_id": "s0055",
+      "tool": "chatunitest",
+      "rounded_monotonic_seconds": 33.602,
+      "wall_timestamp_window_seconds": 33.602012157440186,
+      "signed_delta_s": -1.215744018878695e-05,
+      "absolute_delta_s": 1.215744018878695e-05,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/chatunitest/s0055/done.json",
+      "done_sha256": "f3bf1da79a3eba4fa43edb8b9ce4f43c24a52397eba5079c1060a013231c451f"
+    },
+    {
+      "method_id": "s0025",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 46.792,
+      "wall_timestamp_window_seconds": 46.79199028015137,
+      "signed_delta_s": 9.719848634404116e-06,
+      "absolute_delta_s": 9.719848634404116e-06,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/hits/s0025/done.json",
+      "done_sha256": "d938b5f52b5722d1dd0826eac8631a46eaf8fc93a4c574b926fa03912dac1ac3"
+    },
+    {
+      "method_id": "s0006",
+      "tool": "hits",
+      "rounded_monotonic_seconds": 132.183,
+      "wall_timestamp_window_seconds": 132.1829903125763,
+      "signed_delta_s": 9.68742369877873e-06,
+      "absolute_delta_s": 9.68742369877873e-06,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/hits/s0006/done.json",
+      "done_sha256": "dc5ff81f51517a4dd89aac3f7c4b7a3c9f5f3b492f13a4cbe2ad2991d3b976ae"
+    },
+    {
+      "method_id": "s0018",
+      "tool": "evosuite",
+      "rounded_monotonic_seconds": 17.792,
+      "wall_timestamp_window_seconds": 17.791990995407104,
+      "signed_delta_s": 9.004592897099428e-06,
+      "absolute_delta_s": 9.004592897099428e-06,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/evosuite/s0018/done.json",
+      "done_sha256": "d22d958ea672db07591830e082012ea0d9016e1ddb89eb954976835897e885c8"
+    },
+    {
+      "method_id": "s0003",
+      "tool": "chattester",
+      "rounded_monotonic_seconds": 89.844,
+      "wall_timestamp_window_seconds": 89.84399747848511,
+      "signed_delta_s": 2.5215148866664094e-06,
+      "absolute_delta_s": 2.5215148866664094e-06,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/chattester/s0003/done.json",
+      "done_sha256": "a6dda257b57b970f3e880a3b0781ae919938150624338e7bb4374bdf9b664f2d"
+    },
+    {
+      "method_id": "s0026",
+      "tool": "justin-llm",
+      "rounded_monotonic_seconds": 18.026,
+      "wall_timestamp_window_seconds": 18.026000022888184,
+      "signed_delta_s": -2.2888183792701966e-08,
+      "absolute_delta_s": 2.2888183792701966e-08,
+      "done_path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0026/done.json",
+      "done_sha256": "ca26d378659331c03489e536609a5bcc08ed612d31eaa0598d2fe589b28c0d03"
+    }
+  ]
+}

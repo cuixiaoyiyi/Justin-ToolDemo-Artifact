@@ -1,0 +1,584 @@
+[
+  {
+    "input": "inputs/maven/junit/junit/4.13.2/junit-4.13.2.jar",
+    "member": "LICENSE-junit.txt",
+    "path": "LICENSES/embedded/junit-4.13.2.jar/LICENSE-junit.txt",
+    "sha256": "9648bb2891b9813970bddb68d4be8a5e6ec8280d0180a53dfb29236b579c55bb"
+  },
+  {
+    "input": "inputs/maven/net/bytebuddy/byte-buddy/1.10.20/byte-buddy-1.10.20.jar",
+    "member": "META-INF/NOTICE",
+    "path": "LICENSES/embedded/byte-buddy-1.10.20.jar/META-INF/NOTICE",
+    "sha256": "15d1f7ae195532a9d16748b736dd5c583ed412f73a6b3fd39f40a9d583270155"
+  },
+  {
+    "input": "inputs/maven/net/bytebuddy/byte-buddy/1.10.20/byte-buddy-1.10.20.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/byte-buddy-1.10.20.jar/META-INF/LICENSE",
+    "sha256": "149951e7ff6eef6c4402eb0fe24354a9c17023c509a5143993057ce9e3d4f726"
+  },
+  {
+    "input": "inputs/maven/net/bytebuddy/byte-buddy-agent/1.10.20/byte-buddy-agent-1.10.20.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/byte-buddy-agent-1.10.20.jar/META-INF/LICENSE",
+    "sha256": "bb28c48e3e078166e91cfc2b6db7ffebb8a0973b9e23b3df060561292d8d69ec"
+  },
+  {
+    "input": "inputs/maven/net/bytebuddy/byte-buddy-agent/1.10.20/byte-buddy-agent-1.10.20.jar",
+    "member": "META-INF/NOTICE",
+    "path": "LICENSES/embedded/byte-buddy-agent-1.10.20.jar/META-INF/NOTICE",
+    "sha256": "15d1f7ae195532a9d16748b736dd5c583ed412f73a6b3fd39f40a9d583270155"
+  },
+  {
+    "input": "inputs/maven/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/apiguardian-api-1.1.2.jar/META-INF/LICENSE",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+  },
+  {
+    "input": "inputs/maven/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+    "member": "LICENSE.txt",
+    "path": "LICENSES/embedded/hamcrest-core-1.3.jar/LICENSE.txt",
+    "sha256": "1cde867cab5c8e842929da5391cef98b4017314822270e934e8e2eef3767c666"
+  },
+  {
+    "input": "inputs/maven/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/junit-jupiter-api-5.9.2.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/maven/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/junit-jupiter-api-5.9.2.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/maven/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/junit-jupiter-engine-5.9.2.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/maven/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/junit-jupiter-engine-5.9.2.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/maven/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/junit-jupiter-params-5.9.2.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/maven/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar",
+    "member": "META-INF/LICENSE-univocity-parsers.md",
+    "path": "LICENSES/embedded/junit-jupiter-params-5.9.2.jar/META-INF/LICENSE-univocity-parsers.md",
+    "sha256": "d25d17d20162cce14cdbb467a0f6d75a35ba488a4144637b17392eaa8042c122"
+  },
+  {
+    "input": "inputs/maven/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/junit-jupiter-params-5.9.2.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/junit-platform-commons-1.9.2.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/junit-platform-commons-1.9.2.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/junit-platform-engine-1.9.2.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/junit-platform-engine-1.9.2.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/junit-platform-launcher-1.9.2.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/junit-platform-launcher-1.9.2.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-runner/1.9.2/junit-platform-runner-1.9.2.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/junit-platform-runner-1.9.2.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-runner/1.9.2/junit-platform-runner-1.9.2.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/junit-platform-runner-1.9.2.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-suite-api/1.9.2/junit-platform-suite-api-1.9.2.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/junit-platform-suite-api-1.9.2.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-suite-api/1.9.2/junit-platform-suite-api-1.9.2.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/junit-platform-suite-api-1.9.2.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-suite-commons/1.9.2/junit-platform-suite-commons-1.9.2.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/junit-platform-suite-commons-1.9.2.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/maven/org/junit/platform/junit-platform-suite-commons/1.9.2/junit-platform-suite-commons-1.9.2.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/junit-platform-suite-commons-1.9.2.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/maven/org/junit/vintage/junit-vintage-engine/5.9.2/junit-vintage-engine-5.9.2.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/junit-vintage-engine-5.9.2.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/maven/org/junit/vintage/junit-vintage-engine/5.9.2/junit-vintage-engine-5.9.2.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/junit-vintage-engine-5.9.2.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/maven/org/mockito/mockito-core/3.8.0/mockito-core-3.8.0.jar",
+    "member": "LICENSE",
+    "path": "LICENSES/embedded/mockito-core-3.8.0.jar/LICENSE",
+    "sha256": "fc37ea05c14706d13ec54d477a5c8c456aec1a5393779c683404b0151d04d7d7"
+  },
+  {
+    "input": "inputs/maven/org/mockito/mockito-junit-jupiter/3.8.0/mockito-junit-jupiter-3.8.0.jar",
+    "member": "LICENSE",
+    "path": "LICENSES/embedded/mockito-junit-jupiter-3.8.0.jar/LICENSE",
+    "sha256": "fc37ea05c14706d13ec54d477a5c8c456aec1a5393779c683404b0151d04d7d7"
+  },
+  {
+    "input": "inputs/maven/org/objenesis/objenesis/3.1/objenesis-3.1.jar",
+    "member": "META-INF/NOTICE",
+    "path": "LICENSES/embedded/objenesis-3.1.jar/META-INF/NOTICE",
+    "sha256": "8999854ef0a0b270017b8e446cb1a66913ce27a6058d5a96b44f9d2c63f924a2"
+  },
+  {
+    "input": "inputs/maven/org/objenesis/objenesis/3.1/objenesis-3.1.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/objenesis-3.1.jar/META-INF/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "input": "inputs/subjects/commons-collections4-4.6.0-sources.jar",
+    "member": "META-INF/LICENSE.txt",
+    "path": "LICENSES/embedded/commons-collections4-4.6.0-sources.jar/META-INF/LICENSE.txt",
+    "sha256": "b1d2870f1a00e4d7f56576e5f0870cba109e041f8af66866cf5b499478e654e7"
+  },
+  {
+    "input": "inputs/subjects/commons-collections4-4.6.0-sources.jar",
+    "member": "META-INF/NOTICE.txt",
+    "path": "LICENSES/embedded/commons-collections4-4.6.0-sources.jar/META-INF/NOTICE.txt",
+    "sha256": "b02ca2cac4b96fa1a9829573fbc61b2603e5325b5e72b22993921e98bf06aa54"
+  },
+  {
+    "input": "inputs/subjects/commons-collections4-4.6.0.jar",
+    "member": "META-INF/LICENSE.txt",
+    "path": "LICENSES/embedded/commons-collections4-4.6.0.jar/META-INF/LICENSE.txt",
+    "sha256": "b1d2870f1a00e4d7f56576e5f0870cba109e041f8af66866cf5b499478e654e7"
+  },
+  {
+    "input": "inputs/subjects/commons-collections4-4.6.0.jar",
+    "member": "META-INF/NOTICE.txt",
+    "path": "LICENSES/embedded/commons-collections4-4.6.0.jar/META-INF/NOTICE.txt",
+    "sha256": "b02ca2cac4b96fa1a9829573fbc61b2603e5325b5e72b22993921e98bf06aa54"
+  },
+  {
+    "input": "inputs/subjects/commons-lang3-3.17.0-sources.jar",
+    "member": "META-INF/LICENSE.txt",
+    "path": "LICENSES/embedded/commons-lang3-3.17.0-sources.jar/META-INF/LICENSE.txt",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "input": "inputs/subjects/commons-lang3-3.17.0-sources.jar",
+    "member": "META-INF/NOTICE.txt",
+    "path": "LICENSES/embedded/commons-lang3-3.17.0-sources.jar/META-INF/NOTICE.txt",
+    "sha256": "73c3dd73ad54910699e4e364345798d083a9126b9799663d4bdce8d7468b7f66"
+  },
+  {
+    "input": "inputs/subjects/commons-lang3-3.17.0.jar",
+    "member": "META-INF/LICENSE.txt",
+    "path": "LICENSES/embedded/commons-lang3-3.17.0.jar/META-INF/LICENSE.txt",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "input": "inputs/subjects/commons-lang3-3.17.0.jar",
+    "member": "META-INF/NOTICE.txt",
+    "path": "LICENSES/embedded/commons-lang3-3.17.0.jar/META-INF/NOTICE.txt",
+    "sha256": "73c3dd73ad54910699e4e364345798d083a9126b9799663d4bdce8d7468b7f66"
+  },
+  {
+    "input": "inputs/subjects/commons-text-1.15.0-sources.jar",
+    "member": "META-INF/LICENSE.txt",
+    "path": "LICENSES/embedded/commons-text-1.15.0-sources.jar/META-INF/LICENSE.txt",
+    "sha256": "b1d2870f1a00e4d7f56576e5f0870cba109e041f8af66866cf5b499478e654e7"
+  },
+  {
+    "input": "inputs/subjects/commons-text-1.15.0-sources.jar",
+    "member": "META-INF/NOTICE.txt",
+    "path": "LICENSES/embedded/commons-text-1.15.0-sources.jar/META-INF/NOTICE.txt",
+    "sha256": "26ebc5e05468959b3ae5010f10e0c3fb0cbf8d7d2f1242005bf5656c1348c69f"
+  },
+  {
+    "input": "inputs/subjects/commons-text-1.15.0.jar",
+    "member": "META-INF/LICENSE.txt",
+    "path": "LICENSES/embedded/commons-text-1.15.0.jar/META-INF/LICENSE.txt",
+    "sha256": "b1d2870f1a00e4d7f56576e5f0870cba109e041f8af66866cf5b499478e654e7"
+  },
+  {
+    "input": "inputs/subjects/commons-text-1.15.0.jar",
+    "member": "META-INF/NOTICE.txt",
+    "path": "LICENSES/embedded/commons-text-1.15.0.jar/META-INF/NOTICE.txt",
+    "sha256": "26ebc5e05468959b3ae5010f10e0c3fb0cbf8d7d2f1242005bf5656c1348c69f"
+  },
+  {
+    "input": "inputs/subjects/dependencies/commons-codec-1.22.1.jar",
+    "member": "META-INF/LICENSE.txt",
+    "path": "LICENSES/embedded/commons-codec-1.22.1.jar/META-INF/LICENSE.txt",
+    "sha256": "b1d2870f1a00e4d7f56576e5f0870cba109e041f8af66866cf5b499478e654e7"
+  },
+  {
+    "input": "inputs/subjects/dependencies/commons-codec-1.22.1.jar",
+    "member": "META-INF/NOTICE.txt",
+    "path": "LICENSES/embedded/commons-codec-1.22.1.jar/META-INF/NOTICE.txt",
+    "sha256": "d82503df1b65173afe535a2f753d27c25377f7f6e9d0b19b4665af617df14750"
+  },
+  {
+    "input": "inputs/subjects/dependencies/commons-lang3-3.20.0.jar",
+    "member": "META-INF/LICENSE.txt",
+    "path": "LICENSES/embedded/commons-lang3-3.20.0.jar/META-INF/LICENSE.txt",
+    "sha256": "b1d2870f1a00e4d7f56576e5f0870cba109e041f8af66866cf5b499478e654e7"
+  },
+  {
+    "input": "inputs/subjects/dependencies/commons-lang3-3.20.0.jar",
+    "member": "META-INF/NOTICE.txt",
+    "path": "LICENSES/embedded/commons-lang3-3.20.0.jar/META-INF/NOTICE.txt",
+    "sha256": "64bc8696af3f6c770521412b85d3a733fa44b2ef5b0f4bd739e0c4d02eca492a"
+  },
+  {
+    "input": "inputs/subjects/dependencies/jna-5.9.0.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/jna-5.9.0.jar/META-INF/LICENSE",
+    "sha256": "521bb271ac56e0e29a1b1b688b94af17d00d378fc8e63478d8c8b2a7c4a229d0"
+  },
+  {
+    "input": "inputs/subjects/dependencies/sshd-common-2.7.0.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/sshd-common-2.7.0.jar/META-INF/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "input": "inputs/subjects/dependencies/sshd-common-2.7.0.jar",
+    "member": "META-INF/NOTICE",
+    "path": "LICENSES/embedded/sshd-common-2.7.0.jar/META-INF/NOTICE",
+    "sha256": "0d6d71557ae64a57fcb1c92417f18a3e8fd3d6369bb0b0cc172078103ed863ec"
+  },
+  {
+    "input": "inputs/subjects/dependencies/sshd-core-2.7.0.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/sshd-core-2.7.0.jar/META-INF/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "input": "inputs/subjects/dependencies/sshd-core-2.7.0.jar",
+    "member": "META-INF/NOTICE",
+    "path": "LICENSES/embedded/sshd-core-2.7.0.jar/META-INF/NOTICE",
+    "sha256": "83175410d5a5043b7b038ad3b2a4672ed5e813baea7c663e7f2434a44ddfc744"
+  },
+  {
+    "input": "inputs/subjects/dependencies/sshd-scp-2.7.0.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/sshd-scp-2.7.0.jar/META-INF/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "input": "inputs/subjects/dependencies/sshd-scp-2.7.0.jar",
+    "member": "META-INF/NOTICE",
+    "path": "LICENSES/embedded/sshd-scp-2.7.0.jar/META-INF/NOTICE",
+    "sha256": "0d6d71557ae64a57fcb1c92417f18a3e8fd3d6369bb0b0cc172078103ed863ec"
+  },
+  {
+    "input": "inputs/subjects/dependencies/sshd-sftp-2.7.0.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/sshd-sftp-2.7.0.jar/META-INF/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "input": "inputs/subjects/dependencies/sshd-sftp-2.7.0.jar",
+    "member": "META-INF/NOTICE",
+    "path": "LICENSES/embedded/sshd-sftp-2.7.0.jar/META-INF/NOTICE",
+    "sha256": "0d6d71557ae64a57fcb1c92417f18a3e8fd3d6369bb0b0cc172078103ed863ec"
+  },
+  {
+    "input": "inputs/subjects/jsoup-1.23.2-sources.jar",
+    "member": "META-INF/jsoup/LICENSE",
+    "path": "LICENSES/embedded/jsoup-1.23.2-sources.jar/META-INF/jsoup/LICENSE",
+    "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1"
+  },
+  {
+    "input": "inputs/subjects/jsoup-1.23.2.jar",
+    "member": "META-INF/jsoup/LICENSE",
+    "path": "LICENSES/embedded/jsoup-1.23.2.jar/META-INF/jsoup/LICENSE",
+    "sha256": "f5d724c5818010c61bff2e177f5b6452434bc054807522bf241940bca8b1d6b1"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "LICENSE",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/LICENSE",
+    "sha256": "fc37ea05c14706d13ec54d477a5c8c456aec1a5393779c683404b0151d04d7d7"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "META-INF/NOTICE",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/META-INF/NOTICE",
+    "sha256": "15d1f7ae195532a9d16748b736dd5c583ed412f73a6b3fd39f40a9d583270155"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/META-INF/LICENSE",
+    "sha256": "c178ad07ba877fc2e143f68ae555261bedc7836f9333a1efc5e9911b2b7ee3ec"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "META-INF/LICENSE.txt",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/META-INF/LICENSE.txt",
+    "sha256": "a4c80869daf4350b6773bd5e6ee1d0a6cc52b63db3a3d2dc20961b0cdd272a5c"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "LICENSE-junit.txt",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/LICENSE-junit.txt",
+    "sha256": "9648bb2891b9813970bddb68d4be8a5e6ec8280d0180a53dfb29236b579c55bb"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "LICENSE.txt",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/LICENSE.txt",
+    "sha256": "1cde867cab5c8e842929da5391cef98b4017314822270e934e8e2eef3767c666"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "META-INF/NOTICE.txt",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/META-INF/NOTICE.txt",
+    "sha256": "9ad4ec6b60a0d6ffa269c116fd117ce41d67c31fc301c8a2cba309f1d72cfde3"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "META-INF/LICENSE-univocity-parsers.md",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/META-INF/LICENSE-univocity-parsers.md",
+    "sha256": "d25d17d20162cce14cdbb467a0f6d75a35ba488a4144637b17392eaa8042c122"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "COPYING",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/COPYING",
+    "sha256": "0ae0485a5bd37a63e63603596417e4eb0e653334fa6c7f932ca3a0e85d4af227"
+  },
+  {
+    "input": "inputs/tools/evosuite-1.2.0.jar",
+    "member": "COPYING.LESSER",
+    "path": "LICENSES/embedded/evosuite-1.2.0.jar/COPYING.LESSER",
+    "sha256": "ff9ed2eae018d242c1f222c2a22c1dfb936ba053d92e11c3f6f88a4df025fced"
+  },
+  {
+    "input": "inputs/tools/evosuite-standalone-runtime-1.2.0.jar",
+    "member": "META-INF/LICENSE.txt",
+    "path": "LICENSES/embedded/evosuite-standalone-runtime-1.2.0.jar/META-INF/LICENSE.txt",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "input": "inputs/tools/evosuite-standalone-runtime-1.2.0.jar",
+    "member": "META-INF/NOTICE.txt",
+    "path": "LICENSES/embedded/evosuite-standalone-runtime-1.2.0.jar/META-INF/NOTICE.txt",
+    "sha256": "ee00a9534f25e735b92676cff420aa33d3ea196c8642ec93daa264225f3457df"
+  },
+  {
+    "input": "inputs/tools/evosuite-standalone-runtime-1.2.0.jar",
+    "member": "LICENSE",
+    "path": "LICENSES/embedded/evosuite-standalone-runtime-1.2.0.jar/LICENSE",
+    "sha256": "fc37ea05c14706d13ec54d477a5c8c456aec1a5393779c683404b0151d04d7d7"
+  },
+  {
+    "input": "inputs/tools/evosuite-standalone-runtime-1.2.0.jar",
+    "member": "META-INF/NOTICE",
+    "path": "LICENSES/embedded/evosuite-standalone-runtime-1.2.0.jar/META-INF/NOTICE",
+    "sha256": "15d1f7ae195532a9d16748b736dd5c583ed412f73a6b3fd39f40a9d583270155"
+  },
+  {
+    "input": "inputs/tools/evosuite-standalone-runtime-1.2.0.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/evosuite-standalone-runtime-1.2.0.jar/META-INF/LICENSE",
+    "sha256": "c178ad07ba877fc2e143f68ae555261bedc7836f9333a1efc5e9911b2b7ee3ec"
+  },
+  {
+    "input": "inputs/tools/hamcrest-core-1.3.jar",
+    "member": "LICENSE.txt",
+    "path": "LICENSES/embedded/hamcrest-core-1.3.jar/LICENSE.txt",
+    "sha256": "1cde867cab5c8e842929da5391cef98b4017314822270e934e8e2eef3767c666"
+  },
+  {
+    "input": "inputs/tools/junit-4.13.2.jar",
+    "member": "LICENSE-junit.txt",
+    "path": "LICENSES/embedded/junit-4.13.2.jar/LICENSE-junit.txt",
+    "sha256": "9648bb2891b9813970bddb68d4be8a5e6ec8280d0180a53dfb29236b579c55bb"
+  },
+  {
+    "input": "inputs/tools/junit-platform-console-standalone-1.12.2.jar",
+    "member": "LICENSE-junit.txt",
+    "path": "LICENSES/embedded/junit-platform-console-standalone-1.12.2.jar/LICENSE-junit.txt",
+    "sha256": "9648bb2891b9813970bddb68d4be8a5e6ec8280d0180a53dfb29236b579c55bb"
+  },
+  {
+    "input": "inputs/tools/junit-platform-console-standalone-1.12.2.jar",
+    "member": "LICENSE.txt",
+    "path": "LICENSES/embedded/junit-platform-console-standalone-1.12.2.jar/LICENSE.txt",
+    "sha256": "1cde867cab5c8e842929da5391cef98b4017314822270e934e8e2eef3767c666"
+  },
+  {
+    "input": "inputs/tools/junit-platform-console-standalone-1.12.2.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/junit-platform-console-standalone-1.12.2.jar/META-INF/LICENSE",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+  },
+  {
+    "input": "inputs/tools/junit-platform-console-standalone-1.12.2.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/junit-platform-console-standalone-1.12.2.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/tools/junit-platform-console-standalone-1.12.2.jar",
+    "member": "META-INF/LICENSE-picocli.md",
+    "path": "LICENSES/embedded/junit-platform-console-standalone-1.12.2.jar/META-INF/LICENSE-picocli.md",
+    "sha256": "a54304564eda345ce83d806b6fd5b9b137ed653e50e459ed0f1ac2547537cad0"
+  },
+  {
+    "input": "inputs/tools/junit-platform-console-standalone-1.12.2.jar",
+    "member": "META-INF/LICENSE-univocity-parsers.md",
+    "path": "LICENSES/embedded/junit-platform-console-standalone-1.12.2.jar/META-INF/LICENSE-univocity-parsers.md",
+    "sha256": "d25d17d20162cce14cdbb467a0f6d75a35ba488a4144637b17392eaa8042c122"
+  },
+  {
+    "input": "inputs/tools/junit-platform-console-standalone-1.12.2.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/junit-platform-console-standalone-1.12.2.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "META-INF/LICENSE",
+    "path": "LICENSES/embedded/justin-all.jar/META-INF/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "META-INF/LICENSE.txt",
+    "path": "LICENSES/embedded/justin-all.jar/META-INF/LICENSE.txt",
+    "sha256": "e90eaa08dea089df10f2bf7f9dba63a5f6237c01562c4741e2e86773e78582d5"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "META-INF/NOTICE.txt",
+    "path": "LICENSES/embedded/justin-all.jar/META-INF/NOTICE.txt",
+    "sha256": "2254574ad82687764e97a182763118379a948d6d6408cce25f0ba716a7b9ac08"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "LICENSE-junit.txt",
+    "path": "LICENSES/embedded/justin-all.jar/LICENSE-junit.txt",
+    "sha256": "9648bb2891b9813970bddb68d4be8a5e6ec8280d0180a53dfb29236b579c55bb"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "LICENSE.txt",
+    "path": "LICENSES/embedded/justin-all.jar/LICENSE.txt",
+    "sha256": "1cde867cab5c8e842929da5391cef98b4017314822270e934e8e2eef3767c666"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "META-INF/LICENSE-notice.md",
+    "path": "LICENSES/embedded/justin-all.jar/META-INF/LICENSE-notice.md",
+    "sha256": "c7d843e0faf8a251278c9220f6b5326a42a01f08b855c1ec871bcef6211a7e2a"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "META-INF/LICENSE-picocli.md",
+    "path": "LICENSES/embedded/justin-all.jar/META-INF/LICENSE-picocli.md",
+    "sha256": "a54304564eda345ce83d806b6fd5b9b137ed653e50e459ed0f1ac2547537cad0"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "META-INF/LICENSE-univocity-parsers.md",
+    "path": "LICENSES/embedded/justin-all.jar/META-INF/LICENSE-univocity-parsers.md",
+    "sha256": "d25d17d20162cce14cdbb467a0f6d75a35ba488a4144637b17392eaa8042c122"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "META-INF/LICENSE.md",
+    "path": "LICENSES/embedded/justin-all.jar/META-INF/LICENSE.md",
+    "sha256": "5aa4cd44c111add178d1c2e2fe36d58a484012c80167df925f826cd64d411bf0"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "META-INF/NOTICE",
+    "path": "LICENSES/embedded/justin-all.jar/META-INF/NOTICE",
+    "sha256": "612b14bc77c944ce229cbba0d14919162cfea8ed802cbf06a8e865e032d03201"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "io/swagger/v3/oas/annotations/info/License.class",
+    "path": "LICENSES/embedded/justin-all.jar/io/swagger/v3/oas/annotations/info/License.class",
+    "sha256": "754f594a02a0b1588353e5446a7a1a5c5cd00ad9d6066fc70e6a8daeae9a7f02"
+  },
+  {
+    "input": "inputs/tools/justin-all.jar",
+    "member": "okhttp3/internal/publicsuffix/NOTICE",
+    "path": "LICENSES/embedded/justin-all.jar/okhttp3/internal/publicsuffix/NOTICE",
+    "sha256": "8a9c58fbded5ea3474315e4a9824ca8b1486098a1a03e897e0b19419d5e1876a"
+  }
+]

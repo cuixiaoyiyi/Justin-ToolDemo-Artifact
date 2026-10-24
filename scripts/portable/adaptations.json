@@ -1,0 +1,27 @@
+[
+  {
+    "file": "benchmark.py",
+    "original_sha256": "b9a6597533b9c69f6ec92096ee48eb76b6ad4e717febee079c115bbee58737d0",
+    "adapted_sha256": "b96f4eafabd1bb86c4e0db885e9543221ba7e88bf7d26f293e54657293915b48"
+  },
+  {
+    "file": "generator_projects.py",
+    "original_sha256": "792a49daecb461778d83e70651f315d5243119ce3e7b778e2dc67af94f553a33",
+    "adapted_sha256": "b53a5859efa2bdf9ce552dfdce12c011021e51fab08b4e8d696fc1c4f45c8932"
+  },
+  {
+    "file": "measurement.py",
+    "original_sha256": "5f0c28bd702459613db1fef6923450e3f19325508f60dc514eb7e206e097d16e",
+    "adapted_sha256": "5c25981e6b9c90b6f706b54b73c1ebabcdf81a2e9cc3a0803c182c09d8223f9e"
+  },
+  {
+    "file": "llm_proxy.py",
+    "original_sha256": "28b21ff0a407216b0cc681691c415ac454ae3b5b1002c1dcdd3a2a81cec2b410",
+    "adapted_sha256": "4042ed78e4879531bb22ce82f1ba8ad6737bdef7c8c6c4dcd8d36ac61d2d459d"
+  },
+  {
+    "file": "report72.py",
+    "original_sha256": "12dd54b9083a68cf66772e48bb3bd6fc407df6491c7b132c1d842f7744e9b14d",
+    "adapted_sha256": "5827c105464561ede547f1b43f7861137dbd990671ae2a531980c48be04e076d"
+  }
+]

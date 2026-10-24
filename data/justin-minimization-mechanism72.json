@@ -1,0 +1,203 @@
+{
+  "schema": "justin-classwide-minimization-mechanism-evidence-v1",
+  "created_unix": 1792755319.4564116,
+  "status": "CONFIRMED_IMPLEMENTATION_WITH_SCOPE_LIMITS",
+  "method_id": "s0002",
+  "target_descriptor": "(Ljava/nio/CharBuffer;II)Lorg/apache/commons/text/TextStringBuilder;",
+  "frozen_justin_jar_sha256": "acc1227b2e0fbcb620107af99b77b64224d23703900a78f08887a3e9cbc38aed",
+  "build_commit_record": {
+    "sha256": "acc1227b2e0fbcb620107af99b77b64224d23703900a78f08887a3e9cbc38aed",
+    "commit": "cb961b3ff42a880466d0f44440a8a41e0a691f87"
+  },
+  "current_source_commit": "cb961b3ff42a880466d0f44440a8a41e0a691f87",
+  "four_relevant_source_files_unmodified_from_build_commit": true,
+  "frozen_classfile_sha256": {
+    "cn/ac/ios/justin/api/Engine.class": "7be9e89da027d5dbb05e53763914bfc90697a0c1814ccec422d0f474c5bc1997",
+    "cn/ac/ios/justin/exec/Invoker.class": "d46eb12a820aaba6806229132ae44f9fbed598a8ee6700460972f49fc44e7e45",
+    "cn/ac/ios/justin/exec/CoverageProbe.class": "e4d0ccaa344e094f5919be6bdc758a431ead2f113204ebabba40db4a24e8d0a9"
+  },
+  "source_evidence": [
+    {
+      "role": "Per-class generation instruments subjectNames and stores all per-test class probe maps",
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/justin-api/src/main/java/cn/ac/ios/justin/api/Engine.java",
+      "sha256": "0fc0cbeba49b0802fe5c932431c12fae273547fb5b921054030416d77b9426f0",
+      "start_line": 175,
+      "end_line": 209
+    },
+    {
+      "role": "Greedy minimizer iterates every class-entry BitSet and keeps any new probe; no focal-method slice",
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/justin-api/src/main/java/cn/ac/ios/justin/api/Engine.java",
+      "sha256": "0fc0cbeba49b0802fe5c932431c12fae273547fb5b921054030416d77b9426f0",
+      "start_line": 556,
+      "end_line": 578
+    },
+    {
+      "role": "After stable invocation, Engine attaches invoker.lastCoverage() to the TestCase",
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/justin-api/src/main/java/cn/ac/ios/justin/api/Engine.java",
+      "sha256": "0fc0cbeba49b0802fe5c932431c12fae273547fb5b921054030416d77b9426f0",
+      "start_line": 1073,
+      "end_line": 1118
+    },
+    {
+      "role": "Probe reset before entire tuple.run and drain after it",
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/justin-exec/src/main/java/cn/ac/ios/justin/exec/Invoker.java",
+      "sha256": "d397a1b1f4e857839110b75107c1106927d25ad5eeb60d1960db6a947da3651a",
+      "start_line": 127,
+      "end_line": 134
+    },
+    {
+      "role": "Receiver and args are materialized before reflective focal call, then returned value observed before drain",
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/justin-exec/src/main/java/cn/ac/ios/justin/exec/Invoker.java",
+      "sha256": "d397a1b1f4e857839110b75107c1106927d25ad5eeb60d1960db6a947da3651a",
+      "start_line": 254,
+      "end_line": 286
+    },
+    {
+      "role": "Sequence materialization invokes receiver mutators inside the same tuple coverage window",
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/justin-exec/src/main/java/cn/ac/ios/justin/exec/Materializer.java",
+      "sha256": "2391cf8139f924943c948f9abe9d59b4cdff649d56fd3ee87dddd37b614514b9",
+      "start_line": 145,
+      "end_line": 154
+    },
+    {
+      "role": "Probe drain keys whole-class BitSets by binary class, no method slicing",
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/justin-exec/src/main/java/cn/ac/ios/justin/exec/CoverageProbe.java",
+      "sha256": "9125529f08829ef0ae0dcf227ade02ffb3cbdf7ed88cdabbe587d6a28115bd76",
+      "start_line": 39,
+      "end_line": 55
+    }
+  ],
+  "frozen_bytecode_evidence": [
+    {
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/analysis-evidence/Engine-frozen-javap.txt",
+      "sha256": "abca82b0979bd062f4ae42a329104beccce038b9bf84f9fbbe4fbca81af2e242",
+      "start_line": 1807,
+      "end_line": 1907
+    },
+    {
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/analysis-evidence/Invoker-frozen-javap.txt",
+      "sha256": "e87afdfadbde48f94f2acc06caaa0f40861fa3cc26c5a2580016c27e6c462f5f",
+      "start_line": 177,
+      "end_line": 213
+    },
+    {
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/analysis-evidence/Invoker-frozen-javap.txt",
+      "sha256": "e87afdfadbde48f94f2acc06caaa0f40861fa3cc26c5a2580016c27e6c462f5f",
+      "start_line": 474,
+      "end_line": 595
+    },
+    {
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/analysis-evidence/CoverageProbe-frozen-javap.txt",
+      "sha256": "7452a2dfd969d61d343badb8ff6c470929740d1e935e668e96ba9184a532d621"
+    }
+  ],
+  "observed_current_run": {
+    "exported_and_passing_cases": 12,
+    "exact_focal_direct_binding_sites": 12,
+    "all12_direct_focal_calls_use_CharBuffer_null": true,
+    "focal_line_covered": 2,
+    "focal_line_total": 15,
+    "focal_branch_covered": 1,
+    "focal_branch_total": 12,
+    "whole_focal_class_coverage_in_same_external_execution": {
+      "INSTRUCTION": {
+        "covered": 499,
+        "missed": 3014
+      },
+      "BRANCH": {
+        "covered": 58,
+        "missed": 460
+      },
+      "LINE": {
+        "covered": 116,
+        "missed": 625
+      },
+      "COMPLEXITY": {
+        "covered": 47,
+        "missed": 382
+      },
+      "METHOD": {
+        "covered": 38,
+        "missed": 132
+      },
+      "CLASS": {
+        "covered": 1,
+        "missed": 0
+      }
+    },
+    "native_probe_coverage": {
+      "totalProbes": 750,
+      "coveredProbes": 95,
+      "byStrategy": {
+        "llm": {
+          "tests": 9,
+          "probes": 83,
+          "exclusiveProbes": 61
+        },
+        "random": {
+          "tests": 5,
+          "probes": 67,
+          "exclusiveProbes": 35
+        },
+        "sequence": {
+          "tests": 2,
+          "probes": 28,
+          "exclusiveProbes": 2
+        },
+        "special": {
+          "tests": 1,
+          "probes": 27,
+          "exclusiveProbes": 3
+        },
+        "static": {
+          "tests": 1,
+          "probes": 20,
+          "exclusiveProbes": 0
+        },
+        "symbolic": {
+          "tests": 3,
+          "probes": 34,
+          "exclusiveProbes": 12
+        }
+      }
+    },
+    "native_rejected_tuples": {
+      "candidate-not-constructible": 4,
+      "redundant-coverage": 2
+    },
+    "evidence": [
+      {
+        "path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0002/generation.log",
+        "sha256": "21afdc51120df457b4006eafe0c42f575658df638b54cdcc4664de3549881b77"
+      },
+      {
+        "path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0002/out/run/reports/report.json",
+        "sha256": "bb6df5046505fb2d94afd29a476d9a039b2fed1df397ca78bebf2c111cd7ac46"
+      },
+      {
+        "path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0002/measure/result.json",
+        "sha256": "f432607a04f536d0e9647ba285e12672d652abe658e9779141c088f2379699d2"
+      },
+      {
+        "path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0002/measure/coverage.xml",
+        "sha256": "4d8231009af4e15b7c6139b699b46a3419e6fc133ef57a2c8c6bc4e105550a81"
+      },
+      {
+        "path": "/home/clm/tooldemo72-20261023/runs/commons-text-1.15.0/justin-llm/s0002/measure/compiled-method-invocations.json",
+        "sha256": "dce3006a681a1e316defd6132e8263a5efd5024027b10e03c2aeefe61bcbbb1e"
+      }
+    ]
+  },
+  "confirmed_conclusion": "Generation-time minimization uses per-class probe sets over all instrumented subject classes reached during receiver/argument materialization, focal invocation and result observation. Method scope restricts generation targets, while retained-test usefulness is not restricted to probes of the focal method. Receiver setup can therefore retain tests whose direct focal call repeats the same null-input early return.",
+  "s0002_explanation": "The12 retained tests vary receiver constructors/mutator setup while every direct CharBuffer focal call passes null. Whole-class coverage and native probes can increase without improving the focal2/15 lines and1/12 branches. This is consistent with and supported by the confirmed broader minimization objective; case count must not be treated as focal testing quality.",
+  "limits": [
+    "Per-test sandbox probe BitSets are not persisted in these artifacts, so the exact incremental probe contribution and retaining reason of each of the12 tests cannot be reconstructed without new execution.",
+    "This evidence does not establish why non-null CharBuffer candidates were never generated, failed construction, or were not retained; internal candidate-cause remains unknown.",
+    "The greedy minimizer has a special one-per-method/outcome rule for completely empty probe maps; this does not narrow its main class-wide probe criterion.",
+    "Symbolic uncovered-line steering separately slices focal method lines, so broad minimization does not imply every steering stage ignores the focal method."
+  ],
+  "no_generators_or_model_calls": true,
+  "no_subject_or_generated_test_execution": true,
+  "static_javap_only": true,
+  "no_runtime_code_or_protocol_changes": true
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "path": "JLine-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/jline/jline3/jline-parent-3.21.0/LICENSE.txt",
+    "sha256": "7d9ca7d4eb3a2534869e7823b81b299321d49ceb3d169d11b995513fabd9fc7e"
+  },
+  {
+    "path": "ChatUniTest-core-LICENSE",
+    "source": "https://raw.githubusercontent.com/ZJU-ACES-ISE/chatunitest-core/master/LICENSE",
+    "sha256": "72053cd557e96db274584f9b087a0d8f2afa8ee6bb9993fb6d7198c2defcf577",
+    "note": "Upstream current license text, retrieved 2026-10-24; archived 2.1.1 POM independently declares MIT."
+  },
+  {
+    "path": "ChatUniTest-plugin-LICENSE",
+    "source": "https://raw.githubusercontent.com/ZJU-ACES-ISE/chatunitest-maven-plugin/master/LICENSE",
+    "sha256": "72053cd557e96db274584f9b087a0d8f2afa8ee6bb9993fb6d7198c2defcf577",
+    "note": "Upstream current license text, retrieved 2026-10-24; archived 2.1.1 POM independently declares MIT."
+  }
+]

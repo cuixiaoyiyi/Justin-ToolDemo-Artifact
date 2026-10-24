@@ -1,0 +1,451 @@
+{
+  "schema": "original72-independent-final-claim-review-v1",
+  "created_unix": 1792757038.3251479,
+  "status": "FINAL_COMPLETE",
+  "analysis_sha256": "192ce551be3d1c488c00f2aeff0749fad9f54af9a59009a15fae8c8514616a36",
+  "benchmark_sha256": "57b5764d0b261593b2413d880986c83ef6c05546b68a6841f31240099547f9cb",
+  "population": "All original72 exact methods and versions; all360 records complete; no outcome filtering.",
+  "supported_core_claim": "In this fixed exploratory72 cohort, Justin achieved high focal coverage (96.65% line,96.54% branch) and exported fully compilable closed-JUnit suites for all72 targets, with26.84 cumulative generation minutes and at least163419 observed tokens. Its aggregate generation time and observed token count were lower than the three LLM baseline configurations.",
+  "claim_limits": [
+    "Justin does not have the highest line coverage: ChatTester reproduction reaches97.17%.",
+    "Justin branch coverage is highest in the all72 table, but only one seed/repetition and a post-hoc concentrated cohort were evaluated. This is not a general superiority claim.",
+    "All four LLM total-token aggregates are observed lower bounds; neither exact total spending nor strict true-token savings is established.",
+    "EvoSuite consumes zero LLM tokens. Justin aggregate time is10.4% lower, but it is slower on51/72 individual targets and faster on21; it is not uniformly faster.",
+    "All-five fully compiled and closed-JUnit sensitivity has37 methods; ChatTester and HITS reproductions have higher conditional line/branch coverage than Justin. HITS low all72 coverage is strongly associated with34 no-export outcomes.",
+    "Generated case count is an output-volume measure, not a quality advantage. Class-wide minimization can retain receiver/setup diversity with identical focal null behavior.",
+    "Original72 is75% TextStringBuilder/Conversion by method count; outcomes should not be generalized to arbitrary Java APIs.",
+    "ChatTester and HITS entries are third-party reproductions, not faithful claims about newly located author implementations."
+  ],
+  "comparisons": [
+    {
+      "other": "evosuite",
+      "Justin_line_delta_percentage_points": 1.8018018018018012,
+      "Justin_branch_delta_percentage_points": 0.9695290858725798,
+      "Justin_observed_cumulative_time_reduction_pct": 10.356662686118467,
+      "Justin_observed_token_reduction_pct": null,
+      "token_reduction_is_observed_only_because_both_or_either_total_is_lower_bound": true
+    },
+    {
+      "other": "chatunitest",
+      "Justin_line_delta_percentage_points": 10.167310167310163,
+      "Justin_branch_delta_percentage_points": 6.37119113573408,
+      "Justin_observed_cumulative_time_reduction_pct": 37.170773848264496,
+      "Justin_observed_token_reduction_pct": 12.443475279141037,
+      "token_reduction_is_observed_only_because_both_or_either_total_is_lower_bound": true
+    },
+    {
+      "other": "chattester",
+      "Justin_line_delta_percentage_points": -0.5148005148005268,
+      "Justin_branch_delta_percentage_points": 1.662049861495845,
+      "Justin_observed_cumulative_time_reduction_pct": 57.113852752513985,
+      "Justin_observed_token_reduction_pct": 56.22384853176751,
+      "token_reduction_is_observed_only_because_both_or_either_total_is_lower_bound": true
+    },
+    {
+      "other": "hits",
+      "Justin_line_delta_percentage_points": 42.59974259974259,
+      "Justin_branch_delta_percentage_points": 40.02770083102494,
+      "Justin_observed_cumulative_time_reduction_pct": 78.77223704094709,
+      "Justin_observed_token_reduction_pct": 86.80672730237823,
+      "token_reduction_is_observed_only_because_both_or_either_total_is_lower_bound": true
+    }
+  ],
+  "Justin_vs_Evo_line_W_T_L": {
+    "tie": 54,
+    "loss": 8,
+    "win": 10
+  },
+  "Justin_vs_Evo_branch_W_T_L": {
+    "tie": 54,
+    "loss": 9,
+    "win": 9
+  },
+  "coverage_dominance_methods_vs_Evo": [
+    {
+      "method_id": "s0003",
+      "class": "org.apache.commons.text.TextStringBuilder",
+      "method": "append",
+      "descriptor": "(Ljava/lang/CharSequence;II)Lorg/apache/commons/text/TextStringBuilder;"
+    },
+    {
+      "method_id": "s0022",
+      "class": "org.apache.commons.lang3.Conversion",
+      "method": "byteToHex",
+      "descriptor": "(BILjava/lang/String;II)Ljava/lang/String;"
+    },
+    {
+      "method_id": "s0028",
+      "class": "org.apache.commons.lang3.Conversion",
+      "method": "longToHex",
+      "descriptor": "(JILjava/lang/String;II)Ljava/lang/String;"
+    },
+    {
+      "method_id": "s0040",
+      "class": "org.apache.commons.lang3.Conversion",
+      "method": "byteArrayToUuid",
+      "descriptor": "([BI)Ljava/util/UUID;"
+    },
+    {
+      "method_id": "s0045",
+      "class": "org.apache.commons.lang3.Conversion",
+      "method": "intToShortArray",
+      "descriptor": "(II[SII)[S"
+    },
+    {
+      "method_id": "s0047",
+      "class": "org.apache.commons.lang3.Conversion",
+      "method": "longToByteArray",
+      "descriptor": "(JI[BII)[B"
+    },
+    {
+      "method_id": "s0049",
+      "class": "org.apache.commons.lang3.Conversion",
+      "method": "longToShortArray",
+      "descriptor": "(JI[SII)[S"
+    },
+    {
+      "method_id": "s0064",
+      "class": "org.jline.utils.WriterOutputStream",
+      "method": "write",
+      "descriptor": "([BII)V"
+    },
+    {
+      "method_id": "s0067",
+      "class": "org.apache.commons.collections4.set.ListOrderedSet",
+      "method": "addAll",
+      "descriptor": "(ILjava/util/Collection;)Z"
+    },
+    {
+      "method_id": "s0068",
+      "class": "org.jsoup.nodes.Element",
+      "method": "child",
+      "descriptor": "(I)Lorg/jsoup/nodes/Element;"
+    }
+  ],
+  "advantage_class_findings": [
+    {
+      "class": "org.apache.commons.lang3.Conversion",
+      "methods": 33,
+      "evidence": "Justin jointly improves six methods over Evo and ties27, with no joint coverage losses in this class; improvements include byteToHex,longToHex,byteArrayToUuid,intToShortArray,longToByteArray,longToShortArray. This is a class-specific observation, not a causal attribution to LLM or relation expansion."
+    },
+    {
+      "class": "org.apache.commons.collections4.set.ListOrderedSet",
+      "methods": 2,
+      "evidence": "addAll(int,Collection) is100/100 for Justin versus50/60 for Evo; the other selected method ties."
+    },
+    {
+      "class": "org.jsoup.nodes.Element",
+      "methods": 3,
+      "evidence": "child(int) is100/100 for Justin versus66.67/40 for Evo; two insertChildren methods tie Evo."
+    },
+    {
+      "class": "org.jline.utils.WriterOutputStream",
+      "methods": 1,
+      "evidence": "write(byte[],int,int) reaches100% line versus55.56% Evo, branches tie100%; one method is insufficient for a general stream-API claim."
+    }
+  ],
+  "Justin_incomplete_coverage_methods": [
+    {
+      "method_id": "s0002",
+      "class": "org.apache.commons.text.TextStringBuilder",
+      "method": "append",
+      "descriptor": "(Ljava/nio/CharBuffer;II)Lorg/apache/commons/text/TextStringBuilder;",
+      "coverage": {
+        "line": {
+          "covered": 2,
+          "total": 15,
+          "pct": 13.333333333333334
+        },
+        "branch": {
+          "covered": 1,
+          "total": 12,
+          "pct": 8.333333333333334
+        }
+      },
+      "diagnostic": "direct_focal_calls_have_no_nonnull_inputs_for_observed_reference_parameters"
+    },
+    {
+      "method_id": "s0008",
+      "class": "org.apache.commons.text.TextStringBuilder",
+      "method": "appendFixedWidthPadLeft",
+      "descriptor": "(Ljava/lang/Object;IC)Lorg/apache/commons/text/TextStringBuilder;",
+      "coverage": {
+        "line": {
+          "covered": 13,
+          "total": 14,
+          "pct": 92.85714285714286
+        },
+        "branch": {
+          "covered": 5,
+          "total": 6,
+          "pct": 83.33333333333333
+        }
+      },
+      "diagnostic": "unknown"
+    },
+    {
+      "method_id": "s0052",
+      "class": "org.apache.commons.lang3.Conversion",
+      "method": "shortToBinary",
+      "descriptor": "(SI[ZII)[Z",
+      "coverage": {
+        "line": {
+          "covered": 9,
+          "total": 9,
+          "pct": 100.0
+        },
+        "branch": {
+          "covered": 8,
+          "total": 10,
+          "pct": 80.0
+        }
+      },
+      "diagnostic": "unknown"
+    },
+    {
+      "method_id": "s0054",
+      "class": "org.apache.commons.lang3.Conversion",
+      "method": "uuidToByteArray",
+      "descriptor": "(Ljava/util/UUID;[BII)[B",
+      "coverage": {
+        "line": {
+          "covered": 4,
+          "total": 8,
+          "pct": 50.0
+        },
+        "branch": {
+          "covered": 3,
+          "total": 6,
+          "pct": 50.0
+        }
+      },
+      "diagnostic": "direct_focal_calls_have_no_nonnull_inputs_for_observed_reference_parameters"
+    },
+    {
+      "method_id": "s0057",
+      "class": "org.apache.commons.lang3.builder.CompareToBuilder",
+      "method": "append",
+      "descriptor": "([D[D)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+      "coverage": {
+        "line": {
+          "covered": 15,
+          "total": 16,
+          "pct": 93.75
+        },
+        "branch": {
+          "covered": 15,
+          "total": 16,
+          "pct": 93.75
+        }
+      },
+      "diagnostic": "unknown"
+    },
+    {
+      "method_id": "s0058",
+      "class": "org.apache.commons.lang3.builder.CompareToBuilder",
+      "method": "append",
+      "descriptor": "([F[F)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+      "coverage": {
+        "line": {
+          "covered": 15,
+          "total": 16,
+          "pct": 93.75
+        },
+        "branch": {
+          "covered": 15,
+          "total": 16,
+          "pct": 93.75
+        }
+      },
+      "diagnostic": "unknown"
+    },
+    {
+      "method_id": "s0060",
+      "class": "org.apache.commons.lang3.builder.CompareToBuilder",
+      "method": "append",
+      "descriptor": "([J[J)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+      "coverage": {
+        "line": {
+          "covered": 15,
+          "total": 16,
+          "pct": 93.75
+        },
+        "branch": {
+          "covered": 15,
+          "total": 16,
+          "pct": 93.75
+        }
+      },
+      "diagnostic": "unknown"
+    },
+    {
+      "method_id": "s0061",
+      "class": "org.apache.commons.lang3.builder.CompareToBuilder",
+      "method": "append",
+      "descriptor": "([Ljava/lang/Object;[Ljava/lang/Object;Ljava/util/Comparator;)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+      "coverage": {
+        "line": {
+          "covered": 15,
+          "total": 16,
+          "pct": 93.75
+        },
+        "branch": {
+          "covered": 15,
+          "total": 16,
+          "pct": 93.75
+        }
+      },
+      "diagnostic": "unknown"
+    },
+    {
+      "method_id": "s0062",
+      "class": "org.apache.commons.lang3.builder.CompareToBuilder",
+      "method": "append",
+      "descriptor": "([S[S)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+      "coverage": {
+        "line": {
+          "covered": 15,
+          "total": 16,
+          "pct": 93.75
+        },
+        "branch": {
+          "covered": 15,
+          "total": 16,
+          "pct": 93.75
+        }
+      },
+      "diagnostic": "unknown"
+    },
+    {
+      "method_id": "s0063",
+      "class": "org.apache.commons.collections4.functors.InvokerTransformer",
+      "method": "invokerTransformer",
+      "descriptor": "(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Lorg/apache/commons/collections4/Transformer;",
+      "coverage": {
+        "line": {
+          "covered": 6,
+          "total": 6,
+          "pct": 100.0
+        },
+        "branch": {
+          "covered": 17,
+          "total": 18,
+          "pct": 94.44444444444444
+        }
+      },
+      "diagnostic": "unknown"
+    },
+    {
+      "method_id": "s0071",
+      "class": "org.jsoup.nodes.TextNode",
+      "method": "splitText",
+      "descriptor": "(I)Lorg/jsoup/nodes/TextNode;",
+      "coverage": {
+        "line": {
+          "covered": 9,
+          "total": 10,
+          "pct": 90.0
+        },
+        "branch": {
+          "covered": 5,
+          "total": 6,
+          "pct": 83.33333333333333
+        }
+      },
+      "diagnostic": "unknown"
+    },
+    {
+      "method_id": "s0072",
+      "class": "org.apache.commons.lang3.text.FormattableUtils",
+      "method": "append",
+      "descriptor": "(Ljava/lang/CharSequence;Ljava/util/Formatter;IIICLjava/lang/CharSequence;)Ljava/util/Formatter;",
+      "coverage": {
+        "line": {
+          "covered": 9,
+          "total": 11,
+          "pct": 81.81818181818181
+        },
+        "branch": {
+          "covered": 15,
+          "total": 16,
+          "pct": 93.75
+        }
+      },
+      "diagnostic": "direct_focal_calls_have_no_nonnull_inputs_for_observed_reference_parameters"
+    }
+  ],
+  "confirmed_null_input_examples": [
+    {
+      "method_id": "s0002",
+      "type": "java.nio.CharBuffer",
+      "direct_sites": 12,
+      "evidence": "All12 source-resolved exact calls pass null; coverage2/15 lines and1/12 branches. Receiver/setup class-wide minimization mechanism is independently confirmed; per-case incremental probes are unavailable."
+    },
+    {
+      "method_id": "s0054",
+      "type": "java.util.UUID",
+      "direct_sites": 3,
+      "evidence": "All3 exact direct calls use(UUID)null. Production code returns early for nBytes0 or rejects>16; successful conversion dereferences UUID bit getters. Retained inputs therefore cannot exercise the normal non-null UUID conversion path; underlying generation/construction cause unknown."
+    },
+    {
+      "method_id": "s0072",
+      "type": "java.util.Formatter",
+      "direct_sites": 6,
+      "evidence": "All6 exact direct calls use(Formatter)null and generated tests assert exceptions. Production code ultimately calls formatter.format and returns formatter; normal Formatter completion is absent from those direct test inputs. Why no non-null input was retained remains unknown."
+    }
+  ],
+  "test_failure_observation": {
+    "method_id": "s0048",
+    "method": "Conversion.longToIntArray",
+    "executed": 5,
+    "passed": 3,
+    "observed_failed_assertions": 2,
+    "evidence": "Both failures are AssertionFailedError expected:not<null>. This establishes failing generated non-null assertions; no inference about the LLM annotation cause without reviewing the contract/oracle path.",
+    "diagnosis": "Confirmed incorrect model-inferred unconditional return NotNull contract; valid null-dst/nInts0 case returns null as documented. Regression assertNull agrees with behavior; appended semantic assertNotNull produces two SUSPECT false positives.",
+    "diagnosis_evidence": {
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/justin-failed-contract-diagnosis72.json",
+      "sha256": "caca8ee889ca8cc93735bd6ca5d70e34af76bcc7baad6e3e99e7321d2681dcc8"
+    },
+    "confirmed_production_defects": 0
+  },
+  "sensitivity_population": [
+    "s0001",
+    "s0002",
+    "s0004",
+    "s0006",
+    "s0007",
+    "s0010",
+    "s0011",
+    "s0012",
+    "s0014",
+    "s0020",
+    "s0023",
+    "s0026",
+    "s0027",
+    "s0028",
+    "s0029",
+    "s0030",
+    "s0032",
+    "s0035",
+    "s0040",
+    "s0041",
+    "s0043",
+    "s0045",
+    "s0046",
+    "s0048",
+    "s0050",
+    "s0054",
+    "s0056",
+    "s0057",
+    "s0058",
+    "s0059",
+    "s0060",
+    "s0062",
+    "s0066",
+    "s0067",
+    "s0068",
+    "s0070",
+    "s0071"
+  ],
+  "no_experimental_results_modified": true
+}

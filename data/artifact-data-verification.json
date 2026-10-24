@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "schema": "independent-frozen72-csv-audit-v1",
+  "methods": 72,
+  "cells": 360,
+  "projects": 5,
+  "classes": 10,
+  "denominators": {
+    "line": 777,
+    "branch": 722,
+    "instruction": 4099,
+    "method": 72,
+    "complexity": 433
+  },
+  "common_fully_compiled_methods": 37,
+  "projects_method_counts": {
+    "commons-text-1.15.0": 21,
+    "commons-lang3-3.17.0": 42,
+    "commons-collections4-4.6.0": 3,
+    "jline-3.21.0": 1,
+    "jsoup-1.23.2": 5
+  },
+  "original_group_counts": {
+    "text-index": 21,
+    "hex-index": 8,
+    "ordinary-arrays": 25,
+    "array-comparison": 8,
+    "paired-array-length": 1,
+    "byte-range": 1,
+    "array-parity": 1,
+    "indexed-set": 2,
+    "dom-sequence": 3,
+    "text-cross-counterexamples": 2
+  },
+  "missing_total_usage_attempts": 21,
+  "results": [
+    {
+      "tool": "justin-llm",
+      "line": "751/777",
+      "branch": "697/722",
+      "generation_seconds": "1610.205",
+      "generation_minutes": "26.83675",
+      "observed_total_tokens": 163419,
+      "exported_cases": 733,
+      "fully_compiled_targets": 72,
+      "tests_executed": 733,
+      "tests_passed": 731,
+      "attempts_without_total_usage": 2
+    },
+    {
+      "tool": "evosuite",
+      "line": "737/777",
+      "branch": "690/722",
+      "generation_seconds": "1796.235",
+      "generation_minutes": "29.93725",
+      "observed_total_tokens": 0,
+      "exported_cases": 349,
+      "fully_compiled_targets": 72,
+      "tests_executed": 348,
+      "tests_passed": 348,
+      "attempts_without_total_usage": 0
+    },
+    {
+      "tool": "chatunitest",
+      "line": "672/777",
+      "branch": "651/722",
+      "generation_seconds": "2562.828",
+      "generation_minutes": "42.7138",
+      "observed_total_tokens": 186644,
+      "exported_cases": 863,
+      "fully_compiled_targets": 72,
+      "tests_executed": 863,
+      "tests_passed": 771,
+      "attempts_without_total_usage": 2
+    },
+    {
+      "tool": "chattester",
+      "line": "755/777",
+      "branch": "685/722",
+      "generation_seconds": "3754.604",
+      "generation_minutes": "62.57673333333333333333333333",
+      "observed_total_tokens": 373306,
+      "exported_cases": 965,
+      "fully_compiled_targets": 70,
+      "tests_executed": 965,
+      "tests_passed": 858,
+      "attempts_without_total_usage": 2
+    },
+    {
+      "tool": "hits",
+      "line": "420/777",
+      "branch": "408/722",
+      "generation_seconds": "7585.373",
+      "generation_minutes": "126.4228833333333333333333333",
+      "observed_total_tokens": 1238654,
+      "exported_cases": 2640,
+      "fully_compiled_targets": 38,
+      "tests_executed": 2640,
+      "tests_passed": 2364,
+      "attempts_without_total_usage": 15
+    }
+  ],
+  "files": {
+    "benchmark72.json": "57b5764d0b261593b2413d880986c83ef6c05546b68a6841f31240099547f9cb",
+    "protocol.json": "3e10b4c4d43c709badf9eca355b6cd107eef8eb481d094b23a731e78ac0457cc",
+    "sample72.csv": "6f6320018b245391d9a4e3eed2805335558b4b0ea54d56f91b1e1e27cd249cee",
+    "results360.csv": "87cbcc809e5c1d3d333ba6546c9098da2566498760a1a6ca2ed80e5001b5b532",
+    "summary72.csv": "17df264da745e4b14cd8303bcfe50431e9195aa89a76572f9e23f11502673e05"
+  },
+  "model_calls": 0,
+  "java_invocations": 0,
+  "input_files_modified": false
+}

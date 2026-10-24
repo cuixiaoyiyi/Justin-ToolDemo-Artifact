@@ -1,0 +1,51 @@
+{
+  "status": "VERIFIED",
+  "methods": 72,
+  "classes": 10,
+  "subject_count": 5,
+  "exact_selection_sha256": "6c66fea195280c83c7782f127775476b09f76964b9a44108af1299784f440bb0",
+  "source_file_count": 10,
+  "denominators": {
+    "LINE": 777,
+    "BRANCH": 722,
+    "INSTRUCTION": 4099
+  },
+  "source_inventory_sha256": "9785d84f42d550bb0e5432a15dd2f8bac141d99224f3a44cecfc707229f65ef7",
+  "subjects": {
+    "commons-text-1.15.0": {
+      "jar": "/home/clm/tooldemo-20261017/subjects/commons-text-1.15.0.jar",
+      "jar_sha256": "58d2da30f058512a1e7f914e39241deca4dff5c27a085b4ed2faa9e7208067f6",
+      "sources": "/home/clm/tooldemo-20261017/subjects/commons-text-1.15.0-sources.jar",
+      "sources_sha256": "6fa2f1db12dc4147094be928a5b54d567cea287df54e4c76b7dfb6096c05439d"
+    },
+    "commons-lang3-3.17.0": {
+      "jar": "/home/clm/tooldemo-20261017/subjects/commons-lang3-3.17.0.jar",
+      "jar_sha256": "6ee731df5c8e5a2976a1ca023b6bb320ea8d3539fbe64c8a1d5cb765127c33b4",
+      "sources": "/home/clm/tooldemo-20261017/subjects/commons-lang3-3.17.0-sources.jar",
+      "sources_sha256": "5fdcac21ad329766054a95367d7583dfcdca737d221d5e01a5f2a198c04c6b18"
+    },
+    "commons-collections4-4.6.0": {
+      "jar": "/home/clm/tooldemo-20261017/subjects/commons-collections4-4.6.0.jar",
+      "jar_sha256": "4e0d0896bac5356cead277bac0283f09813e14417e3e84e0c86b573b54d218a3",
+      "sources": "/home/clm/tooldemo-20261017/subjects/commons-collections4-4.6.0-sources.jar",
+      "sources_sha256": "2caf7d2e94b12b3433f9f12ab3b37b7d16626deb2ed4ed13d401ac53d2f5d5c5"
+    },
+    "jline-3.21.0": {
+      "jar": "/home/clm/tooldemo-20261017/subjects/jline-3.21.0.jar",
+      "jar_sha256": "1e7d63a2bd1c26354ca1987e55469ea4327c4a3845c10d7a7790ca9729c49c02",
+      "sources": "/home/clm/tooldemo-20261017/subjects/jline-3.21.0-sources.jar",
+      "sources_sha256": "9d1f5958a0cff8f0b1729cd10b3bbe71d2587a0ec9537ece87cca45d21ba3db3"
+    },
+    "jsoup-1.23.2": {
+      "jar": "/home/clm/tooldemo-20261017/subjects/jsoup-1.23.2.jar",
+      "jar_sha256": "e9d8c856856680427f096d156f02a414289985c930998fcb519ce5be39b42003",
+      "sources": "/home/clm/tooldemo-20261017/subjects/jsoup-1.23.2-sources.jar",
+      "sources_sha256": "f0ed21735857df93c3e461d1aecf89d28c3eda552f2e043d68959d341376aa17"
+    }
+  },
+  "all_exact_binary_and_source_verified": true,
+  "no_subject_compilation": true,
+  "no_subject_execution": true,
+  "no_generation": true,
+  "no_model_requests": true
+}

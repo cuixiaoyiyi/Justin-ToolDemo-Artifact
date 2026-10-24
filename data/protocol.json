@@ -1,0 +1,85 @@
+{
+  "version": "original72-exact-method-fresh-20261023-v1",
+  "scope": "The unchanged original72 method/version cohort; fresh method-level generation for all five tools.",
+  "selection": "Freeze all72 old exploratory core methods before observing this batch. Prior selection is post hoc and concentrated in two classes; keep all failures and zero coverage.",
+  "original_method_manifest_membership": "Original72 exploratory sample; no published-tool dataset membership claim.",
+  "methods": 72,
+  "subjects": 5,
+  "tools": [
+    "justin-llm",
+    "evosuite",
+    "chatunitest",
+    "chattester",
+    "hits"
+  ],
+  "seed": 42,
+  "generation_wall_cap_s": 900,
+  "external_test_wall_cap_s": 300,
+  "budgets": "Common wall ceiling; native search, symbolic and repair budgets differ and are reported, not equated.",
+  "evosuite_search_s": 60,
+  "justin_sym_class_budget_ms": 20000,
+  "model": "deepseek-flash",
+  "max_response_tokens": 4096,
+  "thinking": "disabled",
+  "temperature": "native tool default",
+  "llm_cache": "Fresh per-method/tool caches; provider cache usage recorded separately.",
+  "repetitions": 1,
+  "workers": 8,
+  "external_measure_workers": 2,
+  "external_heap_gib": 6,
+  "java": "EvoSuite JDK8; other tools JDK17; compatibility limitation retained",
+  "primary_coverage": "Exact public focal JVM method; common immutable JaCoCo denominator; zero/failure outcomes retained.",
+  "wrapper_policy": "Every frozen method retained; old descriptive groups recorded for audit only.",
+  "cost": "Actual per-attempt provider usage including retries; failed/cancelled client requests counted when usage available.",
+  "result_policy": "Preserve zero/timeout/generation failure; no outcome-based sample exclusions.",
+  "tools_provenance": {
+    "Justin": "Unchanged acc1227b2e0fbcb620107af99b77b64224d23703900a78f08887a3e9cbc38aed jar with LLM enabled",
+    "EvoSuite": "EvoSuite 1.2.0, JDK8, target_method full JVM descriptor, seed42, search budget60s",
+    "ChatUniTest": "Existing pinned native Maven plugin implementation; exact method metadata selectors",
+    "ChatTester": "Existing third-party Maven reproduction (CHATTESTER phase); original author repository provides no runnable implementation",
+    "HITS": "Existing third-party Maven reproduction (HITS phase) with audited lexical generated-class-name repair; not the newly located author implementation"
+  },
+  "old_results": "Read-only; no old class-level or341 results substituted into this fresh batch.",
+  "source_manifests": {
+    "original72": {
+      "path": "/mnt/c/Users/Administrator/Documents/Codex/2026-10-17/new-chat/outputs/sequence-boundary-analysis.json",
+      "sha256": "3db9303ddfecf100e0f763b11d213a04a4b046f3ad62511d97975da3c81d34ef"
+    }
+  },
+  "classes": 10,
+  "work_units": 360,
+  "source_selection_frozen": true,
+  "descriptor_verification_complete": true,
+  "old_results_policy": "All360 method/tool cells receive fresh generation and measurement. Original72 class-level and341 results remain separate immutable records.",
+  "output_cases": "Generated Java source cases, discovered/executed JUnit cases and compile success recorded separately; no focal-hit claim from case counts alone.",
+  "memory_reservation_gib": 24,
+  "generation_reservation_gib": 3,
+  "measurement_reservation_gib": 6,
+  "reuse_old_results": false,
+  "setup_costs": "All setup-/preflight- method labels accounted separately, never charged as primary generation or silently discarded.",
+  "implementation_decisions": {
+    "date_Asia_Shanghai": "2026-10-23",
+    "decision": "Fresh original72-method, five-tool batch with the same upstream model and frozen native budgets; all360 cells receive fresh generation and exact-method measurement. Old class-level and341 artifacts remain immutable inputs.",
+    "tools_provenance": {
+      "Justin": "Unchanged acc1227b2e0fbcb620107af99b77b64224d23703900a78f08887a3e9cbc38aed jar with LLM enabled",
+      "EvoSuite": "EvoSuite 1.2.0, JDK8, target_method full JVM descriptor, seed42, search budget60s",
+      "ChatUniTest": "Existing pinned native Maven plugin implementation; exact method metadata selectors",
+      "ChatTester": "Existing third-party Maven reproduction (CHATTESTER phase); original author repository provides no runnable implementation",
+      "HITS": "Existing third-party Maven reproduction (HITS phase) with audited lexical generated-class-name repair; not the newly located author implementation"
+    },
+    "official_HITS_assessment": {
+      "repository": "https://github.com/eecshope/HITS",
+      "commit": "f80b0b1d329457972789c9a678547d2f7fd0fade",
+      "decision": "Do not replace missing prompts/no_mock slice-specific templates with whole-method root templates; that silently changes the method. No invented prompts or data graphs.",
+      "effect": "Primary HITS comparison is explicitly a reproduction result. No claim of faithfully executing the author implementation."
+    },
+    "native_selector_mapping": "All72 owners are public top-level classes. Select native metadata only after full JVM descriptor and source-body validation; no nested-owner aliases or enum exclusions are needed in this cohort.",
+    "replications": 1,
+    "selection_policy": "All72 original exploratory methods and release versions retained, including previous weak cases and failure-prone overloads. Sample originally selected post hoc and concentrated in TextStringBuilder/Conversion; frozen before any new outcomes. No new coverage/failure based removals.",
+    "autonomous_decisions_authorized_by": "User explicitly requested completion without interim clarification and allowed resource-based parallel execution.",
+    "resource_policy": "At most8 generation workers and2 external measurement workers. Weighted memory reservation at24GiB:3GiB/generator and6GiB/measurement; measurement admission priority; minimum4GiB MemAvailable before admission.",
+    "primary_metrics": "Exact-method common-denominator line/branch coverage including zeros; cumulative generation wall time; actual input/output/cache tokens including retries; generated Java case count, discovered/executed JUnit cases, full-unit compile success and test pass rate. No class-level metric attribution to this method cohort.",
+    "budget_comparability": "All methods/tools have900s generation wall ceiling, but native strategy/search/repair budgets differ: EvoSuite search60s, Justin symbolic class20s, native ChatUniTest-family settings unchanged. Shared model field deepseek-flash,4096 max response tokens,thinking disabled; provider backend snapshot unpinned; temperatures remain native defaults.",
+    "setup_accounting": "Any setup-/preflight- transport labels and invalid setup runs must be preserved separately with observed usage; unknown usage is not zero."
+  }
+}

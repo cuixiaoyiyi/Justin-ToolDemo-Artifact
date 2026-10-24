@@ -1,0 +1,16 @@
+/inputs/
+/release-assets/*.zip
+/release-assets/*.part
+/restored/
+/new-run/
+/verification-local.json
+__pycache__/
+*.pyc
+**/target/
+.env
+.env.*
+*.secret
+*.key
+*credentials*
+*local.properties
+*.log

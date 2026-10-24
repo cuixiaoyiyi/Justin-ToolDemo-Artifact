@@ -1,0 +1,181 @@
+# Justin: Size-Aware Test Generation for Java APIs
+
+This artifact contains the Justin tool, the five frozen subject versions, the experiment harness, and the complete results for **72 methods × 5 tool configurations = 360 runs**. It supports inspecting generated tests, independently checking the reported measurements, and preparing a fresh experiment. Only the final fixed-72 experiment is included; earlier subject versions and earlier experiment datasets are excluded.
+
+Repository: <https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact> · Release: [v1.0.0](https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact/releases/tag/v1.0.0)
+
+## 1. Start with the recorded results
+
+The recorded results can be checked without Java, Maven, a model account, or network access. Python **3.10 or later**, using only its standard library, is sufficient. Run these commands from the artifact root on Linux, macOS, or Windows (replace `python3` with `python` on Windows):
+
+```bash
+python3 scripts/verify_results.py data --output verification-local.json
+```
+
+Expected output includes `status: passed`, **72 methods**, **360 cells**, **5 projects**, **10 classes**, and common coverage denominators of **777 executable lines / 722 branches**. The script checks the JSON and CSV exports against each other and independently recomputes the frozen summary from all method/tool records. It does not run generated tests or call a model.
+
+Open [data/benchmark72.html](data/benchmark72.html) in a browser for the interactive report. Its recorded absolute paths identify the original execution environment; use the selective restore command below to inspect their local copies. The CSV files use UTF-8 with a BOM and can be opened in Excel.
+
+| File or directory | Contents |
+|---|---|
+| `tools/justin-source/` | Buildable Maven source snapshot of Justin |
+| `input-manifest.json` | Exact input locations, versions, runtime dependencies, binary checksums |
+| `subjects/manifest.json`, `subjects/focal-source/` | Five-version subject manifest and the ten focal classes' original source files |
+| `data/frozen-sample.json`, `data/sample72.csv` | All 72 exact class/name/JVM-descriptor identities and frozen denominators |
+| `data/results360.csv`, `data/benchmark72.json` | Complete per-method/tool measurements, including failures and zero coverage |
+| `data/summary72.csv` | Five tool summaries from those same 360 records |
+| `data/audit72.json`, `data/native-exact-target-audit.json` | Independent raw-evidence audit and exact-overload/selector audit |
+| `data/analysis72*.json` | Per-method mechanism analysis and limitations |
+| `scripts/verify_results.py`, `scripts/evidence.py` | Offline result verification and selective raw-evidence restoration |
+| `scripts/portable/` | Configurable Linux/WSL replay harness and adaptation record |
+| `scripts/original/` | Unmodified scripts that produced or analyzed the completed batch |
+| `LICENSES/` | Third-party attribution and preserved embedded license/notice texts |
+| `release-assets/` | Download location for the two large release archives |
+
+The local delivered artifact also contains the restored `inputs/` directory and both release archives. A Git clone obtains the source, scripts, manifests, and readable data; the binary inputs and raw logs are downloaded separately to keep large binary files out of Git history.
+
+## 2. Obtain the frozen binaries and raw evidence
+
+The [v1.0.0 release](https://github.com/cuixiaoyiyi/Justin-ToolDemo-Artifact/releases/tag/v1.0.0) provides:
+
+- **`runtime-inputs.zip`**: the exact Justin JAR, EvoSuite and measurement tools, pinned native Maven artifacts, five subject binary/source JAR pairs, and their required runtime dependencies.
+- **`raw-evidence.zip`**: generated tests, native outputs, process logs, command vectors, external compilation diagnostics, JUnit XML, JaCoCo data, token usage/lifecycle records, and static parser context from the completed 360-run batch.
+
+To download and checksum-verify both archives, then materialize the runtime inputs:
+
+```bash
+python3 scripts/fetch_assets.py --extract-inputs
+python3 scripts/verify_integrity.py --inputs --assets
+python3 scripts/evidence.py verify
+```
+
+For a smaller download, use `python3 scripts/fetch_assets.py --only runtime-inputs.zip --extract-inputs`. `--gh` selects the installed GitHub CLI as the downloader. The expected asset SHA-256 values and public download URLs are pinned in [assets.json](assets.json).
+
+Because the historical harness copied much of the same parser context into each run, full raw-evidence restoration creates over **900,000 files** (about **5.6 GB of file bytes**, plus filesystem overhead). The archive stores identical content once and provides a streamed path map. Restore one target first:
+
+```bash
+python3 scripts/evidence.py inspect
+python3 scripts/evidence.py restore --unit s0001 --tool justin-llm --destination restored
+```
+
+The selected files appear under `restored/runtime-root/runs/commons-text-1.15.0/justin-llm/s0001/`. `list --unit s0001 --tool justin-llm` lists their logical paths. For the complete usage ledger, use `restore --prefix runtime-root/usage.jsonl --destination restored`. Full restoration requires the explicit `restore --all --destination restored` option and is best performed on a Linux filesystem. Existing files with different bytes are never overwritten.
+
+Each retained raw file keeps its original bytes and content hash. Repacking removed historical delivery documents and redundant external-input paths; no experiment outcomes were changed. The original full-archive hash is recorded in [data/raw-evidence-manifest.json](data/raw-evidence-manifest.json), and [packaging-decisions.json](packaging-decisions.json) records the packaging choices. Absolute paths inside logs and historical metadata remain provenance, not required installation paths.
+
+## 3. Frozen subjects and scope
+
+| Tested project | Version | Focal methods |
+|---|---|---:|
+| Apache Commons Text | 1.15.0 | 21 |
+| Apache Commons Lang | 3.17.0 | 42 |
+| Apache Commons Collections | 4.6.0 | 3 |
+| JLine | 3.21.0 | 1 |
+| jsoup | 1.23.2 | 5 |
+| **Total** | **5 versions / 10 classes** | **72** |
+
+String, array, and indexed collection APIs operate on finite sequences: access requires an existing position, a fragment count depends on the extent remaining after its start, and insertion depends on the receiver's current size. The cohort covers text editing/padding, binary/hex conversion, array comparison, byte ranges, indexed collections, and document-tree updates. The exact frozen list, rather than a method-name substring, determines every comparison.
+
+The scope is targeted and exploratory. `TextStringBuilder` contributes 21 methods and `Conversion` contributes 33, together **54/72**. Selection was retrospective, then frozen before this fresh batch; this is neither a random Java API sample nor an independent holdout. Each configuration ran once. These limitations remain part of the dataset.
+
+Only the versions in the table are **tested subjects**. For example, `inputs/subjects/dependencies/commons-lang3-3.20.0.jar` is the runtime dependency used by Commons Text 1.15.0; it is not an additional tested Commons Lang version. Preserving it avoids silently changing the recorded classpath. Other dependency JARs are likewise separated and listed in `input-manifest.json`.
+
+## 4. Use Justin on one example
+
+Justin builds related input values and receiver states, supplements uncovered paths, and exports executable JUnit tests with source labels. For a non-null, nonempty array of length `L`, a start **inside** the array satisfies `0 <= i < L`, and a fragment count satisfies `0 <= n <= L - i`; `n = 0` is allowed and the count's upper bound is inclusive. Endpoint and insertion rules depend on the operation: the example append API also accepts `i = L, n = 0`, while ordinary element access requires `i < L`. An indexed insertion can allow `i = size`.
+
+The recorded target `s0001` is `org.apache.commons.text.TextStringBuilder#append(char[],int,int)`, with JVM descriptor `([CII)Lorg/apache/commons/text/TextStringBuilder;`. Its generated `append_62` test passes an eight-element array with start `0` and count `8`, and records the source `symbolic:path~`. The raw run also contains expected-exception cases and independent exact-method coverage evidence.
+
+The binary needs **JDK 17**. After restoring inputs, this command starts a new local example and writes results to a separate directory:
+
+```bash
+java -Xmx3g -jar inputs/tools/justin-all.jar generate \
+  --classes inputs/subjects/commons-text-1.15.0.jar \
+  --sources inputs/subjects/commons-text-1.15.0-sources.jar \
+  --cp inputs/subjects/dependencies/commons-lang3-3.20.0.jar \
+  --method 'org.apache.commons.text.TextStringBuilder#append(char[],int,int)' \
+  --out new-demo --seed 42 --run
+```
+
+This command uses the native generator without an LLM. To enable inferred annotation hints, add `--llm-config /path/outside/repository/justin-local.properties`. Copy the placeholder [config/justin.example.properties](config/justin.example.properties) to that external path and supply your own **Anthropic Messages-compatible** endpoint and API key: the standalone Justin client uses that protocol. The full benchmark below instead supplies a local protocol bridge to the common OpenAI-compatible upstream. Do not commit the private properties file. `java -jar inputs/tools/justin-all.jar generate --help` describes the full CLI.
+
+Generation creates Java test sources and HTML/JSON reports in the output run directory. Source comments identify input-generation channels. A tool's class-level report can cover helper calls and other methods; the experiment's primary metric independently measures the exact focal JVM descriptor. Test assertions record observed behavior and require review when used as specification checks.
+
+To build the supplied source with JDK 17 and Maven:
+
+```bash
+cd tools/justin-source
+mvn -DskipTests package
+java -jar justin-cli/target/justin-all.jar --help
+```
+
+The source commit and the authoritative experiment JAR hash are recorded in `tools/source-provenance.json`. Rebuilding is supported; a byte-identical Maven build is not promised. Use the frozen release binary when comparing with the recorded experiment.
+
+## 5. Prepare and rerun the complete experiment
+
+Generation and external measurement require **Linux or WSL2**, Python 3.10+, Maven 3.8+, **JDK 17 and JDK 8**, and access to an OpenAI-compatible model service. EvoSuite uses JDK 8; the other generators use JDK 17. Use a new workspace on a Linux filesystem. The historical scripts use POSIX process control and `/proc` resource data, so they are not native Windows runners. Result inspection and checksum validation remain cross-platform.
+
+The recorded schedule allowed up to eight generation workers and two external-measurement workers, with 24 GiB weighted memory reservations and at least 4 GiB available before admission. A machine with **32 GiB RAM** is a practical starting point. Scheduler limits and the measurement heap are documented in `data/protocol.json`; concurrency is resource-gated.
+
+Prepare the frozen inputs and static native parser context without generating tests or calling the model:
+
+```bash
+python3 scripts/portable/rerun.py prepare \
+  --artifact "$PWD" \
+  --root "$HOME/justin72-new-run" \
+  --jdk17 /path/to/jdk17 \
+  --jdk8 /path/to/jdk8 \
+  --maven-repo "$HOME/.m2/repository"
+python3 scripts/portable/rerun.py doctor --root "$HOME/justin72-new-run"
+```
+
+Preparation can download missing Maven transitive dependencies; the release pins the native plugin/core files but does not contain a complete Maven installation or offline dependency cache. `prepare --offline` forbids Maven network resolution and requires a sufficiently populated cache. It rejects a nonempty workspace to protect completed evidence.
+
+The following **explicit `run` command sends paid model requests** and generates/executes tests for all 360 cells. Provide the endpoint and credential only through process environment variables:
+
+```bash
+export JUSTIN_LLM_BASE_URL='https://your-provider.example/v1'
+read -rsp 'LLM API key: ' JUSTIN_LLM_API_KEY; echo
+export JUSTIN_LLM_API_KEY
+python3 scripts/portable/rerun.py run --root "$HOME/justin72-new-run"
+unset JUSTIN_LLM_API_KEY
+```
+
+The model field remains `deepseek-flash`, the response cap is 4,096 tokens, thinking is disabled, and native tool temperatures are retained. A provider must support the recorded model name and request format; its current backend may differ from the unpinned 2026-10-23 snapshot. New wall times and generated tests need not match a single historical run exactly. Keep new results separate from `data/`. On completion, the runner automatically writes fresh JSON, HTML, sample/result/summary CSV files under the new workspace's `reports/` directory; raw generation, compilation, JUnit, JaCoCo, and token records remain alongside them. To recompute those reports without model calls or test execution, run `python3 scripts/portable/rerun.py summarize --root "$HOME/justin72-new-run"`.
+
+`scripts/portable/README.md` documents adaptation details and operational commands. `scripts/original/` preserves the original experiment/reporting implementation and its recorded absolute paths for provenance; use the configurable entry point above for a fresh checkout.
+
+## 6. Tool configurations and measurement
+
+The five configurations are **Justin + LLM**, **EvoSuite 1.2.0**, and the **ChatUniTest**, **ChatTester**, and **HITS** modes of the pinned ChatUniTest Maven plugin/core **2.1.1**. ChatTester and HITS here identify those runnable plugin modes; the artifact does not claim to execute the original authors' standalone implementations. Implementation provenance and the retained selector mapping are recorded in `data/implementation.json` and `data/native-exact-target-audit.json`.
+
+Every cell has a 900-second generation wall ceiling. EvoSuite's search budget is 60 seconds and Justin's symbolic class budget is 20 seconds; the common ceiling does not equate native search/repair budgets. External compilation and testing use the same subject bytecode/runtime classpath, a 6 GiB heap, and a 300-second test wall ceiling. Exact selectors are verified from the complete JVM descriptor before generation.
+
+| Tool configuration | Line coverage | Branch coverage | Generation time (min.) | Recorded tokens, approx. | Exported cases |
+|---|---:|---:|---:|---:|---:|
+| Justin + LLM | 96.65% | 96.54% | 26.8 | 163,419 | 733 |
+| EvoSuite | 94.85% | 95.57% | 29.9 | 0 | 349 |
+| ChatUniTest | 86.49% | 90.17% | 42.7 | 186,644 | 863 |
+| ChatTester | 97.17% | 94.88% | 62.6 | 373,306 | 965 |
+| HITS | 54.05% | 56.51% | 126.4 | 1,238,654 | 2,640 |
+
+Coverage sums covered focal lines/branches over the **same 72-target denominator**, including failed or zero-coverage cells. Generation time sums each cell's generator wall time and excludes external measurement; parallel batch elapsed time was about 48.21 minutes. Exported cases count ordinary source `@Test` methods, not all XML-discovered executions, and more cases do not imply better tests.
+
+| Tool | Fully compiled targets / 72 | All-export compile rate | Executed tests passing |
+|---|---:|---:|---:|
+| Justin + LLM | 72/72 | 72/72 | 731/733 (99.73%) |
+| EvoSuite | 72/72 | 72/72 | 348/348 (100%) |
+| ChatUniTest | 72/72 | 72/72 | 771/863 (89.34%) |
+| ChatTester | 70/72 | 70/70 | 858/965 (88.91%) |
+| HITS | 38/72 | 38/38 | 2,364/2,640 (89.55%) |
+
+The conditional compile rate uses nonempty exported suites as its denominator. Missing exports remain failures to deliver a compilable target suite in the 72-target population. EvoSuite exported 349 source cases and executed 348, with one skipped case. The 37 targets delivered by all tools are also identified in the data; their subset results should not replace the full frozen cohort.
+
+Token figures sum recorded provider usage over actual attempts, including retries. **21 failed attempts have missing usage** (Justin 2, ChatUniTest 2, ChatTester 2, HITS 15). Recorded totals are therefore approximate observed amounts, not complete actual totals, and do not establish the true total-cost ranking. Cache-input usage is already part of input tokens. No cost is assigned to a missing usage value as if it were zero.
+
+The native audit distinguishes wrong overload binding, no recorded focal probe, repair failure, and missing native slice files. In particular, 34 HITS-mode targets have no saved export after a missing `slice.json`, and two ChatTester-mode targets have no saved export after native repair failure. These observations describe this pinned execution and do not establish an intrinsic limitation of the original tools. The token/model, budget, version, sample, and one-run limitations should accompany any reuse of the results.
+
+## 7. Integrity, attribution, and publication
+
+`SHA256SUMS` covers tracked artifact content; `input-manifest.json` and `assets.json` pin restored binaries and release assets. Run `python3 scripts/verify_integrity.py --inputs --assets` after download. No API/GitHub credentials, Maven settings, personal credential files, Git history from the research checkout, historical subject datasets, or older paper/slides are included.
+
+Justin's source snapshot does not declare a permissive license; no new license has been assigned during packaging. Consult [LICENSES/README.md](LICENSES/README.md) for rights and third-party attribution. Third-party components retain their own licenses, notices, and upstream source links. Authors: Baoquan Cui, Rong Qu, and Jian Zhang, Institute of Software, Chinese Academy of Sciences.

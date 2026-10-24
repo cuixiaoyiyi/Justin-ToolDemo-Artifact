@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "date": "2026-10-24",
+  "offline_data_check": {
+    "methods": 72,
+    "cells": 360,
+    "projects": 5,
+    "line_denominator": 777,
+    "branch_denominator": 722,
+    "details": "data/artifact-data-verification.json"
+  },
+  "raw_archive_check": {
+    "content_objects": 32460,
+    "logical_paths": 923805,
+    "all_content_hashes_verified": true,
+    "selective_restore_smoke": "s0001/justin-llm/done.json restored and verified without overwriting existing bytes"
+  },
+  "tool_check": {
+    "frozen_binary_generate_help": "passed under JDK17",
+    "source_maven_package": "passed with JDK17 and -DskipTests; dependency download needed; no tool unit tests executed"
+  },
+  "security": {
+    "actual_secret_findings": 0,
+    "source_and_data": "scanned for GitHub/LLM token and private-key signatures; no values printed",
+    "original_raw_archive": "all 32604 content objects and nested JAR members independently scanned; no actual secrets",
+    "private_key_literal": "sshd-common class contains PEM format string literal, not private key material"
+  },
+  "new_experiment_runs": 0,
+  "model_requests": 0,
+  "scope": "Only final72 cohort and five SUT versions. Runtime dependencies retained separately."
+}

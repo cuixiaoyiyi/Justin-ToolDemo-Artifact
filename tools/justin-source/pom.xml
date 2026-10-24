@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>cn.ac.ios.justin</groupId>
+  <artifactId>justin-parent</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Justin</name>
+  <description>Justin: automatic unit test generation for Java</description>
+
+  <modules>
+    <module>justin-annotations</module>
+    <module>justin-core</module>
+    <module>justin-generics</module>
+    <module>justin-scan</module>
+    <module>justin-analysis</module>
+    <module>justin-strategies</module>
+    <module>justin-combine</module>
+    <module>justin-exec</module>
+    <module>justin-oracle</module>
+    <module>justin-emit</module>
+    <module>justin-runner</module>
+    <module>justin-llm</module>
+    <module>justin-symexec</module>
+    <module>justin-api</module>
+    <module>justin-cli</module>
+    <module>justin-samples</module>
+  </modules>
+
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <asm.version>9.8</asm.version>
+    <sootup.version>2.0.0</sootup.version>
+    <javapoet.version>0.7.0</javapoet.version>
+    <junit.version>5.12.2</junit.version>
+    <junit.platform.version>1.12.2</junit.platform.version>
+    <jacoco.version>0.8.13</jacoco.version>
+    <picocli.version>4.7.7</picocli.version>
+    <slf4j.version>2.0.17</slf4j.version>
+    <logback.version>1.5.18</logback.version>
+    <jackson.version>2.19.0</jackson.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- internal -->
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-core</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-generics</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-scan</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-analysis</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-strategies</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-combine</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-exec</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-oracle</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-emit</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-runner</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-llm</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-symexec</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-api</artifactId><version>${project.version}</version></dependency>
+      <dependency><groupId>cn.ac.ios.justin</groupId><artifactId>justin-annotations</artifactId><version>${project.version}</version></dependency>
+
+      <!-- bytecode -->
+      <dependency><groupId>org.ow2.asm</groupId><artifactId>asm</artifactId><version>${asm.version}</version></dependency>
+      <dependency><groupId>org.ow2.asm</groupId><artifactId>asm-tree</artifactId><version>${asm.version}</version></dependency>
+      <dependency><groupId>org.ow2.asm</groupId><artifactId>asm-util</artifactId><version>${asm.version}</version></dependency>
+
+      <!-- SootUp -->
+      <dependency><groupId>org.soot-oss</groupId><artifactId>sootup.core</artifactId><version>${sootup.version}</version></dependency>
+      <dependency><groupId>org.soot-oss</groupId><artifactId>sootup.java.core</artifactId><version>${sootup.version}</version></dependency>
+      <dependency><groupId>org.soot-oss</groupId><artifactId>sootup.java.bytecode.frontend</artifactId><version>${sootup.version}</version></dependency>
+
+      <!-- codegen -->
+      <dependency><groupId>com.palantir.javapoet</groupId><artifactId>javapoet</artifactId><version>${javapoet.version}</version></dependency>
+
+      <!-- test execution tooling (used at runtime by the runner) -->
+      <dependency><groupId>org.junit.platform</groupId><artifactId>junit-platform-console-standalone</artifactId><version>${junit.platform.version}</version></dependency>
+      <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter-api</artifactId><version>${junit.version}</version></dependency>
+      <dependency><groupId>org.jacoco</groupId><artifactId>org.jacoco.core</artifactId><version>${jacoco.version}</version></dependency>
+      <dependency><groupId>org.jacoco</groupId><artifactId>org.jacoco.report</artifactId><version>${jacoco.version}</version></dependency>
+      <dependency><groupId>org.jacoco</groupId><artifactId>org.jacoco.agent</artifactId><version>${jacoco.version}</version><classifier>runtime</classifier></dependency>
+
+      <!-- infra -->
+      <dependency><groupId>info.picocli</groupId><artifactId>picocli</artifactId><version>${picocli.version}</version></dependency>
+      <dependency><groupId>com.github.curious-odd-man</groupId><artifactId>rgxgen</artifactId><version>2.0</version></dependency>
+      <dependency><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId><version>${slf4j.version}</version></dependency>
+      <dependency><groupId>ch.qos.logback</groupId><artifactId>logback-classic</artifactId><version>${logback.version}</version></dependency>
+      <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-databind</artifactId><version>${jackson.version}</version></dependency>
+
+      <!-- tests of Justin itself -->
+      <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>${junit.version}</version><scope>test</scope></dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId></dependency>
+    <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><scope>test</scope></dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.13.0</version></plugin>
+        <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.5.2</version></plugin>
+        <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-jar-plugin</artifactId><version>3.4.2</version></plugin>
+        <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId><version>3.8.1</version></plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

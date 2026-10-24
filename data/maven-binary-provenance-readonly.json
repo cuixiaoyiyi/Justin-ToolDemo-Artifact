@@ -1,0 +1,129 @@
+{
+  "schema": "maven-binary-provenance-readonly-v1",
+  "resolved_local_repository": "/home/clm/.m2/repository",
+  "user_settings_present": false,
+  "system_settings_localRepository": null,
+  "effective_repository_basis": "No user settings.xml; system settings declare no localRepository; no repo-local override in preparation commands; exact default-repository artifacts exist and are hashed.",
+  "projects": [
+    {
+      "pom": "/home/clm/tooldemo72-20261023/projects/commons-collections4-4.6.0/pom.xml",
+      "pom_sha256": "a5d6bf9e08dbdb4d5dfcaa4611eef4be351ce207905ac02f5e6db503ff9a07cb",
+      "declared_chatunitest_plugin": [
+        {
+          "groupId": "io.github.zju-aces-ise",
+          "artifactId": "chatunitest-maven-plugin",
+          "version": "2.1.1"
+        }
+      ]
+    },
+    {
+      "pom": "/home/clm/tooldemo72-20261023/projects/commons-lang3-3.17.0/pom.xml",
+      "pom_sha256": "7d23ab2cee2f5fbfbe5db5846b83e6ceb93faf0ade18800b13bf1de544d6cc53",
+      "declared_chatunitest_plugin": [
+        {
+          "groupId": "io.github.zju-aces-ise",
+          "artifactId": "chatunitest-maven-plugin",
+          "version": "2.1.1"
+        }
+      ]
+    },
+    {
+      "pom": "/home/clm/tooldemo72-20261023/projects/commons-text-1.15.0/pom.xml",
+      "pom_sha256": "bf322759636185742e3ea96e20f0deb8d199bdb12fb98e3e5b3d71e256f4e3ae",
+      "declared_chatunitest_plugin": [
+        {
+          "groupId": "io.github.zju-aces-ise",
+          "artifactId": "chatunitest-maven-plugin",
+          "version": "2.1.1"
+        }
+      ]
+    },
+    {
+      "pom": "/home/clm/tooldemo72-20261023/projects/jline-3.21.0/pom.xml",
+      "pom_sha256": "8d6a770c96259cb6c8130c0e254594399759b2fd32f60cf287ade84a56ae93c0",
+      "declared_chatunitest_plugin": [
+        {
+          "groupId": "io.github.zju-aces-ise",
+          "artifactId": "chatunitest-maven-plugin",
+          "version": "2.1.1"
+        }
+      ]
+    },
+    {
+      "pom": "/home/clm/tooldemo72-20261023/projects/jsoup-1.23.2/pom.xml",
+      "pom_sha256": "a5d793f653bc3fa069061068d55281ba3fc57728fdf815b21aa11890ff63f834",
+      "declared_chatunitest_plugin": [
+        {
+          "groupId": "io.github.zju-aces-ise",
+          "artifactId": "chatunitest-maven-plugin",
+          "version": "2.1.1"
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact": "chatunitest-maven-plugin",
+      "version_directory": "2.1.1",
+      "jar": "/home/clm/.m2/repository/io/github/zju-aces-ise/chatunitest-maven-plugin/2.1.1/chatunitest-maven-plugin-2.1.1.jar",
+      "jar_resolved": "/home/clm/.m2/repository/io/github/zju-aces-ise/chatunitest-maven-plugin/2.1.1/chatunitest-maven-plugin-2.1.1.jar",
+      "jar_sha256": "fa908b2579e350220e1a0027eec283355551832101200c206ab39063509a2c29",
+      "jar_bytes": 17149891,
+      "pom": "/home/clm/.m2/repository/io/github/zju-aces-ise/chatunitest-maven-plugin/2.1.1/chatunitest-maven-plugin-2.1.1.pom",
+      "pom_sha256": "a5a201c05ab0db49d1218f84fef556cff0ef9afe4d374e518226e22912833408",
+      "pom_gav": {
+        "groupId": "io.github.zju-aces-ise",
+        "artifactId": "chatunitest-maven-plugin",
+        "version": "2.1.1"
+      },
+      "chatunitest_dependencies": [
+        {
+          "groupId": "io.github.zju-aces-ise",
+          "artifactId": "chatunitest-core",
+          "version": "2.1.1",
+          "scope": null
+        }
+      ],
+      "embedded_maven_properties": [
+        {
+          "entry": "META-INF/maven/io.github.zju-aces-ise/chatunitest-maven-plugin/pom.properties",
+          "text": "artifactId=chatunitest-maven-plugin\ngroupId=io.github.zju-aces-ise\nversion=2.1.1\n"
+        }
+      ],
+      "implementation_markers": [
+        "zju/cst/aces/MethodTestMojo.class"
+      ]
+    },
+    {
+      "artifact": "chatunitest-core",
+      "version_directory": "2.1.1",
+      "jar": "/home/clm/.m2/repository/io/github/zju-aces-ise/chatunitest-core/2.1.1/chatunitest-core-2.1.1.jar",
+      "jar_resolved": "/home/clm/.m2/repository/io/github/zju-aces-ise/chatunitest-core/2.1.1/chatunitest-core-2.1.1.jar",
+      "jar_sha256": "547850026ece3cf46b7e2932ed3b41755b6d8eb614691161cb49d4d447402a31",
+      "jar_bytes": 976259,
+      "pom": "/home/clm/.m2/repository/io/github/zju-aces-ise/chatunitest-core/2.1.1/chatunitest-core-2.1.1.pom",
+      "pom_sha256": "859c6efff7dfa9b09d1e97002fc90f14f2ec58b9a7e627fb6b19271bca788b57",
+      "pom_gav": {
+        "groupId": "io.github.zju-aces-ise",
+        "artifactId": "chatunitest-core",
+        "version": "2.1.1"
+      },
+      "chatunitest_dependencies": [],
+      "embedded_maven_properties": [
+        {
+          "entry": "META-INF/maven/io.github.zju-aces-ise/chatunitest-core/pom.properties",
+          "text": "artifactId=chatunitest-core\ngroupId=io.github.zju-aces-ise\nversion=2.1.1\n"
+        }
+      ],
+      "implementation_markers": [
+        "zju/cst/aces/runner/solution_runner/ChatTesterRunner.class",
+        "zju/cst/aces/runner/solution_runner/HITSRunner.class"
+      ]
+    }
+  ],
+  "maven_invocations": 0,
+  "java_invocations": 0,
+  "model_requests": 0,
+  "settings_modified": false,
+  "settings_servers_read_or_copied": false
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "original72-batch-execution-provenance-v1",
+  "launched_unix": 1792753797.8366146,
+  "runtime_root": "/home/clm/tooldemo72-20261023",
+  "delivery_directory": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo",
+  "python": "/usr/bin/python3",
+  "operating_system": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "cpu_count": 16,
+  "meminfo": [
+    "MemTotal:       32727208 kB",
+    "MemFree:        31047232 kB",
+    "MemAvailable:   31925492 kB"
+  ],
+  "sample_sha256": "20af6b344f3c3bcba49ee2da913cfe208fa59c6aacbce20df7ba6d4df21d31a9",
+  "selectors_sha256": "b890107254477724fc262eee286dadde64a24a3b09734d9141f26350f063f518",
+  "subjects_sha256": "a150a56543b286db706e8157a85daf1cbd9eb7497cc96789648e7aff9a793f03",
+  "preflight_audit_sha256": "c76a8e5ee9cf3be4200482ffedc87f11d71f67f343bf9cfb30e79213d986f6a2",
+  "code_sha256": {
+    "benchmark.py": "b9a6597533b9c69f6ec92096ee48eb76b6ad4e717febee079c115bbee58737d0",
+    "freeze72.py": "4449adadaf501fd87f3c8155b4684a7c4b0288874012d03f5f430e48d7405691",
+    "generator_projects.py": "792a49daecb461778d83e70651f315d5243119ce3e7b778e2dc67af94f553a33",
+    "measurement.py": "5f0c28bd702459613db1fef6923450e3f19325508f60dc514eb7e206e097d16e",
+    "llm_proxy.py": "28b21ff0a407216b0cc681691c415ac454ae3b5b1002c1dcdd3a2a81cec2b410",
+    "resource_sampler.py": "a2379eedd51a0d82b36d509d89428d8173f0b8834f95cecec31624ef116d6e62",
+    "launch72.py": "4dab7b3e9b77605fc13859eb0613a42bdcd3d1f3276dae080f3b99633dc83117",
+    "implementation.json": "ab4f762993a6f77b8705ed9b844c033b293b73eacd9fff3d7bd24b741fe2bc3d"
+  },
+  "methods": 72,
+  "tools": 5,
+  "expected_units": 360,
+  "generation_workers": 8,
+  "external_measurement_workers": 2,
+  "note": "Original SUT bytecode, exact overloads and fresh isolated generation/measurement for every cell. No old numeric results reused.",
+  "resource_sampler": {
+    "pid": 3337,
+    "command": [
+      "/usr/bin/python3",
+      "-u",
+      "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/resource_sampler.py"
+    ],
+    "log": "/home/clm/tooldemo72-20261023/resource_sampler.log"
+  },
+  "runner": {
+    "pid": 3338,
+    "command": [
+      "/usr/bin/python3",
+      "-u",
+      "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/benchmark.py",
+      "run"
+    ],
+    "log": "/home/clm/tooldemo72-20261023/runner.log"
+  }
+}

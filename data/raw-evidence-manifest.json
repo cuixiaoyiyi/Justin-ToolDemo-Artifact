@@ -1,0 +1,30 @@
+{
+  "schema": "justin72-raw-evidence-v1",
+  "scope": "Completed five-version / 72-method / 360-cell batch only. Exact file bytes retained. Historical delivery snapshots and old experiment data excluded.",
+  "source_archive_sha256": "a01cfdcc6286906e677e7f7a808be9e68a7dab86b04439f18da885d785adbe1d",
+  "logical_files": 923805,
+  "content_objects": 32460,
+  "materialized_bytes": 5620171918,
+  "path_mapping": "paths.jsonl contains [relative_path, sha256]. Content is objects/<first2>/<sha256>.",
+  "groups": {
+    "runtime-root/decisions.jsonl": 1,
+    "runtime-root/denominators": 26,
+    "runtime-root/execution-provenance.json": 1,
+    "runtime-root/frozen-sample.json": 1,
+    "runtime-root/parsed": 17272,
+    "runtime-root/projects": 2974,
+    "runtime-root/protocol.json": 1,
+    "runtime-root/provenance": 2,
+    "runtime-root/proxy-lifecycle.jsonl": 1,
+    "runtime-root/proxy.log": 1,
+    "runtime-root/resource-samples.jsonl": 1,
+    "runtime-root/resource-summary.json": 1,
+    "runtime-root/resource_sampler.log": 1,
+    "runtime-root/runner.log": 1,
+    "runtime-root/runs": 903517,
+    "runtime-root/selectors.json": 1,
+    "runtime-root/state.json": 1,
+    "runtime-root/subjects.json": 1,
+    "runtime-root/usage.jsonl": 1
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "schema": "original72-Justin-failed-contract-diagnosis-v1",
+  "created_unix": 1792757235.6926255,
+  "status": "CONFIRMED_INCORRECT_LLM_RETURN_CONTRACT_FALSE_POSITIVES",
+  "method_id": "s0048",
+  "target": {
+    "subject": "commons-lang3-3.17.0",
+    "class": "org.apache.commons.lang3.Conversion",
+    "method": "longToIntArray",
+    "descriptor": "(JI[III)[I"
+  },
+  "production_source": {
+    "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/frozen-source/commons-lang3-3.17.0/org/apache/commons/lang3/Conversion.java",
+    "sha256": "dd203aa1f10c369f1451e9b6d5d76f659f722da94fbbe1a427b944dfa8d2cb8d",
+    "start_line": 1239,
+    "end_line": 1267
+  },
+  "production_contract_facts": [
+    "Javadoc returns dst and only declares NullPointerException for null dst when nInts>0. It does not guarantee a non-null return.",
+    "With nInts==0 the first branch returns dst directly, so dst==null legitimately produces null.",
+    "With the second generated input nInts=-2,srcPos=-823 the bound guard expression is-919; the loop has no iterations and the final return is dst==null. That input violates inferred non-negative preconditions and cannot support a production-defect claim."
+  ],
+  "persisted_llm_inference": {
+    "evidence": {
+      "path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0048/llm-cache/928ed7158ee19faad2528a2e434ca81d4c9e6ed7c080e77ebd8dcc6f68a724ec.txt",
+      "sha256": "30aeae51dba6a168d1567c3d6ea389cc78cb59b36013095e8f3e1cc6f3e19e30"
+    },
+    "return_constraints": [
+      {
+        "kind": "notNull"
+      }
+    ],
+    "dst_constraints": [
+      {
+        "kind": "nullable"
+      }
+    ],
+    "confidence": 0.9,
+    "accepted_contract_confidence_threshold_in_implementation": 0.5,
+    "contradiction": "The inferred unconditional notNull return constraint contradicts the documented return-dst semantics and the valid zero-length/null-dst case."
+  },
+  "generated_test_evidence": {
+    "path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0048/out/run/generated-tests/src/org/apache/commons/lang3/ConversionJustinTest.java",
+    "sha256": "81c4646279ac6f97528492404b09367ff9219d2635f5f87cfe81221ef9ecb9b5",
+    "start_line": 20,
+    "end_line": 61
+  },
+  "failed_cases": [
+    {
+      "name": "longToIntArray_1",
+      "arguments": [
+        "-1L",
+        "0",
+        "(int[]) null",
+        "0",
+        "0"
+      ],
+      "observed_result": "null",
+      "emitted_assertions": [
+        "assertNull(result)",
+        "assertNotNull(result)"
+      ],
+      "semantic_verdict": "SUSPECT",
+      "native_execution_status": "FAILED",
+      "failure_line": 24,
+      "input_note": "Zero elements copied; documented/null-dst return case contradicts unconditional NotNull inference."
+    },
+    {
+      "name": "longToIntArray_17",
+      "arguments": [
+        "-1124468978000L",
+        "-823",
+        "(int[]) null",
+        "165",
+        "-2"
+      ],
+      "observed_result": "null",
+      "emitted_assertions": [
+        "assertNull(result)",
+        "assertNotNull(result)"
+      ],
+      "semantic_verdict": "SUSPECT",
+      "native_execution_status": "FAILED",
+      "failure_line": 60,
+      "input_note": "Negative positions/counts violate inferred preconditions; no confirmed production defect."
+    }
+  ],
+  "json_verdict_evidence": {
+    "evidence": {
+      "path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0048/out/run/reports/report.json",
+      "sha256": "a223ce589bab8950574e09e1d6b22377584e9d63f3aaf7f8b9f9c1d9c06c0e7f"
+    },
+    "verdicts": {
+      "expected": 3,
+      "suspect": 2,
+      "unknown": 0,
+      "suspects": [
+        {
+          "testClass": "org.apache.commons.lang3.ConversionJustinTest",
+          "test": "longToIntArray_1",
+          "targetMethod": "org.apache.commons.lang3.Conversion#longToIntArray(long, int, int[], int, int)",
+          "exception": "returned",
+          "evidence": "return contract @NotNull violated: null returned",
+          "strategy": "llm+static",
+          "source": "ipog1"
+        },
+        {
+          "testClass": "org.apache.commons.lang3.ConversionJustinTest",
+          "test": "longToIntArray_17",
+          "targetMethod": "org.apache.commons.lang3.Conversion#longToIntArray(long, int, int[], int, int)",
+          "exception": "returned",
+          "evidence": "return contract @NotNull violated: null returned",
+          "strategy": "llm+random",
+          "source": "ipog1"
+        }
+      ]
+    },
+    "failed_test_records": [
+      {
+        "name": "longToIntArray_1",
+        "targetMethod": "org.apache.commons.lang3.Conversion#longToIntArray(long, int, int[], int, int)",
+        "strategy": "llm+static",
+        "source": "ipog1",
+        "assertions": 2,
+        "outcomeKind": "returned",
+        "verdict": "SUSPECT",
+        "evidence": "return contract @NotNull violated: null returned",
+        "executionStatus": "FAILED",
+        "failure": {
+          "exceptionType": "org.opentest4j.AssertionFailedError",
+          "message": "expected: not <null>",
+          "stackTrace": "org.opentest4j.AssertionFailedError: expected: not <null>\nat org.apache.commons.lang3.ConversionJustinTest.longToIntArray_1(ConversionJustinTest.java:24)"
+        }
+      },
+      {
+        "name": "longToIntArray_17",
+        "targetMethod": "org.apache.commons.lang3.Conversion#longToIntArray(long, int, int[], int, int)",
+        "strategy": "llm+random",
+        "source": "ipog1",
+        "assertions": 2,
+        "outcomeKind": "returned",
+        "verdict": "SUSPECT",
+        "evidence": "return contract @NotNull violated: null returned",
+        "executionStatus": "FAILED",
+        "failure": {
+          "exceptionType": "org.opentest4j.AssertionFailedError",
+          "message": "expected: not <null>",
+          "stackTrace": "org.opentest4j.AssertionFailedError: expected: not <null>\nat org.apache.commons.lang3.ConversionJustinTest.longToIntArray_17(ConversionJustinTest.java:60)"
+        }
+      }
+    ]
+  },
+  "junit_failures": [
+    {
+      "name": "longToIntArray_1()",
+      "type": "org.opentest4j.AssertionFailedError",
+      "message": "expected: not <null>",
+      "xml": {
+        "path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0048/measure/junit/TEST-junit-jupiter.xml",
+        "sha256": "585e7434a177670c334c65f707104356888ab6ed06cc0b4fbdd4191806f298d0"
+      }
+    },
+    {
+      "name": "longToIntArray_17()",
+      "type": "org.opentest4j.AssertionFailedError",
+      "message": "expected: not <null>",
+      "xml": {
+        "path": "/home/clm/tooldemo72-20261023/runs/commons-lang3-3.17.0/justin-llm/s0048/measure/junit/TEST-junit-jupiter.xml",
+        "sha256": "585e7434a177670c334c65f707104356888ab6ed06cc0b4fbdd4191806f298d0"
+      }
+    }
+  ],
+  "implementation_chain": [
+    {
+      "role": "Confidence threshold and notNull conversion for model inference",
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/justin-llm/src/main/java/cn/ac/ios/justin/llm/AnnotationInferrer.java",
+      "sha256": "a5c9d9df59d94d7b2e0f399b66c00eea04c3d910f6352f722ba3113b2b664cc2",
+      "start_line": 151,
+      "end_line": 175
+    },
+    {
+      "role": "Inferred return annotations merged into target method",
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/justin-llm/src/main/java/cn/ac/ios/justin/llm/AnnotationAugmenter.java",
+      "sha256": "cffc8a244b42151ec49084c49b429eb4eb8de96c0de8c61e8e5410a5534d8532",
+      "start_line": 92,
+      "end_line": 112
+    },
+    {
+      "role": "Observed regression assertions emitted, followed by semantic contract assertions",
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/justin-oracle/src/main/java/cn/ac/ios/justin/oracle/OracleBuilder.java",
+      "sha256": "6e3d76b21b69d446027896a97b181c9eff139cd9726254cf6a7e471633043b31",
+      "start_line": 92,
+      "end_line": 107
+    },
+    {
+      "role": "NotNull return spec creates assertNotNull",
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/justin-oracle/src/main/java/cn/ac/ios/justin/oracle/ReturnContracts.java",
+      "sha256": "321923647adef5aa22f1b6b8c1c13cf67752b008de2e5e683f7e641040ad0820",
+      "start_line": 44,
+      "end_line": 55
+    }
+  ],
+  "diagnosis": "An incorrect model-inferred unconditional return NotNull contract was accepted and converted into semantic assertions. The observed regression oracle correctly records null using assertNull, while the semantic oracle adds assertNotNull and flags SUSPECT. Both native and independent external JUnit runs consistently fail those assertions. This is an inferred-contract false positive requiring review, not evidence of a defect in Commons Lang, environment instability or wrong-overload measurement.",
+  "environment_explanation_not_supported": {
+    "external_oom_in_log": false,
+    "external_oom_in_reports": false,
+    "execution_timeout": false,
+    "closed_junit": true,
+    "native_same_two_assertion_failures": true
+  },
+  "whole72_interpretation": {
+    "compiled_suites": 72,
+    "selected_methods": 72,
+    "closed_junit_suites": 72,
+    "executed_cases": 733,
+    "passed_cases": 731,
+    "test_pass_pct": 99.72714870395635,
+    "full_passing_pipeline_units": 71,
+    "pipeline_units_total": 72
+  },
+  "paper_safe_sentence": "Across72 targets all exported suites compiled, and731/733 executed tests passed(99.73%). Two SUSPECT tests arose from an incorrect model-inferred non-null return contract, illustrating why inferred contracts and candidate failures require developer review.",
+  "confirmed_production_defects": 0,
+  "no_new_execution_or_model_calls": true,
+  "no_experimental_results_or_generated_tests_changed": true
+}

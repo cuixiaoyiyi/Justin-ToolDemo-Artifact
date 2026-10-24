@@ -1,0 +1,48 @@
+{
+  "all_percentages_use_0_to_100_scale": true,
+  "booleans": "true/false text",
+  "created_unix": 1792756828.3834827,
+  "input_schema": {
+    "complete_records": 360,
+    "expected_units": 360,
+    "final_ready": true,
+    "methods": 72,
+    "observed_records": 360,
+    "schema_status": "passed"
+  },
+  "missing_numeric_values": "Empty CSV cell; preserved independently of true numeric zero.",
+  "model_API_calls": 0,
+  "no_rounding_before_export": true,
+  "output_files": [
+    {
+      "columns": 13,
+      "exact_string_roundtrip_verified": true,
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/sample72.csv",
+      "rows": 72,
+      "sha256": "6f6320018b245391d9a4e3eed2805335558b4b0ea54d56f91b1e1e27cd249cee",
+      "utf8_BOM_verified": true
+    },
+    {
+      "columns": 67,
+      "exact_string_roundtrip_verified": true,
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/results360.csv",
+      "rows": 360,
+      "sha256": "87cbcc809e5c1d3d333ba6546c9098da2566498760a1a6ca2ed80e5001b5b532",
+      "utf8_BOM_verified": true
+    },
+    {
+      "columns": 60,
+      "exact_string_roundtrip_verified": true,
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/summary72.csv",
+      "rows": 5,
+      "sha256": "17df264da745e4b14cd8303bcfe50431e9195aa89a76572f9e23f11502673e05",
+      "utf8_BOM_verified": true
+    }
+  ],
+  "script_sha256": "c52de023ae54d5068053e75075ad7dd182e789355ed0ce3ddaabbab4b319d0ff",
+  "source": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/benchmark72.json",
+  "source_sha256": "57b5764d0b261593b2413d880986c83ef6c05546b68a6841f31240099547f9cb",
+  "status": "passed",
+  "subject_runs": 0,
+  "summary_values_equal_final_JSON": true
+}

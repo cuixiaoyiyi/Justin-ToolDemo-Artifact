@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "python_compile": "Windows and WSL Python3",
+  "help_entrypoints": "prepare/run/summarize/doctor",
+  "configured_modules_import": "passed on Linux/WSL",
+  "input_checks": {
+    "status": "passed",
+    "subjects": 5,
+    "methods": 72,
+    "line_denominator": 777,
+    "branch_denominator": 722,
+    "mode": "read_only_frozen_input_hash_check",
+    "pinned_input_files": 60,
+    "fixed_sample_sha256": "02e0f59f9f8174fab9f5a728fecfefe1d7c810396a8c9c796e2c3f5b34e81cf4",
+    "fixed_selection_sha256": "6c66fea195280c83c7782f127775476b09f76964b9a44108af1299784f440bb0",
+    "model_calls": 0,
+    "new_test_generations": 0,
+    "new_test_executions": 0
+  },
+  "archived_raw_report_recomputation": {
+    "status": "passed",
+    "mode": "read_only_archived_raw_evidence_report_smoke",
+    "completed": 360,
+    "metrics_equal_frozen_report": true,
+    "fields": [
+      "line_covered",
+      "line_total",
+      "branch_covered",
+      "branch_total",
+      "generation_s",
+      "input_tokens",
+      "output_tokens",
+      "total_tokens",
+      "generated_test_methods"
+    ],
+    "model_calls": 0,
+    "new_test_generations": 0,
+    "new_test_executions": 0
+  },
+  "generation_runs_during_packaging": 0,
+  "model_calls": 0
+}

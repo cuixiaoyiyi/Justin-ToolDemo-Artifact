@@ -1,0 +1,578 @@
+[
+  {
+    "method_id": "s0001",
+    "number": 6,
+    "signature": "append(char[], int, int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "([CII)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0002",
+    "number": 8,
+    "signature": "append(CharBuffer, int, int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(Ljava/nio/CharBuffer;II)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0003",
+    "number": 10,
+    "signature": "append(CharSequence, int, int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(Ljava/lang/CharSequence;II)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0004",
+    "number": 17,
+    "signature": "append(String, int, int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(Ljava/lang/String;II)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0005",
+    "number": 20,
+    "signature": "append(StringBuffer, int, int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(Ljava/lang/StringBuffer;II)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0006",
+    "number": 22,
+    "signature": "append(StringBuilder, int, int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(Ljava/lang/StringBuilder;II)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0007",
+    "number": 24,
+    "signature": "append(TextStringBuilder, int, int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(Lorg/apache/commons/text/TextStringBuilder;II)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0008",
+    "number": 30,
+    "signature": "appendFixedWidthPadLeft(Object, int, char)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(Ljava/lang/Object;IC)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0009",
+    "number": 32,
+    "signature": "appendFixedWidthPadRight(Object, int, char)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(Ljava/lang/Object;IC)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0010",
+    "number": 53,
+    "signature": "appendPadding(int, char)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(IC)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0011",
+    "number": 75,
+    "signature": "delete(int, int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(II)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0012",
+    "number": 95,
+    "signature": "getChars(int, int, char[], int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(II[CI)V",
+    "supported": true
+  },
+  {
+    "method_id": "s0013",
+    "number": 105,
+    "signature": "insert(int, boolean)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(IZ)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0014",
+    "number": 107,
+    "signature": "insert(int, char[])",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(I[C)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0015",
+    "number": 108,
+    "signature": "insert(int, char[], int, int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(I[CII)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0016",
+    "number": 114,
+    "signature": "insert(int, String)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(ILjava/lang/String;)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0017",
+    "number": 124,
+    "signature": "leftString(int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(I)Ljava/lang/String;",
+    "supported": true
+  },
+  {
+    "method_id": "s0018",
+    "number": 126,
+    "signature": "midString(int, int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(II)Ljava/lang/String;",
+    "supported": true
+  },
+  {
+    "method_id": "s0019",
+    "number": 145,
+    "signature": "rightString(int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(I)Ljava/lang/String;",
+    "supported": true
+  },
+  {
+    "method_id": "s0020",
+    "number": 148,
+    "signature": "setLength(int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(I)Lorg/apache/commons/text/TextStringBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0021",
+    "number": 153,
+    "signature": "subSequence(int, int)",
+    "native_selector_class": "org.apache.commons.text.TextStringBuilder",
+    "descriptor": "(II)Ljava/lang/CharSequence;",
+    "supported": true
+  },
+  {
+    "method_id": "s0022",
+    "number": 15,
+    "signature": "byteToHex(byte, int, String, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(BILjava/lang/String;II)Ljava/lang/String;",
+    "supported": true
+  },
+  {
+    "method_id": "s0023",
+    "number": 20,
+    "signature": "hexToByte(String, int, byte, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(Ljava/lang/String;IBII)B",
+    "supported": true
+  },
+  {
+    "method_id": "s0024",
+    "number": 21,
+    "signature": "hexToInt(String, int, int, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(Ljava/lang/String;IIII)I",
+    "supported": true
+  },
+  {
+    "method_id": "s0025",
+    "number": 22,
+    "signature": "hexToLong(String, int, long, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(Ljava/lang/String;IJII)J",
+    "supported": true
+  },
+  {
+    "method_id": "s0026",
+    "number": 23,
+    "signature": "hexToShort(String, int, short, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(Ljava/lang/String;ISII)S",
+    "supported": true
+  },
+  {
+    "method_id": "s0027",
+    "number": 27,
+    "signature": "intToHex(int, int, String, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(IILjava/lang/String;II)Ljava/lang/String;",
+    "supported": true
+  },
+  {
+    "method_id": "s0028",
+    "number": 33,
+    "signature": "longToHex(long, int, String, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(JILjava/lang/String;II)Ljava/lang/String;",
+    "supported": true
+  },
+  {
+    "method_id": "s0029",
+    "number": 40,
+    "signature": "shortToHex(short, int, String, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(SILjava/lang/String;II)Ljava/lang/String;",
+    "supported": true
+  },
+  {
+    "method_id": "s0030",
+    "number": 1,
+    "signature": "binaryBeMsb0ToHexDigit(boolean[], int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([ZI)C",
+    "supported": true
+  },
+  {
+    "method_id": "s0031",
+    "number": 2,
+    "signature": "binaryToByte(boolean[], int, byte, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([ZIBII)B",
+    "supported": true
+  },
+  {
+    "method_id": "s0032",
+    "number": 4,
+    "signature": "binaryToHexDigit(boolean[], int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([ZI)C",
+    "supported": true
+  },
+  {
+    "method_id": "s0033",
+    "number": 6,
+    "signature": "binaryToHexDigitMsb0_4bits(boolean[], int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([ZI)C",
+    "supported": true
+  },
+  {
+    "method_id": "s0034",
+    "number": 7,
+    "signature": "binaryToInt(boolean[], int, int, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([ZIIII)I",
+    "supported": true
+  },
+  {
+    "method_id": "s0035",
+    "number": 8,
+    "signature": "binaryToLong(boolean[], int, long, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([ZIJII)J",
+    "supported": true
+  },
+  {
+    "method_id": "s0036",
+    "number": 9,
+    "signature": "binaryToShort(boolean[], int, short, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([ZISII)S",
+    "supported": true
+  },
+  {
+    "method_id": "s0037",
+    "number": 10,
+    "signature": "byteArrayToInt(byte[], int, int, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([BIIII)I",
+    "supported": true
+  },
+  {
+    "method_id": "s0038",
+    "number": 11,
+    "signature": "byteArrayToLong(byte[], int, long, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([BIJII)J",
+    "supported": true
+  },
+  {
+    "method_id": "s0039",
+    "number": 12,
+    "signature": "byteArrayToShort(byte[], int, short, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([BISII)S",
+    "supported": true
+  },
+  {
+    "method_id": "s0040",
+    "number": 13,
+    "signature": "byteArrayToUuid(byte[], int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([BI)Ljava/util/UUID;",
+    "supported": true
+  },
+  {
+    "method_id": "s0041",
+    "number": 14,
+    "signature": "byteToBinary(byte, int, boolean[], int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(BI[ZII)[Z",
+    "supported": true
+  },
+  {
+    "method_id": "s0042",
+    "number": 24,
+    "signature": "intArrayToLong(int[], int, long, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([IIJII)J",
+    "supported": true
+  },
+  {
+    "method_id": "s0043",
+    "number": 25,
+    "signature": "intToBinary(int, int, boolean[], int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(II[ZII)[Z",
+    "supported": true
+  },
+  {
+    "method_id": "s0044",
+    "number": 26,
+    "signature": "intToByteArray(int, int, byte[], int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(II[BII)[B",
+    "supported": true
+  },
+  {
+    "method_id": "s0045",
+    "number": 30,
+    "signature": "intToShortArray(int, int, short[], int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(II[SII)[S",
+    "supported": true
+  },
+  {
+    "method_id": "s0046",
+    "number": 31,
+    "signature": "longToBinary(long, int, boolean[], int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(JI[ZII)[Z",
+    "supported": true
+  },
+  {
+    "method_id": "s0047",
+    "number": 32,
+    "signature": "longToByteArray(long, int, byte[], int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(JI[BII)[B",
+    "supported": true
+  },
+  {
+    "method_id": "s0048",
+    "number": 34,
+    "signature": "longToIntArray(long, int, int[], int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(JI[III)[I",
+    "supported": true
+  },
+  {
+    "method_id": "s0049",
+    "number": 35,
+    "signature": "longToShortArray(long, int, short[], int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(JI[SII)[S",
+    "supported": true
+  },
+  {
+    "method_id": "s0050",
+    "number": 36,
+    "signature": "shortArrayToInt(short[], int, int, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([SIIII)I",
+    "supported": true
+  },
+  {
+    "method_id": "s0051",
+    "number": 37,
+    "signature": "shortArrayToLong(short[], int, long, int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "([SIJII)J",
+    "supported": true
+  },
+  {
+    "method_id": "s0052",
+    "number": 38,
+    "signature": "shortToBinary(short, int, boolean[], int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(SI[ZII)[Z",
+    "supported": true
+  },
+  {
+    "method_id": "s0053",
+    "number": 39,
+    "signature": "shortToByteArray(short, int, byte[], int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(SI[BII)[B",
+    "supported": true
+  },
+  {
+    "method_id": "s0054",
+    "number": 41,
+    "signature": "uuidToByteArray(UUID, byte[], int, int)",
+    "native_selector_class": "org.apache.commons.lang3.Conversion",
+    "descriptor": "(Ljava/util/UUID;[BII)[B",
+    "supported": true
+  },
+  {
+    "method_id": "s0055",
+    "number": 7,
+    "signature": "append(boolean[], boolean[])",
+    "native_selector_class": "org.apache.commons.lang3.builder.CompareToBuilder",
+    "descriptor": "([Z[Z)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0056",
+    "number": 9,
+    "signature": "append(byte[], byte[])",
+    "native_selector_class": "org.apache.commons.lang3.builder.CompareToBuilder",
+    "descriptor": "([B[B)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0057",
+    "number": 13,
+    "signature": "append(double[], double[])",
+    "native_selector_class": "org.apache.commons.lang3.builder.CompareToBuilder",
+    "descriptor": "([D[D)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0058",
+    "number": 15,
+    "signature": "append(float[], float[])",
+    "native_selector_class": "org.apache.commons.lang3.builder.CompareToBuilder",
+    "descriptor": "([F[F)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0059",
+    "number": 17,
+    "signature": "append(int[], int[])",
+    "native_selector_class": "org.apache.commons.lang3.builder.CompareToBuilder",
+    "descriptor": "([I[I)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0060",
+    "number": 19,
+    "signature": "append(long[], long[])",
+    "native_selector_class": "org.apache.commons.lang3.builder.CompareToBuilder",
+    "descriptor": "([J[J)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0061",
+    "number": 23,
+    "signature": "append(Object[], Object[], Comparator)",
+    "native_selector_class": "org.apache.commons.lang3.builder.CompareToBuilder",
+    "descriptor": "([Ljava/lang/Object;[Ljava/lang/Object;Ljava/util/Comparator;)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0062",
+    "number": 25,
+    "signature": "append(short[], short[])",
+    "native_selector_class": "org.apache.commons.lang3.builder.CompareToBuilder",
+    "descriptor": "([S[S)Lorg/apache/commons/lang3/builder/CompareToBuilder;",
+    "supported": true
+  },
+  {
+    "method_id": "s0063",
+    "number": 1,
+    "signature": "invokerTransformer(String, Class<?>[], Object[])",
+    "native_selector_class": "org.apache.commons.collections4.functors.InvokerTransformer",
+    "descriptor": "(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Lorg/apache/commons/collections4/Transformer;",
+    "supported": true
+  },
+  {
+    "method_id": "s0064",
+    "number": 2,
+    "signature": "write(byte[], int, int)",
+    "native_selector_class": "org.jline.utils.WriterOutputStream",
+    "descriptor": "([BII)V",
+    "supported": true
+  },
+  {
+    "method_id": "s0065",
+    "number": 23,
+    "signature": "data(String[])",
+    "native_selector_class": "org.jsoup.helper.HttpConnection",
+    "descriptor": "([Ljava/lang/String;)Lorg/jsoup/Connection;",
+    "supported": true
+  },
+  {
+    "method_id": "s0066",
+    "number": 4,
+    "signature": "add(int, E)",
+    "native_selector_class": "org.apache.commons.collections4.set.ListOrderedSet",
+    "descriptor": "(ILjava/lang/Object;)V",
+    "supported": true
+  },
+  {
+    "method_id": "s0067",
+    "number": 6,
+    "signature": "addAll(int, Collection)",
+    "native_selector_class": "org.apache.commons.collections4.set.ListOrderedSet",
+    "descriptor": "(ILjava/util/Collection;)Z",
+    "supported": true
+  },
+  {
+    "method_id": "s0068",
+    "number": 25,
+    "signature": "child(int)",
+    "native_selector_class": "org.jsoup.nodes.Element",
+    "descriptor": "(I)Lorg/jsoup/nodes/Element;",
+    "supported": true
+  },
+  {
+    "method_id": "s0069",
+    "number": 60,
+    "signature": "insertChildren(int, Collection)",
+    "native_selector_class": "org.jsoup.nodes.Element",
+    "descriptor": "(ILjava/util/Collection;)Lorg/jsoup/nodes/Element;",
+    "supported": true
+  },
+  {
+    "method_id": "s0070",
+    "number": 61,
+    "signature": "insertChildren(int, Node[])",
+    "native_selector_class": "org.jsoup.nodes.Element",
+    "descriptor": "(I[Lorg/jsoup/nodes/Node;)Lorg/jsoup/nodes/Element;",
+    "supported": true
+  },
+  {
+    "method_id": "s0071",
+    "number": 5,
+    "signature": "splitText(int)",
+    "native_selector_class": "org.jsoup.nodes.TextNode",
+    "descriptor": "(I)Lorg/jsoup/nodes/TextNode;",
+    "supported": true
+  },
+  {
+    "method_id": "s0072",
+    "number": 2,
+    "signature": "append(CharSequence, Formatter, int, int, int, char, CharSequence)",
+    "native_selector_class": "org.apache.commons.lang3.text.FormattableUtils",
+    "descriptor": "(Ljava/lang/CharSequence;Ljava/util/Formatter;IIICLjava/lang/CharSequence;)Ljava/util/Formatter;",
+    "supported": true
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "mode": "read_only_archived_raw_evidence_report_smoke",
+  "completed": 360,
+  "metrics_equal_frozen_report": true,
+  "fields": [
+    "line_covered",
+    "line_total",
+    "branch_covered",
+    "branch_total",
+    "generation_s",
+    "input_tokens",
+    "output_tokens",
+    "total_tokens",
+    "generated_test_methods"
+  ],
+  "model_calls": 0,
+  "new_test_generations": 0,
+  "new_test_executions": 0
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "original72-provenance-amendment-v1",
+  "recorded_unix": 1792754712.9907956,
+  "kind": "PRELAUNCH_AUDIT_METADATA_ENRICHMENT_AFTER_LAUNCH",
+  "original_audit_at_launch_sha256": "c76a8e5ee9cf3be4200482ffedc87f11d71f67f343bf9cfb30e79213d986f6a2",
+  "enhanced_current_audit_sha256": "3a808ffac958458994029f7eab223560984efa3ea357438c058154d1fe6e387b",
+  "original_created_unix": 1792753781.5678837,
+  "created_unix_unchanged": true,
+  "added_top_level_fields": {
+    "source_selection_manifest": {
+      "path": "/mnt/d/wsl/personal/dr/paper/JavaUnitTest/1023ToolDemo/frozen-sample.json",
+      "sha256": "02e0f59f9f8174fab9f5a728fecfefe1d7c810396a8c9c796e2c3f5b34e81cf4"
+    },
+    "execution_manifest": {
+      "path": "/home/clm/tooldemo72-20261023/frozen-sample.json",
+      "sha256": "20af6b344f3c3bcba49ee2da913cfe208fa59c6aacbce20df7ba6d4df21d31a9"
+    }
+  },
+  "removed_or_changed_existing_fields": [],
+  "exact_recovery": "The two added top-level fields were removed in memory and the original ensure_ascii=False,indent=2,newline serialization reproduced the launch hash exactly. The recovered bytes are saved separately; current audit and original execution provenance were not rewritten.",
+  "runtime_code_hashes_unchanged": {
+    "benchmark.py": true,
+    "freeze72.py": true,
+    "generator_projects.py": true,
+    "measurement.py": true,
+    "llm_proxy.py": true,
+    "resource_sampler.py": true,
+    "launch72.py": true,
+    "implementation.json": true
+  },
+  "runtime_protocol_manifest_unchanged": true,
+  "execution_manifest_sha256": "20af6b344f3c3bcba49ee2da913cfe208fa59c6aacbce20df7ba6d4df21d31a9",
+  "original_execution_provenance_sha256": "e43bf7c517359fef3a302ad41b097ffcf807e0028027c668433746ad081e75a1",
+  "at_launch_snapshot": "preflight-audit72-at-launch.json",
+  "no_generation_or_model_calls": true
+}
