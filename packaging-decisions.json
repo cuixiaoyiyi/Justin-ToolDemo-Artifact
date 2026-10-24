@@ -2,7 +2,7 @@
   "date": "2026-10-24",
   "scope": "Only the final fixed72 cohort and five tested project versions. No original341/six-project/old-class-level results or older paper versions.",
   "raw_evidence": "Repacked without modifying retained file bytes; compact streamed path map supports selective restore. Original archive remains unchanged outside Artifact.",
-  "inputs": "Frozen tool and subject binaries restored by SHA256; required runtime dependencies separated from tested subjects.",
+  "inputs": "Tool and subject binaries verified by SHA256; required runtime dependencies separated from tested subjects.",
   "credentials": "No credentials copied. Publishing uses a process-only credential for account cuixiaoyiyi.",
   "visibility": "Public as explicitly requested by the user.",
   "source_license": "No permissive license invented for Justin. Third-party license/notice texts preserved separately.",

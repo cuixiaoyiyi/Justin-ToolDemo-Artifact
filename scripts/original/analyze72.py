@@ -18,7 +18,7 @@ import time
 
 HERE = Path(__file__).resolve().parent
 TOOLS = ['justin-llm','evosuite','chatunitest','chattester','hits']
-LABELS = dict(zip(TOOLS,['Justin+LLM','EvoSuite','ChatUniTest','ChatTester reproduction','HITS reproduction']))
+LABELS = dict(zip(TOOLS,['Justin','EvoSuite','ChatUniTest','ChatTester reproduction','HITS reproduction']))
 METRICS = ['LINE','BRANCH']
 LEX = re.compile(r'//[^\n]*|/\*[\s\S]*?\*/|"(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\'')
 

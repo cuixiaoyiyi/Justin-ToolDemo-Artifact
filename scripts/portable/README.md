@@ -23,7 +23,7 @@ python3 scripts/portable/rerun.py prepare \
 python3 scripts/portable/rerun.py doctor --root "$HOME/justin72-new-run"
 ```
 
-Preparation verifies the five source/binary release hashes and the evaluated Justin JAR. It copies the pinned inputs into the new workspace, seeds the caller-selected Maven repository with the archived native plugin/core artifacts, and parses current subjects with ChatUniTest. Maven may resolve missing transitive dependencies over the network during this static setup; add `--offline` when the Maven cache is already complete. `--maven-repo /path/to/cache` chooses a separate cache. Preparation also constructs the common JaCoCo denominators through static class-file analysis and checks them against the frozen counters. No model key is needed during preparation: the parser receives a disabled key and an unreachable localhost endpoint. Subject tests are not executed during preparation.
+Preparation checks the five source/binary JAR checksums and the Justin JAR. It copies inputs into the new workspace, installs the supplied plugin/core files in the selected Maven repository, and parses subjects with ChatUniTest. Maven may download missing dependencies during setup; add `--offline` when the cache is complete. `--maven-repo /path/to/cache` chooses a separate cache. Preparation also calculates the common JaCoCo denominators from class files and checks them against the reference counters. The parser uses a disabled key and an unreachable localhost endpoint, so preparation requires no model credential and does not execute subject tests.
 
 ## Run all 360 target/tool combinations
 
@@ -36,7 +36,7 @@ export JUSTIN_LLM_BASE_URL='https://your-provider.example/v1'
 python3 scripts/portable/rerun.py run --root "$HOME/justin72-new-run"
 ```
 
-This command performs real generation, external compilation and test execution and consumes the caller's model quota. It preserves the original seed, per-tool budgets, model alias, response cap and transport accounting. The same five modes are run: Justin + LLM, EvoSuite, ChatUniTest, ChatTester, and HITS. ChatTester and HITS use the corresponding phases of the pinned ChatUniTest Maven implementation.
+This command generates, compiles, and executes tests and uses the caller's model quota. It uses the recorded seed, tool budgets, model name, response cap, and request accounting. It runs Justin, EvoSuite, ChatUniTest, ChatTester, and HITS. Justin enables LLM-based annotation inference; ChatTester and HITS use the corresponding modes of ChatUniTest Maven plugin 2.1.1.
 
 A completed unit is reused on resume. An interrupted unit with a `started.json` but no completed result stops with a recovery error, so an accidental restart cannot silently duplicate a paid model attempt. A fresh experiment requires a different empty root. The results under the artifact's `data/` directory are never overwritten.
 
@@ -54,6 +54,6 @@ The summarize command refuses to label an incomplete or unresolved run as final.
 
 ## Adaptations from the archived experiment scripts
 
-`adaptations.json` records original and adapted SHA-256 values for the runner and reporting modules. The changes replace machine-specific locations with the explicit workspace configuration, preserve outputs outside the immutable artifact, and read model credentials from environment variables. Maven goals are fully qualified to the pinned plugin version to avoid reliance on a previous user's prefix metadata. Preparation can resolve a missing dependency cache; timed native generation remains offline at the Maven layer. The standalone HITS identifier repair is included without changing its code. The clean POM template retains the archived starter/plugin coordinates and configuration, with runtime dependencies supplied for each current project. Generation algorithms, exact method selection, budgets, seed, coverage collection, case counting and transport accounting are unchanged.
+`adaptations.json` records the original and adapted script checksums. The adaptations replace machine-specific paths with workspace settings, keep new outputs separate from the supplied results, and read model credentials from environment variables. Maven goals specify plugin version 2.1.1. Preparation can download dependencies; timed generation uses Maven offline. The HITS identifier repair is included as used in the experiment. The POM template retains the recorded starter/plugin configuration and adds each project's runtime dependencies. Generation algorithms, method selection, budgets, seed, measurement, and request accounting follow the experiment scripts.
 
-Packaging checks compile these scripts, exercise their help entrypoints and verify the actual frozen input hashes. They do not claim that a new paid 360-unit batch was executed during packaging. New model outputs, timing, and token usage can vary with the provider and machine.
+Packaging checks covered Python syntax, help commands, and input checksums. The 360-run experiment was not repeated during packaging. Model outputs, timing, and token usage can vary with the provider and machine.

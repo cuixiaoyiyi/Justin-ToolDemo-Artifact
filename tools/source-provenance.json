@@ -3,5 +3,5 @@
   "source_repository": "https://github.com/cuiliaomei-beep/justin",
   "source_files": 192,
   "experiment_binary_sha256": "acc1227b2e0fbcb620107af99b77b64224d23703900a78f08887a3e9cbc38aed",
-  "note": "Source snapshot is the tracked tool source at this commit; the frozen binary is authoritative for the recorded experiment. No bit-identical rebuilt JAR claim."
+  "note": "Tool source from the listed commit. The supplied JAR was used in the experiment; rebuilds may produce different bytes."
 }

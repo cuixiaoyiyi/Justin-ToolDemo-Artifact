@@ -1,5 +1,5 @@
 {
-  "scope": "Only the five frozen tested versions; dependency JARs are not additional SUTs.",
+  "scope": "The five tested project versions; runtime dependencies are listed separately.",
   "methods": 72,
   "classes": 10,
   "subjects": [

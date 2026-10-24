@@ -2,7 +2,7 @@
   "schema": "original72-independent-final-claim-review-v1",
   "created_unix": 1792757038.3251479,
   "status": "FINAL_COMPLETE",
-  "analysis_sha256": "192ce551be3d1c488c00f2aeff0749fad9f54af9a59009a15fae8c8514616a36",
+  "analysis_sha256": "b2c6441de2b5797591f1fffe6e6af3a95e3439f3334f7f94ca5e922992b1184e",
   "benchmark_sha256": "57b5764d0b261593b2413d880986c83ef6c05546b68a6841f31240099547f9cb",
   "population": "All original72 exact methods and versions; all360 records complete; no outcome filtering.",
   "supported_core_claim": "In this fixed exploratory72 cohort, Justin achieved high focal coverage (96.65% line,96.54% branch) and exported fully compilable closed-JUnit suites for all72 targets, with26.84 cumulative generation minutes and at least163419 observed tokens. Its aggregate generation time and observed token count were lower than the three LLM baseline configurations.",
