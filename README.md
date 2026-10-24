@@ -72,12 +72,12 @@ Each retained raw file keeps its original bytes and content hash. Repacking remo
 
 | Tested project | Version | Focal methods |
 |---|---|---:|
-| Apache Commons Text | 1.15.0 | 21 |
-| Apache Commons Lang | 3.17.0 | 42 |
-| Apache Commons Collections | 4.6.0 | 3 |
-| JLine | 3.21.0 | 1 |
-| jsoup | 1.23.2 | 5 |
-| **Total** | **5 versions / 10 classes** | **72** |
+| Apache Commons Text | 1.15.0 | 11 |
+| Apache Commons Lang | 3.17.0 | 22 |
+| Apache Commons Collections | 4.6.0 | 13 |
+| JLine | 3.21.0 | 11 |
+| jsoup | 1.23.2 | 15 |
+| **Total** | **5 versions  | **72** |
 
 String, array, and indexed collection APIs operate on finite sequences: access requires an existing position, a fragment count depends on the extent remaining after its start, and insertion depends on the receiver's current size. The selected methods cover text editing/padding, binary/hex conversion, array comparison, byte ranges, indexed collections, and document-tree updates. Every tool uses the same 72 method signatures, including their JVM descriptors to distinguish overloads.
 
